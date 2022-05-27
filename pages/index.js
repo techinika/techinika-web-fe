@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Landing from "../components/Landing";
 
 export default function Home(){
     return (
@@ -16,8 +17,9 @@ export default function Home(){
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"></link>
             </Head>
-            <div>
-                <p className="title">Welcome to Techinika Website</p>
+            <div>    
+
+                {/* <p className="title">Welcome to Techinika Website</p>
                 <div className="construction">
                     <p className="under">This website is under construction, Follow us on social media to stay updated. You can also request one of our services from our social media accounts.</p>
                     <div className="socials">
@@ -40,7 +42,10 @@ export default function Home(){
                     <footer>
                         Techinika Limited &copy; 2022
                     </footer>
-                </div>
+                </div> */}
+                <Landing/>
+                
+                
             </div>
         </>
     )
