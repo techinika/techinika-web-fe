@@ -3,18 +3,24 @@ import Content from "./Content";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import Team from "./Team";
-import Skills from "./Skills";
+import Services from "./Services";
+import { Partners } from "./Partners";
 
 const Landing = ({children}) => {
   return (
-    <div className="bg-gray-200 font-main h-screen">
-      <Nav/>
-      <Content/>
-      <About/>
-      <Skills/>
-      <Team/>
-      <Footer />
-    </div>
+    <>
+      <div className="font-main bg-gray-200">
+        <Nav/>
+      </div>
+      <div className="bg-gray-200 font-main mx-auto">
+        <Content/>
+        <About/>
+        <Services/>
+        <Team/>
+        <Partners/>
+        <Footer />
+      </div>
+    </>
   );
 };
 

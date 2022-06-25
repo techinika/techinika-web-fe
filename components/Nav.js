@@ -4,28 +4,34 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="flex  items-center content-center  p-6 px-8  justify-between">
+    <nav className="flex fixed items-center content-center p-4 px-8  justify-between shadow-sm w-full top-0 z-20">
       <div>
-        <h1 className=" text-xl font-bold">
-          <Link href="/">Techinika Limited</Link>
+        <h1 className=" text-2xl font-bold">
+          <Link href="/">Techinika.</Link>
         </h1>
       </div>
       <div className="">
-        <ul className=" hidden md:flex">
+        <ul className=" md:items-center hidden md:flex text-xl">
           <li className="pr-6 hover:text-blue-800">
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/services"> Services</Link>
+            <Link href="/services">Projects</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/shop">Shop</Link>
+            <Link href="/services">Shop</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/about ">About Us</Link>
+            <Link href="/shop">Programs</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/about ">Our story</Link>
+          </li>
+          <li className="pr-6 hover:text-blue-800">
+            <Link href="/services">Partners</Link>
+          </li>
+          <li className="hover:text-white bg-mainBlue text-white text-center px-4 py-2 rounded-md">
+            <Link href="#">Hire Us</Link>
           </li>
         </ul>
       </div>
