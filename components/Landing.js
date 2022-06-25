@@ -5,8 +5,9 @@ import Nav from "./Nav";
 import Team from "./Team";
 import Services from "./Services";
 import { Partners } from "./Partners";
+import { Programmes } from "./Programmes";
 
-const Landing = ({children}) => {
+const Landing = () => {
   return (
     <>
       <div className="font-main bg-gray-200">
@@ -14,8 +15,9 @@ const Landing = ({children}) => {
       </div>
       <div className="bg-gray-200 font-main mx-auto">
         <Content/>
-        <About/>
+        <Programmes/>
         <Services/>
+        <About/>
         <Team/>
         <Partners/>
         <Footer />

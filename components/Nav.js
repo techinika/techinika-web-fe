@@ -4,7 +4,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="flex fixed items-center content-center p-4 px-8  justify-between shadow-sm w-full top-0 z-20">
+    <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-sm w-full top-0 z-20 bg-gray-200">
       <div>
         <h1 className=" text-2xl font-bold">
           <Link href="/">Techinika.</Link>
@@ -16,19 +16,22 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/services">Projects</Link>
+            <Link href="#programs">Programs</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/services">Shop</Link>
+            <Link href="#offers">Offers</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/shop">Programs</Link>
+            <Link href="#our-story">Our story</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/about ">Our story</Link>
+            <Link href="#contact">Reach out</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/services">Partners</Link>
+            <Link href="/shop ">Shop</Link>
+          </li>
+          <li className="pr-6 hover:text-blue-800">
+            <Link href="#partners">Partners</Link>
           </li>
           <li className="hover:text-white bg-mainBlue text-white text-center px-4 py-2 rounded-md">
             <Link href="#">Hire Us</Link>
