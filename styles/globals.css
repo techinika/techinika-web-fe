@@ -1,55 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
-
-* {
-    font-family: Quicksand, sans-serif;
-}
-
-body {
-    margin: 0;
-    width: 100%;
-}
-
-.title {
-    margin: 0;
-    background-color: rgba(9, 44, 125, 0.558);
-    color: white;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.construction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.under {
-    text-align: center;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    gap: 4;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.socials a {
-    padding: 20px;
-}
-
-footer {
-    margin: 0;
-    background-color: rgba(9, 44, 125, 0.558);
-    color: white;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
