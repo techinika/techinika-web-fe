@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <>
       <div className="bg-mainBlue" id="contact">
-        <footer className=" text-white flex p-8 w-10/12 mx-auto items-start">
-          <div className="flex-1 md:w-1/3">
+        <footer className="text-white flex p-8 w-10/12 mx-auto items-start flex-wrap gap-4">
+          <div className="w-full md:w-1/3">
             <div className="w-3/4 flex flex-col">
               <h2 className="text-2xl font-bold text-backgroundColor pb-4">
                 Techinika.
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 md:w-1/3">
+          <div className="flex-1 w-full md:w-1/3">
             <h2 className="text-2xl font-bold text-backgroundColor">
               Quick links
             </h2>
@@ -79,7 +79,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 w-full">
             <h2 className="text-2xl font-bold text-backgroundColor">Reach out</h2>
             <form method="post" className="py-4">
               <input

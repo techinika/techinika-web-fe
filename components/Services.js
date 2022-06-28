@@ -9,7 +9,7 @@ const Services = () => {
         <p>{"We’ve got everything you need to launch and grow your business. Don't worry we are relieving the load you had to carry yourself and carrying it for you."}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 m-2 md:m-4 gap-2 md:gap-4">
-        <article className="flex w-11/12 md:w-3/4">
+        <article className="flex">
           <div className="basis-1/6 p-2">
             <FaCode className="text-4xl mt-4 ml-4  md:ml-8  text-mainBlue" />
           </div>
@@ -22,7 +22,7 @@ const Services = () => {
             </p>
           </div>
         </article>
-        <article className="flex w-11/12 md:w-3/4">
+        <article className="flex">
           <div className="basis-1/6 p-2">
             <SiAdobeaftereffects className="text-4xl mt-4 ml-4  md:ml-8  text-mainBlue" />
           </div>
@@ -33,7 +33,7 @@ const Services = () => {
             </p>
           </div>
         </article>
-        <article className="flex w-11/12 md:w-3/4">
+        <article className="flex">
           <div className="basis-1/6 p-2">
             <SiMarketo className="text-4xl mt-4 ml-4 md:ml-8  text-mainBlue" />
           </div>
@@ -44,7 +44,7 @@ const Services = () => {
             </p>
           </div>
         </article>
-        <article className="flex w-11/12 md:w-3/4">
+        <article className="flex">
           <div className="basis-1/6 p-2">
             <SiTrainerroad className="text-4xl mt-4 ml-4 md:ml-8  text-mainBlue" />
           </div>
