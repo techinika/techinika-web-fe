@@ -3,7 +3,7 @@ import { SiAdobeaftereffects, SiTrainerroad, SiMarketo } from "react-icons/si";
 
 const Services = () => {
   return (
-    <section className="bg-transparent p-8 my-8 w-10/12 mx-auto" id="offers">
+    <section className="bg-transparent p-8 my-8 md:w-10/12 mx-auto" id="offers">
       <div>
         <h1 className="text-mainBlue font-bold text-4xl my-4">What do we offer?</h1>
         <p>{"We’ve got everything you need to launch and grow your business. Don't worry we are relieving the load you had to carry yourself and carrying it for you."}</p>

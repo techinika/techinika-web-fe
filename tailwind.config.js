@@ -17,7 +17,7 @@ module.exports = {
         mainBg: "#F8F8F8",
       },
       fontFamily: {
-        main: ["Corbel", "sans-serif"],
+        main: ["Baloo Tamma 2", "sans-serif"],
       },
       colors: {
         main: "#269DF8",

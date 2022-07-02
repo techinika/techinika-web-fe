@@ -1,5 +1,6 @@
 import Image from "next/image";
-import  profilePic  from "../public/undraw_development_re_g5hq.svg";
+import  one  from "../public/1.jpg";
+import  two  from "../public/2.jpg";
 
 const Content = (props) => {
   return (
@@ -12,8 +13,9 @@ const Content = (props) => {
           </p>
           <button className="bg-mainBlue hover:animate-bounce duration-1000 rounded-md text-white mt-4 hover:bg-blue-900 py-2 px-8 text-xl">Hire us</button>
         </div>
-        <div className="basis-1/2 my-4 md:block">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/AkFhkUkpTEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className="basis-1/2 my-4 md:flex items-center justify-center hidden">
+
+          <iframe className="w-full h-64" src="https://www.youtube.com/embed/AkFhkUkpTEc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </main>
     </div>
