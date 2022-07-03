@@ -65,7 +65,7 @@ const Team = () => {
     <div className="p-8 bg-mainBg flex flex-col items-center mx-auto">
       <div className='items-center md:w-10/12'>
         <h1 className="text-mainBlue font-bold text-4xl my-4">Leading Team</h1>
-        <p className='w-1/2'>
+        <p>
           {"We are a young, dynamic and innovative team. We care about every employee's continued growth."}
         </p>
       </div>

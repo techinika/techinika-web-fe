@@ -74,7 +74,7 @@ export const Partners = () => {
                 <div className="md:w-10/12 p-8 flex flex-col items-center mx-auto">
                     <div className='w-full items-center'>
                         <h1 className="text-mainBlue font-bold text-4xl my-4">Our Partners / Our clients</h1>
-                        <p className='w-1/2'>
+                        <p>
                         {"To deliver high quality service and best experience possible to our clients, we work with the the best companies and individuals who offer the best in their fields."}
                         </p>
                     </div>

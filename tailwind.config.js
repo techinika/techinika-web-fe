@@ -17,7 +17,7 @@ module.exports = {
         mainBg: "#F8F8F8",
       },
       fontFamily: {
-        main: ["Poppins", "sans-serif"],
+        main: ["Montserrat", "sans-serif"],
       },
       colors: {
         main: "#269DF8",

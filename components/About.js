@@ -29,7 +29,7 @@ const About = () => {
       <div className="flex flex-row mt-4 gap-4 items-start justify-between text-center w-11/12 mx-auto flex-wrap">
         {
           pillars.map(pillar => (
-            <article key={pillar.id} className="flex-1 rounded-md shadow-2xl bg-white text-mainBlue">
+            <article key={pillar.id} className="flex-1 rounded-sm shadow-2xl bg-white text-mainBlue">
               <h3 className="text-xl font-bold p-4">{pillar.title}</h3>
               <hr></hr>
               <p className="p-4">{pillar.desription}</p>
