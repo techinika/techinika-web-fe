@@ -1,6 +1,3 @@
-import Image from "next/image";
-import  one  from "../public/1.jpg";
-import  two  from "../public/2.jpg";
 
 const Content = (props) => {
   return (
@@ -15,7 +12,10 @@ const Content = (props) => {
         </div>
         <div className="basis-1/2 my-4 md:flex items-center justify-center hidden">
 
-          <iframe className="w-full h-64" src="https://www.youtube.com/embed/AkFhkUkpTEc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {/* <iframe className="w-full h-64" src="https://www.youtube.com/embed/AkFhkUkpTEc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+          <video muted autoPlay className="w-full">
+            <source src="http://localhost:3000/video.mp4" type="video/mp4"/>
+          </video>
         </div>
       </main>
     </div>
