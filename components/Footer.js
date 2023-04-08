@@ -37,11 +37,6 @@ const Footer = () => {
                     <FaFacebook size={20} />
                   </a>
                 </Link>
-                <Link href="https://www.t.me/techinika">
-                  <a target="_blank">
-                    <FaTelegram size={20} />
-                  </a>
-                </Link>
                 <Link href="https://linkedin/company/techinika">
                   <a target="_blank">
                     <FaLinkedin size={20} />
@@ -50,11 +45,6 @@ const Footer = () => {
                 <Link href="https://tv.techinika.com">
                   <a target="_blank">
                     <FaYoutube size={20} />
-                  </a>
-                </Link>
-                <Link href="https://www.twitter.com/techinika/">
-                  <a target="_blank">
-                    <Image src={techinikaLogo} width={20} height={20}/>
                   </a>
                 </Link>
               </div>
@@ -69,16 +59,27 @@ const Footer = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/services">Portfolio</Link>
+                <Link href="/services">Institute</Link>
               </li>
               <li>
-                <Link href="/services">shop</Link>
+                <Link href="/services">Workshop</Link>
               </li>
               <li>
-                <Link href="/services">Our Blog</Link>
+                <Link href="/services">Community</Link>
+              </li>
+              <li>
+                <Link href="/services">Solutions</Link>
+              </li>
+              <li>
+                <Link href="/services">Terms and Conditions</Link>
+              </li>
+              <li>
+                <Link href="/services">Privacy Policy</Link>
               </li>
             </ul>
           </div>
+
+          {/* Form for contact */}
           <div className="md:w-1/3 w-full">
             <h2 className="text-xl font-bold text-backgroundColor">Reach out</h2>
             <form method="post" className="py-4">
@@ -101,15 +102,15 @@ const Footer = () => {
                 rows="10"
               ></textarea>
               <br />
-              <button className="bg-white hover:bg-gray-200 font-bold active:bg-gray-200 py-2 px-4 rounded-md text-mainBlue">
+              <button className="btn-white">
                 Send
               </button>
             </form>
           </div>
         </footer>
       </div>
-      <div className="bg-blue-900 text-white  text-backgroundColor text-sm  border-grey text-center p-2">
-        <p>&copy; Techinika Limited 2022</p>
+      <div className="footer-credit">
+        <p>&copy; Techinika Limited 2023</p>
       </div>
     </>
   );

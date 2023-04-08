@@ -4,20 +4,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // colors: {
-    //   mainBg: "",
-    //   backgroundColor: "",
-    //   textCOlor: "#2844CC",
-    //   white:"#fffff"
-    // },
     extend: {
       backgroundColor: {
-        main: "#269DF8",
-        mainBlue: "#2844CC",
-        mainBg: "#F8F8F8",
+        mainBlue: "#17327b",
+        mainYellow: "#fbdb5a",
+        bg: "aliceblue"
+      },
+      backgroundImage: {
+        causeBg: "url('/dots-bg.jpg')"
       },
       fontFamily: {
-        main: ["Montserrat", "sans-serif"],
+        main: ["Space Grotesk","Jua", "sans-serif"],
       },
       colors: {
         main: "#269DF8",

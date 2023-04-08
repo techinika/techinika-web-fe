@@ -10,10 +10,10 @@ import { Programmes } from "./Programmes";
 const Landing = () => {
   return (
     <>
-      <div className="font-main bg-gray-200">
+      <div className="font-main bg-bg">
         <Nav/>
       </div>
-      <div className="bg-gray-200 font-main mx-auto">
+      <div className="bg-bg font-main mx-auto">
         <Content/>
         <Programmes/>
         <Services/>

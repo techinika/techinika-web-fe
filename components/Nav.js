@@ -4,9 +4,9 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-md w-full top-0 z-20 bg-gray-200">
+    <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
       <div>
-        <h1 className=" text-2xl font-bold">
+        <h1 className="text-2xl font-bold">
           <Link href="/">Techinika.</Link>
         </h1>
       </div>
@@ -16,25 +16,19 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#programs">Programs</Link>
+            <Link href="/">Courses</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#offers">Offers</Link>
+            <Link href="#offers">Institute</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#our-story">Our story</Link>
+            <Link href="#our-story">Blog</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#contact">Reach out</Link>
+            <Link href="#contact">Our story</Link>
           </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/shop ">Shop</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="#partners">Partners</Link>
-          </li>
-          <li className="hover:text-white bg-mainBlue text-white text-center px-4 py-2 rounded-md">
-            <Link href="#">Hire Us</Link>
+          <li className="btn-main">
+            <Link href="#">Join us</Link>
           </li>
         </ul>
       </div>
