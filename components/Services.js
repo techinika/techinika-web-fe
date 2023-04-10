@@ -1,6 +1,5 @@
 import Image from "next/image";
 import training from "../public/training.jpg";
-import institute from "../public/institute.png";
 import Link from "next/link";
 
 const Services = () => {

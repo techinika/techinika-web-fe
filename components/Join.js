@@ -23,7 +23,7 @@ export const JoinUs = () => {
                         <p className="text">We are a team of highly motivated individuals working to create the country where Rwandans are able to use technology equipments available for them.</p>
                         <div className="my-4">
                             <Link href="#">
-                                <a className="btn btn-yellow">Join Us</a>
+                                <a className="btn btn-white">Join Us</a>
                             </Link>
                         </div>
                     </div>
