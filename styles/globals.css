@@ -7,7 +7,7 @@
 
 * {
     line-height: 1.5;
-    transition: all 2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-yellow {
@@ -76,4 +76,32 @@
 
 .quote-text {
     @apply text-2xl font-bold italic;
+}
+
+.footer {
+    @apply flex justify-center items-center flex-col gap-4 py-7;
+}
+
+.copyright {
+    @apply text-center font-bold text-sm;
+}
+
+.social {
+    @apply flex gap-5 p-5;
+}
+
+.icon {
+    @apply p-3 rounded-md bg-mainBlue text-white;
+}
+
+.icon:hover {
+    @apply bg-mainYellow text-mainBlue;
+}
+
+.text {
+    @apply text-white leading-10;
+}
+
+.title {
+    @apply text-white font-bold text-2xl py-4;
 }

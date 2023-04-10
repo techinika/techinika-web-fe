@@ -2,11 +2,10 @@ import About from "./About";
 import Content from "./Content";
 import Footer from "./Footer";
 import Nav from "./Nav";
-import Team from "./Team";
 import Services from "./Services";
-import { Partners } from "./Partners";
 import { Programmes } from "./Programmes";
 import { Subscribe } from "./Subscribe";
+import { JoinUs } from "./Join";
 
 const Landing = () => {
   return (
@@ -19,9 +18,8 @@ const Landing = () => {
         <Programmes/>
         <Services/>
         <About/>
-        {/* <Team/> */}
-        {/* <Partners/> */}
         <Subscribe />
+        <JoinUs />
         <Footer />
       </div>
     </>
