@@ -12,11 +12,6 @@ const About = () => {
       title: "Vision",
       desription: "Techinika's Mission is to make changes in the development of Africa through technology by putting our hands on developing and providing skills in technology and business as Africa is growing fast in tech. Especialy in Rwanda, we want to make Made In Rwanda grow to the highest level with, and in technology. We believe that 'with technology, businesses grow much faster'."
     },
-    {
-      id: 3,
-      title: "Core Values",
-      desription: "Techinika's Mission is to make changes in the development of Africa through technology by putting our hands on developing and providing skills in technology and business as Africa is growing fast in tech. Especialy in Rwanda, we want to make Made In Rwanda grow to the highest level with, and in technology. We believe that 'with technology, businesses grow much faster'."
-    }
   ]
 
   return (
@@ -32,7 +27,7 @@ const About = () => {
             <article key={pillar.id} className="flex-1 rounded-sm shadow-2xl bg-white text-mainBlue">
               <h3 className="text-xl font-bold p-4">{pillar.title}</h3>
               <hr></hr>
-              <p className="p-4">{pillar.desription}</p>
+              <p className="p-4 card-body">{pillar.desription}</p>
             </article>
           ))
         }

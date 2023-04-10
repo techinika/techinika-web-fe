@@ -9,7 +9,7 @@ const Content = (props) => {
           <p className="text-7xl font-bold">Techinika.</p>
         </div>
         <p>Skills for the future, Solutions to boost your productivity.</p>
-        <div className="mt-3 flex flex-row flex-wrap gap-5">
+        <div className="btn-group">
           <button className="btn-yellow">Let's help you!</button>
           <button className="btn-white">Join us!</button>
         </div>

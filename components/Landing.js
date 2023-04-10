@@ -6,6 +6,7 @@ import Team from "./Team";
 import Services from "./Services";
 import { Partners } from "./Partners";
 import { Programmes } from "./Programmes";
+import { Subscribe } from "./Subscribe";
 
 const Landing = () => {
   return (
@@ -13,13 +14,14 @@ const Landing = () => {
       <div className="font-main bg-bg">
         <Nav/>
       </div>
-      <div className="bg-bg font-main mx-auto">
+      <div className="bg-white font-main mx-auto">
         <Content/>
         <Programmes/>
         <Services/>
         <About/>
-        <Team/>
-        <Partners/>
+        {/* <Team/> */}
+        {/* <Partners/> */}
+        <Subscribe />
         <Footer />
       </div>
     </>

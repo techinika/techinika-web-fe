@@ -1,10 +1,11 @@
 import Image from "next/image";
 import training from "../public/training.jpg";
+import institute from "../public/institute.png";
 import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="bg-transparent py-20 w-10/12 mx-auto">
+    <section className="py-20 w-10/12 mx-auto">
       <div>
         <h1 className="big-title">Explore how we can help you!</h1>
       </div>
@@ -41,9 +42,14 @@ const Services = () => {
           <div className="h-card-body">
             <h2 className="card-title">Learn from our free contents</h2>
             <p className="card-body">{"If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."}</p>
-            <Link href="/">
-              <a className="btn-main">Learn for FREE</a>
-            </Link>
+            <div className="btn-group">
+              <Link href="/">
+                <a className="btn-yellow">Read articles</a>
+              </Link>
+              <Link href="/">
+                <a className="btn-main">Watch videos</a>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="h-card">
