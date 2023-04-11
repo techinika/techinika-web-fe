@@ -106,6 +106,6 @@
     @apply text-white font-bold text-2xl py-4;
 }
 
-/* .logo {
+.logo {
     @apply flex flex-row gap-2;
-} */
+}
