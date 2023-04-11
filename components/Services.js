@@ -42,11 +42,11 @@ const Services = () => {
             <h2 className="card-title">Learn from our free contents</h2>
             <p className="card-body">{"If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."}</p>
             <div className="btn-group">
-              <Link href="/">
-                <a className="btn-yellow">Read articles</a>
+              <Link href="https://techinika.com/sobanukirwa">
+                <a className="btn-yellow" target="_blank">Read articles</a>
               </Link>
-              <Link href="/">
-                <a className="btn-main">Watch videos</a>
+              <Link href="https://youtube.com/@techinika">
+                <a className="btn-main" target="_blank">Watch videos</a>
               </Link>
             </div>
           </div>
@@ -55,8 +55,8 @@ const Services = () => {
           <div className="h-card-body">
             <h2 className="card-title">Join our community</h2>
             <p className="card-body">{"If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."}</p>
-            <Link href="/">
-              <a className="btn-main">Join Now</a>
+            <Link href="https://whatsapp.techinika.com">
+              <a className="btn-main" target="_blank">Join Now</a>
             </Link>
           </div>
           <div className="image-hold hidden md:block">

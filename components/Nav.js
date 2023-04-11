@@ -16,7 +16,7 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/">Courses</Link>
+            <Link href="/">Learn for free</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
             <Link href="#offers">Institute</Link>
