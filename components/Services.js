@@ -11,7 +11,7 @@ const Services = () => {
 
       <div className="flex flex-col gap-5 my-5">
         <div className="h-card">
-          <div className="image-hold">
+          <div className="image-hold hidden md:block">
             <Image src={training} height={500}   layout="responsive" className="card-image"/>
           </div>
           <div className="h-card-body">
@@ -30,12 +30,12 @@ const Services = () => {
               <a className="btn-main">RSVP Today</a>
             </Link>
           </div>
-          <div className="image-hold">
+          <div className="image-hold hidden md:block">
             <Image src={training} layout="responsive" height={500} className="card-image"/>
           </div>
         </div>
         <div className="h-card">
-          <div className="image-hold">
+          <div className="image-hold hidden md:block">
             <Image src={training} layout="responsive"  height={500} className="card-image"/>
           </div>
           <div className="h-card-body">
@@ -59,12 +59,12 @@ const Services = () => {
               <a className="btn-main">Join Now</a>
             </Link>
           </div>
-          <div className="image-hold">
+          <div className="image-hold hidden md:block">
             <Image src={training} layout="responsive"  height={500} className="card-image"/>
           </div>
         </div>
         <div className="h-card">
-          <div className="image-hold">
+          <div className="image-hold hidden md:block">
             <Image src={training} layout="responsive" height={500} className="card-image"/>
           </div>
           <div className="h-card-body">

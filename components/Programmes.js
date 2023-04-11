@@ -4,8 +4,8 @@ export const Programmes = () => {
     return (
         <>
             <div className="bg-causeBg bg-no-repeat bg-cover py-4">
-                <div className="w-10/12 xs:w-full mx-auto text-white p-8">
-                    <div className="flex flex-wrap justify-center items-start mx-auto mt-8 w-11/12 gap-4">
+                <div className="md:w-10/12 xs:w-full mx-auto text-white p-8">
+                    <div className="flex flex-wrap justify-center items-start mx-auto mt-8 md:w-11/12 gap-4">
                         <div className="card">
                             <h2 className="card-title">Technology For the Future</h2>
                             <p className="card-body">{"It is now very obbbbbbbbvious than any other time how technology is taking a big part of our lives. Transformation is taking place before our eyes. Self driving cars, Artificial Intelligence, Internet of things, Robots and other tech inventions we used to watch only in movies are real today. Read more of what is coming and its impact on the world we know."}</p>
