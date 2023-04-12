@@ -25,7 +25,7 @@ const Nav = () => {
             <Link href="#our-story">Blog</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#contact">Our story</Link>
+            <Link href="/our-story">Our story</Link>
           </li>
           <li className="btn-main">
             <Link href="#">Join us</Link>
