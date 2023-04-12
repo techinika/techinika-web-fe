@@ -111,10 +111,11 @@
 }
 
 .page-header {
-    @apply bg-mainBlue text-white w-full h-1/2 p-10 py-24 text-center flex justify-center items-center;  
+    @apply bg-mainBlue text-white w-full h-1/2 p-10 py-24 text-center flex justify-center items-center mt-5;  
     min-height: 50vh; 
 }
 
 .page-title {
     @apply font-bold text-5xl;
 }
+

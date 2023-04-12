@@ -2,6 +2,8 @@ import Head from "next/head";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import { Timeline } from "../components/Timeline";
+import { JoinUs } from "../components/Join";
+import { Subscribe } from "../components/Subscribe";
 
 export default function Home(){
     return (
@@ -21,6 +23,10 @@ export default function Home(){
                 <Nav />
                 
                 <Timeline />
+
+                <Subscribe />
+
+                <JoinUs />
 
                 <Footer />
                 
