@@ -115,6 +115,6 @@
 }
 
 .page-title {
-    @apply font-bold text-5xl;
+    @apply font-bold text-5xl mt-5;
 }
 
