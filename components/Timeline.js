@@ -1,12 +1,11 @@
+import { PageTitle } from "./HeadFoot/PageTitle"
 
 
 export const Timeline = () => {
     return (
         <>
             <div>
-                <div className="page-header">
-                    <h2 className="page-title">Our Story</h2>
-                </div>
+                <PageTitle title="Our Story"/>
                 <div className="w-10/12 bg-bg m-auto p-10 md:p-24 my-5 rounded-md">
                     <h2 className="card-title">Who are we?</h2>
                     <p className="card-body">{"This is who we are. Muri Nyakanga 2020, nibwo twatangiye dufite urubuga rwitwaga NIGUTE twifashishaga mu kwigisha Abanyarwanda uko ikoranabuhanga rikora, ndetse n’uko baryifashisha mu byo bakora umunsi ku munsi. Muri 2021, nibwo twahinduye urubuga turwita Techinika, tukaba twarahuje amagambo abiri, Technology no Gutekinika."}</p>
