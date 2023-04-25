@@ -1,5 +1,5 @@
 import Link from "next/link";
-import techinikaLogo from "../public/Techinika.png";
+import techinikaLogo from "../../public/Techinika.png";
 import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 

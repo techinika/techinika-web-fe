@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Nav from "../components/Nav";
+import Nav from "../components/HeadFoot/Nav";
+import About from "../components/About";
 
 
 export default function Collaborate () {
@@ -16,7 +17,8 @@ export default function Collaborate () {
             </Head>
             <div>    
 
-                <Nav/>                       
+                <Nav/>
+
                 
             </div>
         </>
