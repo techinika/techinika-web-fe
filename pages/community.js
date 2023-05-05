@@ -3,6 +3,8 @@ import Nav from "../components/HeadFoot/Nav";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import Footer from "../components/HeadFoot/Footer";
 import { AboutCommunity } from "../components/Community/about";
+import { Subscribe } from "../components/Subscribe";
+import { Events } from "../components/Community/Events";
 
 export default function Community() {
   return (
@@ -25,9 +27,11 @@ export default function Community() {
       <div>
         <Nav />
         <PageTitle title="Technology Community" />
-          <div>
-            <AboutCommunity />
-          </div>
+        <div>
+          <AboutCommunity />
+          <Events />
+        </div>
+        <Subscribe />
         <Footer />
       </div>
     </>
