@@ -8,13 +8,13 @@ module.exports = {
       backgroundColor: {
         mainBlue: "#17327b",
         mainYellow: "#fbdb5a",
-        bg: "aliceblue"
+        bg: "aliceblue",
       },
       backgroundImage: {
-        causeBg: "url('/dots-bg.jpg')"
+        causeBg: "url('/dots-bg.jpg')",
       },
       fontFamily: {
-        main: ["Space Grotesk","Jua", "sans-serif"],
+        main: ["Space Grotesk", "Jua", "sans-serif"],
       },
       colors: {
         main: "#269DF8",

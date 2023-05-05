@@ -16,10 +16,10 @@ const Nav = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/">Learn for free</Link>
+            <Link href="/">Learn</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#offers">Institute</Link>
+            <Link href="/community">Community</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
             <Link href="#our-story">Blog</Link>

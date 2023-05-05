@@ -42,11 +42,11 @@
 }
 
 .h-card {
-    @apply bg-bg flex justify-between rounded-lg items-center min-h-fit p-10;
+    @apply bg-bg flex shadow-lg border-2 border-gray-200 justify-between rounded-lg items-center min-h-fit p-10;
 }
 
 .image-hold {
-    @apply flex-1 p-10;
+    @apply flex-1 w-full flex justify-center text-center items-center;
 }
 
 .card-image {
