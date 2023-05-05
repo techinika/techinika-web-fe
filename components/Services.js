@@ -25,7 +25,7 @@ const Services = () => {
             <h2 className="card-title">Learn from our contents</h2>
             <p className="card-body">
               {
-                "If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."
+                "Since 2020, we have been creating contents with only one purpose. We want to make you the tech savvy. You can learn from our articles, videos, and short form contents available on all of our platforms. Contents are found in Kinyarwanda and English, and they are all free."
               }
             </p>
             <Link href="/">
@@ -38,10 +38,10 @@ const Services = () => {
             <h2 className="card-title">Join our community</h2>
             <p className="card-body">
               {
-                "If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."
+                "We are creating a community of individuals who are well informed on what is happening in technology space and how it affects their lives, their occupations and their businesses. By joining us, you get access to our weekly conversation and meeting like minded people who inspire a change in you."
               }
             </p>
-            <Link href="/">
+            <Link href="/community">
               <a className="btn-main">Join Today</a>
             </Link>
           </div>
@@ -67,7 +67,7 @@ const Services = () => {
             <h2 className="card-title">Consult with professionals</h2>
             <p className="card-body">
               {
-                "If you want to become irreplaceable at your job, gain modern skills to make you competitive at the market, become job-ready with our institute of education."
+                "We know technology changes every day and there is a need for businesses to keep up with the changes that are happening. If they don't, their services or products might become obsolete or irrelevant. That is why we are committed to helping your business stay up to date and relevant on the market. Let us talk!"
               }
             </p>
             <div className="btn-group">

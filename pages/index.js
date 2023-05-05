@@ -7,6 +7,7 @@ import About from "../components/About";
 import { Subscribe } from "../components/Subscribe";
 import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
+import { Quote } from "../components/HeadFoot/Quote";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           <Programmes />
           <Services />
           <About />
+          <Quote />
           <Subscribe />
           <JoinUs />
           <Footer />

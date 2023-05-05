@@ -2,6 +2,7 @@ import Head from "next/head";
 import Nav from "../components/HeadFoot/Nav";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import Footer from "../components/HeadFoot/Footer";
+import { AboutCommunity } from "../components/Community/about";
 
 export default function Community() {
   return (
@@ -25,7 +26,7 @@ export default function Community() {
         <Nav />
         <PageTitle title="Technology Community" />
           <div>
-            
+            <AboutCommunity />
           </div>
         <Footer />
       </div>
