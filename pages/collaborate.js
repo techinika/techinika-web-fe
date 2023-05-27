@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Nav from "../components/HeadFoot/Nav";
-import About from "../components/About";
 import Footer from "../components/HeadFoot/Footer";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 

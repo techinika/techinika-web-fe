@@ -6,29 +6,29 @@ const Nav = () => {
   return (
     <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
       <div>
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-xl font-bold">
           <Link href="/">Techinika.</Link>
         </h1>
       </div>
       <div className="">
-        <ul className=" md:items-center hidden md:flex text-xl">
+        <ul className=" md:items-center hidden md:flex text-lg">
           <li className="pr-6 hover:text-blue-800">
             <Link href="/">Home</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="/">Learn</Link>
+            <Link href="/learning">Learning</Link>
+          </li>
+          <li className="pr-6 hover:text-blue-800">
+            <Link href="/services">Services</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
             <Link href="/community">Community</Link>
           </li>
           <li className="pr-6 hover:text-blue-800">
-            <Link href="#our-story">Blog</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/our-story">Our story</Link>
+            <Link href="/about">About us</Link>
           </li>
           <li className="btn-main">
-            <Link href="#">Join us</Link>
+            <Link href="/collaborate">Collaborate</Link>
           </li>
         </ul>
       </div>

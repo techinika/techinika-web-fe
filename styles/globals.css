@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 * {
-    @apply font-main leading-loose transition-all ease-in-out;
+    @apply font-main leading-loose transition-all delay-300 ease-in-out;
 }
 
 .btn-yellow {
@@ -26,7 +26,7 @@
 }
 
 .card {
-    @apply flex-1 shadow-lg rounded-sm bg-white p-10 md:p-20 rounded-lg border-2 border-dashed border-mainBlue h-1/2;
+    @apply flex-1 shadow-lg rounded-sm bg-white p-10 rounded-lg border-2 border-dashed border-mainBlue;
 }
 
 .card-title {
@@ -102,7 +102,7 @@
 }
 
 .title {
-    @apply text-white font-bold text-2xl py-4;
+    @apply text-white font-bold text-4xl py-4;
 }
 
 .logo {

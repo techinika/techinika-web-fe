@@ -35,10 +35,10 @@ export default function Home() {
           <Content />
           <Programmes />
           <Services />
-          <About />
-          <Quote />
-          <Subscribe />
           <JoinUs />
+          {/* <About /> */}
+          {/* <Quote /> */}
+          <Subscribe />
           <Footer />
         </div>
       </div>
