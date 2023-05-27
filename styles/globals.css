@@ -98,7 +98,7 @@
 }
 
 .text {
-    @apply text-white leading-10;
+    @apply text-black leading-10;
 }
 
 .title {
@@ -118,3 +118,10 @@
     @apply font-bold text-5xl mt-5;
 }
 
+.list {
+    @apply list-disc text-gray-900;
+}
+
+.list-item {
+    @apply list-inside;
+}
