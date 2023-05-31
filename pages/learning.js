@@ -222,17 +222,13 @@ export default function Learning() {
         <div className="bg-mainBlue w-full text-white">
           <div className="w-9/12 mx-auto p-10">
             <p className="text-xl leading-loose">
-              {`Since 2020, we have been making contents and learning what people
-              need. Going forward, we have a plan of education more than 150,000
-              people in Rwanda and Burundi on Technology and get 60% of them
-              employed through the skills in demand we will be offering to them.
-              You too can be a part of what we are doing by volunteering,
-              offering your expertise, your skills, or sharing to relevant
-              people in your network.`}
+              {`Join our mission to make a difference in the lives of thousands in Rwanda and Burundi. Since 2020, we have been creating valuable content and gaining insights into people's needs. Moving forward, we aim to educate over 150,000 individuals in technology and empower them with in-demand skills, leading to a 60% employment rate. You can contribute by volunteering, sharing your expertise, skills, or spreading the word among your network.`}
             </p>
             <div className="flex justify-between my-5">
               <div></div>
-              <button className="btn-white">{"Let's work together"}</button>
+              <Link href="/collaborate">
+                <button className="btn-white">{"Let's work together"}</button>
+              </Link>
             </div>
           </div>
         </div>
