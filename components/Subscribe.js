@@ -10,16 +10,16 @@ export const Subscribe = () => {
             Be exclusive in getting our new courses, products, events, and
             services right into your inbox.
           </p>
-          <form className="form">
+          <form className="form flex flex-wrap">
             <input
               type="text"
               placeholder="Enter your name"
-              className="input"
+              className="input flex-1"
             />
             <input
               type="email"
               placeholder="Enter your email"
-              className="input"
+              className="input flex-1"
             />
             <input type="submit" value="Submit" className="btn btn-yellow" />
           </form>
