@@ -125,3 +125,7 @@
 .list-item {
     @apply list-inside;
 }
+
+.text-button {
+    @apply text-mainBlue underline;
+}

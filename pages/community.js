@@ -5,6 +5,7 @@ import Footer from "../components/HeadFoot/Footer";
 import { AboutCommunity } from "../components/Community/about";
 import { Subscribe } from "../components/Subscribe";
 import { Events } from "../components/Community/Events";
+import Link from "next/link";
 
 export default function Community() {
   return (
@@ -30,6 +31,26 @@ export default function Community() {
         <div>
           <AboutCommunity />
           <Events />
+        </div>
+        <div className="bg-mainBlue w-full text-white">
+          <div className="w-9/12 mx-auto p-10">
+            <p className="text-xl leading-loose">
+              {`Are you passionate about technology and making a positive impact? Join our team and work with us to educate schools, villages, and companies about emerging technologies through captivating workshops and our engaging Digital Discourse podcast. Together, let's empower individuals, foster tech literacy, and shape a better future.`}
+            </p>
+            <div className="flex justify-between my-5">
+              <div></div>
+              <div className="flex gap-2 flex-wrap">
+                <Link href="https://whatsapp.techinika.com">
+                  <a target="_blank" className="btn-yellow">
+                    {"Join our community"}
+                  </a>
+                </Link>
+                <Link href="/collaborate">
+                  <button className="btn-white">{"Let's work together"}</button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
         <Subscribe />
         <Footer />
