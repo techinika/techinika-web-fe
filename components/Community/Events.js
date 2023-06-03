@@ -23,12 +23,14 @@ export const Events = () => {
             </div>
             <div className="h-card-body">
               <h2 className="card-title">Digital Discourse Podcast</h2>
-              <p className={`card-body ${
+              <p
+                className={`card-body ${
                   !moreDiscourse && "h-32 overflow-hidden"
-                }`}>
-                {`A conversation with you and technology. It has a purpose of bringing together our community and people who are either in technology industry or want to join technology industry and update them on what is happening today and what it means.`}
+                }`}
+              >
+                {`Embark on a transformative conversation with technology, aimed at uniting our community of tech enthusiasts and aspiring professionals. Our purpose is to provide timely updates on the latest developments in the technology industry and shed light on their significance. By bringing together individuals already immersed in technology and those aspiring to join the field, we strive to foster a sense of belonging and mutual growth.`}
                 <br></br>
-                {`Over time, we will contributing to our country by raising this community of individuals who are well informed on what is happening in technology space and how it affects their lives, their occupations and their businesses.`}
+                {`As we journey together, our collective knowledge will contribute to the betterment of our country. By equipping our community with comprehensive insights into the ever-evolving technology space, we empower them to navigate its impact on their lives, professions, and businesses. Through this shared understanding, we aim to cultivate an informed and engaged community that harnesses the potential of technology for personal and societal progress. Join us as we shape a future where knowledge and technology converge, driving positive change in our communities and beyond.`}
               </p>
               {!moreDiscourse ? (
                 <button
