@@ -1,5 +1,6 @@
 import Image from "next/image";
 import consulting from "../../public/consulting.png";
+import workshops from "../../public/workshops.png";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -58,7 +59,7 @@ export const Events = () => {
           <div className="h-card">
             <div className="image-hold hidden md:block">
               <Image
-                src={consulting}
+                src={workshops}
                 height={300}
                 width={300}
                 className="card-image"
