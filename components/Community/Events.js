@@ -48,9 +48,9 @@ export const Events = () => {
                 </button>
               )}
               <div className="btn-group">
-                <Link href="https://youtube.com/@techinika">
+                <Link href="https://forms.gle/wj1PttqsuLyKB6fb9">
                   <a className="btn-main" target="_blank">
-                    Check out
+                    Register to attend
                   </a>
                 </Link>
               </div>
