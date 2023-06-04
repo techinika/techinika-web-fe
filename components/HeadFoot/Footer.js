@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { Socials } from "./Socials";
 
 const Footer = () => {
   return (
@@ -26,31 +27,7 @@ const Footer = () => {
         <div className="copyright">
           <p>&copy; Techinika Limited - 2023</p>
         </div>
-        <div className="social">
-          <Link href="#" className="cursor-pointer">
-            <div className="icon">
-              <FaFacebookF size={20} color="white"></FaFacebookF>
-            </div>
-          </Link>
-
-          <Link href="#" className="cursor-pointer">
-            <div className="icon">
-              <FaInstagram size={20}></FaInstagram>
-            </div>
-          </Link>
-
-          <Link href="#" className="cursor-pointer">
-            <div className="icon">
-              <FaTwitter size={20}></FaTwitter>
-            </div>
-          </Link>
-
-          <Link href="#" className="cursor-pointer">
-            <div className="icon">
-              <FaLinkedin size={20}></FaLinkedin>
-            </div>
-          </Link>
-        </div>
+        <Socials />
       </div>
     </>
   );
