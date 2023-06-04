@@ -1,8 +1,16 @@
 import Link from "next/link";
-import { AiOutlineMenu } from "react-icons/ai";
-import React from "react";
+import { AiFillCloseCircle, AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
+import React, { useState } from "react";
 
 const Nav = () => {
+  const [showDrawer, setShowDrawer] = useState(false);
+  const links = [
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "Learning", link: "/learning" },
+    { id: 3, name: "Services", link: "/services" },
+    { id: 4, name: "Community", link: "/community" },
+    { id: 5, name: "About Us", link: "/about" },
+  ];
   return (
     <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
       <div>
@@ -12,29 +20,50 @@ const Nav = () => {
       </div>
       <div className="">
         <ul className=" md:items-center hidden md:flex text-lg">
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/learning">Learning</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/services">Services</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/community">Community</Link>
-          </li>
-          <li className="pr-6 hover:text-blue-800">
-            <Link href="/about">About us</Link>
-          </li>
+          {links
+            ? links.map((link) => (
+                <li className="pr-6 hover:text-blue-800" key={link.id}>
+                  <Link href={link.link}>{link.name}</Link>
+                </li>
+              ))
+            : null}
           <li className="btn-main">
-            <Link href="/collaborate">Collaborate</Link>
+            <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>
-      <div className="block md:hidden cursor-pointer">
-        <AiOutlineMenu size={28} className="text-blue-800  font-bold" />
+      <div
+        className="block md:hidden cursor-pointer"
+       
+      >
+        {!showDrawer && <AiOutlineMenuUnfold  onClick={() => setShowDrawer(true)} size={28} className="text-blue-800  font-bold" />}
+        {showDrawer && <AiFillCloseCircle  onClick={() => setShowDrawer(false)} size={28} className="text-blue-800  font-bold" />}
       </div>
+
+      {showDrawer && (
+        <div className="h-screen bg-bg w-2/3 fixed left-0 top-0 bottom-0 shadow-lg">
+          <div className="w-full text-center p-5 bg-mainBlue text-white">
+            <h1 className="text-xl font-bold">
+              <Link href="/">Techinika.</Link>
+            </h1>
+          </div>
+          <ul className="flex flex-col gap-3">
+            {links
+              ? links.map((link) => (
+                  <li
+                    className="p-5 hover:text-blue-800 hover:bg-white hover:shadow"
+                    key={link.id}
+                  >
+                    <Link href={link.link}>{link.name}</Link>
+                  </li>
+                ))
+              : null}
+            <li className="btn-main">
+              <Link href="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

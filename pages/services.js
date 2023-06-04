@@ -28,7 +28,7 @@ export default function Community() {
       <div>
         <Nav />
         <PageTitle title="Services" />
-        <div className="md:w-9/12 mx-auto">
+        <div className="md:w-9/12 mx-auto p-2">
           <div className="flex flex-row flex-wrap gap-2 my-2">
             <div className="card">
               <h2 className="card-title">Corporate trainings</h2>
@@ -82,7 +82,7 @@ export default function Community() {
               </p>
             </div>
           </div>
-          <div className="py-5 flex justify-between flex-wrap gap-5 flex-row ">
+          <div className="py-5 flex justify-between flex-wrap gap-5 flex-row">
             <div className="md:w-6/12">
               <h2 className="card-title">Why should you work with us?</h2>
               <p>

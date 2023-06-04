@@ -2,7 +2,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 export const Quote = () => {
   return (
-    <div className="flex justify-center items-center py-10 md:w-8/12 m-auto flex-col gap-5 ">
+    <div className="flex justify-center items-center py-10 md:w-8/12 m-auto flex-col gap-5 px-2">
       <FaQuoteLeft className="text-3xl"></FaQuoteLeft>
       <h2 className="quote-text h-1/2">
         {
