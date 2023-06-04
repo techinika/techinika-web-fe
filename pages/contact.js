@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Timeline } from "../components/Timeline";
+import { Timeline } from "../components/About/Timeline";
 import { JoinUs } from "../components/Join";
 import { Subscribe } from "../components/Subscribe";
 import Footer from "../components/HeadFoot/Footer";

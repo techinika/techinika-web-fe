@@ -1,4 +1,26 @@
 export const Subscribe = () => {
+  const subscribe = async (e) => {
+    e.preventDefault();
+
+    setState(1);
+    seterrorMsg("");
+    console.log(e.target[0].value);
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        body: e.target[0].value,
+      });
+
+      const data = await res.json();
+      if (data.error !== null) {
+        throw data.error;
+      }
+      setState(2);
+    } catch (e) {
+      seterrorMsg(e);
+      setState(3);
+    }
+  };
   return (
     <>
       <div className="bg-bg p-10">

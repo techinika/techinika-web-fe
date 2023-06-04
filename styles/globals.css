@@ -129,3 +129,27 @@
 .text-button {
     @apply text-mainBlue underline;
 }
+
+.team-card {
+    @apply flex-1 bg-bg border-2 border-mainBlue border-dotted rounded;
+}
+
+.team-image-div {
+@apply w-full h-96 relative bg-main;
+}
+
+.team-image {
+    @apply object-cover rounded;
+}
+
+.image-placeholder {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+}
+
+.team-name {
+    @apply font-bold text-xl text-mainBlue;
+}
+
+.team-row {
+    @apply flex flex-row flex-wrap gap-2 my-2;
+}
