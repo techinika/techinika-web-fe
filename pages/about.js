@@ -1,12 +1,9 @@
 import Head from "next/head";
-import { Timeline } from "../components/About/Timeline";
-import { JoinUs } from "../components/Join";
 import { Subscribe } from "../components/Subscribe";
 import Footer from "../components/HeadFoot/Footer";
 import Nav from "../components/HeadFoot/Nav";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import { Team } from "../components/About/Team";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -35,19 +32,19 @@ export default function Home() {
             <div className="card">
               <h2 className="card-title">Techinika</h2>
               <p>
-                Techinika is a tech company that is striving to make technology that solves problems accessible to everyone is Africa, especially Rwanda where we are based. 
+                {"Techinika is a tech company that is striving to make technology that solves problems accessible to everyone is Africa, especially Rwanda where we are based. "}
               </p>
             </div>
             <div className="card">
               <h2 className="card-title">Why?</h2>
               <p>
-                The future vehicle will be driven by those who understand and use technology. But more than 60% of Rwandans don't understand which tech tools they need and why.
+                {"The future vehicle will be driven by those who understand and use technology. But more than 60% of Rwandans don't understand which tech tools they need and why."}
               </p>
             </div>
             <div className="card">
               <h2 className="card-title">Vision</h2>
               <p>
-                The society where everyone will have knowledge on which tool they need and why, plus being able to use it themselves, and solves other problems by creating new tools themselves.
+                {"The society where everyone will have knowledge on which tool they need and why, plus being able to use it themselves, and solves other problems by creating new tools themselves."}
               </p>
             </div>
           </div>
