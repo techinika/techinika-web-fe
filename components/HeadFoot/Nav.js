@@ -12,7 +12,7 @@ const Nav = () => {
     { id: 5, name: "About Us", link: "/about" },
   ];
   return (
-    <nav className="flex fixed items-center content-center p-4 px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
+    <nav className="flex fixed items-center content-center px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
       <div>
         <h1 className="text-xl font-bold">
           <Link href="/">Techinika.</Link>
@@ -22,7 +22,7 @@ const Nav = () => {
         <ul className=" md:items-center hidden md:flex text-lg">
           {links
             ? links.map((link) => (
-                <li className="pr-6 hover:text-blue-800" key={link.id}>
+                <li className="hover:text-main hover:border-b-4 hover:border-b-main p-6" key={link.id}>
                   <Link href={link.link}>{link.name}</Link>
                 </li>
               ))

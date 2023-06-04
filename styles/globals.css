@@ -6,27 +6,27 @@
 @tailwind utilities;
 
 * {
-    @apply font-main leading-loose transition-all delay-300 ease-in-out;
+    @apply font-main box-border;
 }
 
 .btn-yellow {
-    @apply px-7 py-2 bg-mainYellow rounded-sm text-mainBlue
+    @apply px-7 py-2 bg-mainYellow rounded-sm text-mainBlue hover:bg-main hover:text-white cursor-pointer;
 }
 
 .btn-white {
-    @apply px-7 py-2 bg-white text-mainBlue rounded-sm;
+    @apply px-7 py-2 bg-white text-mainBlue rounded-sm hover:bg-main hover:text-white cursor-pointer;
 }
 
 .btn-main {
-    @apply px-7 py-2 bg-mainBlue text-white rounded-sm;
+    @apply px-7 py-2 bg-mainBlue text-white rounded-sm hover:bg-main cursor-pointer;
 }
 
 .btn-card {
-    @apply bg-mainBlue duration-1000 rounded-sm text-white hover:bg-blue-900 p-2 w-full mt-5;
+    @apply bg-mainBlue rounded-sm text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
 }
 
 .card {
-    @apply flex-1 shadow-lg rounded-sm bg-white p-10 rounded-lg border-2 border-dashed border-mainBlue;
+    @apply flex-1 shadow-lg rounded-sm bg-white p-10 rounded-lg border-2 border-dashed border-mainBlue ;
 }
 
 .card-title {
@@ -152,4 +152,8 @@
 
 .team-row {
     @apply flex flex-row flex-wrap gap-2 my-2;
+}
+
+.nav-link {
+    
 }
