@@ -1,9 +1,14 @@
 import Link from "next/link";
-import { AiFillCloseCircle, AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
-import React, { useState } from "react";
+import { AiFillCloseCircle, AiOutlineMenuUnfold } from "react-icons/ai";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Nav = () => {
+  const router = useRouter();
+
   const [showDrawer, setShowDrawer] = useState(false);
+  const [current, setCurrent] = useState(router.pathname);
+
   const links = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "Learning", link: "/learning" },
@@ -22,7 +27,7 @@ const Nav = () => {
         <ul className=" md:items-center hidden md:flex text-lg">
           {links
             ? links.map((link) => (
-                <li className="hover:text-main hover:border-b-4 hover:border-b-main p-6" key={link.id}>
+                <li className={`hover:text-main hover:border-b-4 hover:border-b-main p-6 ${link.link === current && "border-b-main border-b-4 text-main"}`} key={link.id}>
                   <Link href={link.link}>{link.name}</Link>
                 </li>
               ))
