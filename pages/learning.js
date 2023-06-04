@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Quote } from "../components/HeadFoot/Quote";
 import { Subscribe } from "../components/Subscribe";
 import Footer from "../components/HeadFoot/Footer";
-import Image from "next/image";
 
 export default function Learning() {
   const [program, setProgram] = useState(0);

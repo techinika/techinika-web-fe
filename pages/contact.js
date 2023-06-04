@@ -1,30 +1,18 @@
 import Head from "next/head";
-import { Timeline } from "../components/About/Timeline";
-import { JoinUs } from "../components/Join";
-import { Subscribe } from "../components/Subscribe";
 import Footer from "../components/HeadFoot/Footer";
 import Nav from "../components/HeadFoot/Nav";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import {
   FaEnvelopeSquare,
-  FaLocationArrow,
   FaMapMarked,
   FaMapMarkerAlt,
-  FaPhone,
-  FaPhoneAlt,
   FaPhoneSquare,
-  FaSearchLocation,
   FaWhatsappSquare,
 } from "react-icons/fa";
-import {
-  AiFillMessage,
-  AiOutlineMessage,
-  AiOutlineSafetyCertificate,
-} from "react-icons/ai";
 import { Socials } from "../components/HeadFoot/Socials";
 import Link from "next/link";
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>

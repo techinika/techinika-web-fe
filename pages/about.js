@@ -5,7 +5,7 @@ import Nav from "../components/HeadFoot/Nav";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import { Team } from "../components/About/Team";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>

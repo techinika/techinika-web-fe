@@ -6,7 +6,7 @@ import { Subscribe } from "../components/Subscribe";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Community() {
+export default function Services() {
   const [service, setService] = useState(0);
   return (
     <>
