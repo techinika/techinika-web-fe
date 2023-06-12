@@ -34,8 +34,6 @@ export default function Home() {
           <Programmes />
           <Services />
           <JoinUs />
-          {/* <About /> */}
-          {/* <Quote /> */}
           <Subscribe />
           <Footer />
         </div>

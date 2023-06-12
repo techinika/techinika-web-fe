@@ -22,13 +22,13 @@ const Services = () => {
             />
           </div>
           <div className="h-card-body">
-            <h2 className="card-title">Learn from our contents</h2>
+            <h2 className="card-title">Learn from us</h2>
             <p className="card-body">
               {
-                "Since 2020, we have been creating contents with only one purpose. We want to make you the tech savvy. You can learn from our articles, videos, and short form contents available on all of our platforms. Contents are found in Kinyarwanda and English, and they are all free."
+                "Since 2020, we have been creating contents with only one purpose. We want to make you the tech savvy. You can learn from our articles, videos, and short form contents available on all of our platforms, or join our training programs. Contents are found in Kinyarwanda and English, and they are all free."
               }
             </p>
-            <Link href="/">
+            <Link href="/learning">
               <a className="btn-main">Start Today</a>
             </Link>
           </div>
@@ -71,9 +71,9 @@ const Services = () => {
               }
             </p>
             <div className="btn-group">
-              <Link href="https://youtube.com/@techinika">
-                <a className="btn-main" target="_blank">
-                  Book appointment
+              <Link href="services">
+                <a className="btn-main">
+                  Learn more
                 </a>
               </Link>
             </div>

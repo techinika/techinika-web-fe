@@ -94,8 +94,8 @@ export const Events = () => {
                 </button>
               )}
               <div className="btn-group">
-                <Link href="https://youtube.com/@techinika">
-                  <a className="btn-main" target="_blank">
+                <Link href="/community/calendar">
+                  <a className="btn-main">
                     Calendar
                   </a>
                 </Link>
