@@ -117,8 +117,8 @@ export default function Contact() {
             </p>
             <div className="flex justify-between my-5">
               <div></div>
-              <Link href="/collaborate">
-                <button className="btn-white">{"Book Appointment"}</button>
+              <Link href="https://calendly.com/techinika/work">
+                <a className="btn-white" target="_blank">{"Book Appointment"}</a>
               </Link>
             </div>
           </div>
