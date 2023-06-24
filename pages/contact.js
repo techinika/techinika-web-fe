@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { Socials } from "../components/HeadFoot/Socials";
 import Link from "next/link";
+import ContactForm from "../components/Forms/ContactForm";
 
 export default function Contact() {
   return (
@@ -83,31 +84,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex-1 bg-bg p-5">
-            <h2 className="card-title text-start">Send us a message...</h2>
-            <form className="">
-              <label>Your name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                className="input bg-white"
-                required
-              />
-              <label>Your email</label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="input bg-white"
-                required
-              />
-              <label>Your message</label>
-              <textarea
-                className="input"
-                placeholder="Enter your message..."
-                rows={10}
-                required
-              ></textarea>
-              <input type="submit" className="btn-card" value="Send" />
-            </form>
+            <ContactForm />
           </div>
         </div>
         <div className="bg-mainBlue w-full text-white">
@@ -118,7 +95,9 @@ export default function Contact() {
             <div className="flex justify-between my-5">
               <div></div>
               <Link href="https://calendly.com/techinika/work">
-                <a className="btn-white" target="_blank">{"Book Appointment"}</a>
+                <a className="btn-white" target="_blank">
+                  {"Book Appointment"}
+                </a>
               </Link>
             </div>
           </div>
