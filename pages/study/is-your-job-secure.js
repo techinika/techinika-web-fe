@@ -5,6 +5,7 @@ import Footer from "../../components/HeadFoot/Footer";
 import { Subscribe } from "../../components/Subscribe";
 import { BlogPage } from "../../components/Study/blogPage";
 import Image from "next/image";
+import safeJob from "../../public/technology and your job.jpg";
 
 export default function Technology() {
   return (
@@ -30,7 +31,7 @@ export default function Technology() {
         <BlogPage>
           <div className="relative h-[400px] my-4">
             <Image
-              src={"/technology and your job.jpg"}
+              src={safeJob}
               loading="lazy"
               layout="fill"
               alt="Technology and the future"

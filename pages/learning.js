@@ -2,13 +2,12 @@ import Head from "next/head";
 import { PageTitle } from "../components/HeadFoot/PageTitle";
 import Nav from "../components/HeadFoot/Nav";
 import Link from "next/link";
-import { useState } from "react";
 import { Quote } from "../components/HeadFoot/Quote";
 import { Subscribe } from "../components/Subscribe";
 import Footer from "../components/HeadFoot/Footer";
+import LearningForm from "../components/Forms/LearningForm";
 
 export default function Learning() {
-  const [program, setProgram] = useState(0);
   return (
     <div>
       <Head>
@@ -117,81 +116,7 @@ export default function Learning() {
               </div>
             </div>
             <div className="md:w-4/12 bg-bg rounded p-5">
-              <h2 className="card-title text-end">
-                Apply to join our programs!
-              </h2>
-              <form className="">
-                <label>Your name</label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="input bg-white"
-                />
-                <label>Your email</label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="input bg-white"
-                />
-                <label className="font-bold mt-3">Choose Program</label>
-                <select
-                  className="input"
-                  value={program}
-                  onChange={(e) => setProgram(e.target.value)}
-                >
-                  <option value={0}>Select a program</option>
-                  <option value={1}>One time learning support</option>
-                  <option value={2}>Monthly learning support</option>
-                  <option value={3}>
-                    {"Join our techology institute (3 months)"}
-                  </option>
-                </select>
-                {program === "1" && (
-                  <div>
-                    <p>
-                      If you have a problem while learning, don't hesitate to
-                      reach out for help. You will pay according to how long it
-                      takes to help you.
-                    </p>
-                    <p className="font-bold text-mainBlue">
-                      Starting from $2/hour
-                    </p>
-                  </div>
-                )}
-
-                {program === "2" && (
-                  <div>
-                    <p>
-                      You might be expecting to encounter problems multiple
-                      times. In that case, we offer you a subscription plan that
-                      allows you to reach out to us anytime you have a problem
-                      and we help you resolve it or learn how to resolve it.
-                    </p>
-                    <p className="font-bold text-mainBlue">
-                      Starting from $50/month
-                    </p>
-                  </div>
-                )}
-
-                {program === "3" && (
-                  <div>
-                    <p>
-                      It is possible that you are still a beginner and you need
-                      to learn from zero to the level you want. We have a three
-                      month program designed to help you learn all the basics
-                      and after three months, we allow you to choose what you
-                      want to learn next.
-                    </p>
-                    <p className="font-bold text-mainBlue">
-                      Starting from $150/3 months
-                    </p>
-                  </div>
-                )}
-
-                {program === "0" ? null : (
-                  <button className="btn-card">Proceed</button>
-                )}
-              </form>
+              <LearningForm />
             </div>
           </div>
         </div>

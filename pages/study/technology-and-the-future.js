@@ -5,6 +5,7 @@ import Footer from "../../components/HeadFoot/Footer";
 import { Subscribe } from "../../components/Subscribe";
 import { BlogPage } from "../../components/Study/blogPage";
 import Image from "next/image";
+import futureTech from "../../public/future of tech.jpeg";
 
 export default function Technology() {
   return (
@@ -28,9 +29,15 @@ export default function Technology() {
         <Nav />
         <PageTitle title="Technology and the Future" />
         <BlogPage>
-            <div className="relative h-[500px] my-4">
-            <Image src={"/future of tech.jpeg"} loading="lazy" layout="fill" alt="Technology and the future" className="object-cover"/>
-            </div>
+          <div className="relative h-[500px] my-4">
+            <Image
+              src={futureTech}
+              loading="lazy"
+              layout="fill"
+              alt="Technology and the future"
+              className="object-cover"
+            />
+          </div>
           <p>{`In an era of rapid technological advancement, several groundbreaking innovations are disrupting traditional industries and reshaping our future. These disruptive technologies are revolutionizing the way we live, work, and interact, presenting both challenges and opportunities. Let's explore some of the key technologies that are transforming the world as we know it.`}</p>
           <h2 className="text-2xl py-4 text-mainBlue">
             Artificial Intelligence (AI)
@@ -60,7 +67,7 @@ Artificial Intelligence, or AI, is at the forefront of the technological revolut
           </h2>
 
           <p>{`Robotics and automation are transforming industries by augmenting human capabilities and automating repetitive tasks. Advanced robots are being used in manufacturing, healthcare, agriculture, and logistics, increasing efficiency, precision, and productivity. Collaborative robots, known as cobots, are designed to work alongside humans, opening up new possibilities for human-robot collaboration.`}</p>
-<br></br>
+          <br></br>
           <p>{`
 The future is being shaped by disruptive technologies that challenge existing norms and open doors to innovation. Artificial Intelligence, Internet of Things, Blockchain, 5G, AR/VR, renewable energy, and robotics are just a few examples of the transformative technologies driving change across various sectors. Embracing these disruptions and staying at the forefront of technological advancements will be crucial for individuals, businesses, and societies to thrive in the evolving landscape. By harnessing the power of these technologies responsibly, we can unlock a future full of possibilities, improving our lives and creating a more sustainable and interconnected world.`}</p>
         </BlogPage>

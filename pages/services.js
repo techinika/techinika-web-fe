@@ -4,11 +4,9 @@ import { PageTitle } from "../components/HeadFoot/PageTitle";
 import Footer from "../components/HeadFoot/Footer";
 import { Subscribe } from "../components/Subscribe";
 import Link from "next/link";
-import { useState } from "react";
 import WorkForm from "../components/Forms/WorkForm";
 
 export default function Services() {
-  const [service, setService] = useState(0);
   return (
     <>
       <Head>

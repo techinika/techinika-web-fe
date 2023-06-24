@@ -5,7 +5,7 @@ import Footer from "../../components/HeadFoot/Footer";
 import { BlogPage } from "../../components/Study/blogPage";
 import DDForm from "../../components/Forms/DDForm";
 
-export default function Calendar() {
+export default function PodcastRegister() {
   return (
     <>
       <Head>
