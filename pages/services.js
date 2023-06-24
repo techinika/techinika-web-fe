@@ -5,6 +5,7 @@ import Footer from "../components/HeadFoot/Footer";
 import { Subscribe } from "../components/Subscribe";
 import Link from "next/link";
 import { useState } from "react";
+import WorkForm from "../components/Forms/WorkForm";
 
 export default function Services() {
   const [service, setService] = useState(0);
@@ -112,39 +113,7 @@ export default function Services() {
               </div>
             </div>
             <div className="md:w-4/12 bg-bg rounded p-5">
-              <h2 className="card-title text-end">Request to work with us!</h2>
-              <form className="">
-                <label>Your name</label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="input bg-white"
-                />
-                <label>Your email</label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="input bg-white"
-                />
-                <label className="font-bold mt-3">Choose Service</label>
-                <select
-                  className="input"
-                  value={service}
-                  onChange={(e) => setService(e.target.value)}
-                >
-                  <option value={0}>Select a service</option>
-                  <option value={1}>Corporate Training</option>
-                  <option value={2}>Software Development</option>
-                  <option value={3}>{"Graphic Design & Branding"}</option>
-                  <option value={3}>{"Digital Marketing"}</option>
-                  <option value={3}>{"Content Development"}</option>
-                  <option value={3}>{"Advertising"}</option>
-                </select>
-
-                {service !== "0" && (
-                  <button className="btn-card">Proceed</button>
-                )}
-              </form>
+              <WorkForm />
             </div>
           </div>
         </div>

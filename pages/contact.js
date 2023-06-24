@@ -71,10 +71,6 @@ export default function Contact() {
                 <FaMapMarked size={25} className="text-mainBlue" />
                 <p className="font-bold">{"ICT Innovation Center, KK 15 rd"}</p>
               </div>
-              <div className="flex gap-2 items-center">
-                <FaMapMarked size={25} className="text-mainBlue" />
-                <p className="font-bold">{"Muhima"}</p>
-              </div>
             </div>
             <div>
               <h3 className="text-xl text-mainBlue font-black my-3">

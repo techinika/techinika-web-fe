@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 * {
-    @apply font-main box-border;
+    @apply font-main box-border leading-loose;
 }
 
 .btn-yellow {
