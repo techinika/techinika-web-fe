@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AiFillCloseCircle, AiOutlineMenuUnfold } from "react-icons/ai";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 const Nav = () => {
@@ -27,7 +27,13 @@ const Nav = () => {
         <ul className=" md:items-center hidden md:flex text-lg">
           {links
             ? links.map((link) => (
-                <li className={`hover:text-main hover:border-b-4 hover:border-b-main p-6 ${link.link === current && "border-b-main border-b-4 text-main"}`} key={link.id}>
+                <li
+                  className={`hover:text-main hover:border-b-4 hover:border-b-main p-6 ${
+                    link.link === current &&
+                    "border-b-main border-b-4 text-main"
+                  }`}
+                  key={link.id}
+                >
                   <Link href={link.link}>{link.name}</Link>
                 </li>
               ))
@@ -37,12 +43,21 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <div
-        className="block md:hidden cursor-pointer"
-       
-      >
-        {!showDrawer && <AiOutlineMenuUnfold  onClick={() => setShowDrawer(true)} size={28} className="text-blue-800  font-bold" />}
-        {showDrawer && <AiFillCloseCircle  onClick={() => setShowDrawer(false)} size={28} className="text-blue-800  font-bold" />}
+      <div className="block md:hidden cursor-pointer">
+        {!showDrawer && (
+          <AiOutlineMenuUnfold
+            onClick={() => setShowDrawer(true)}
+            size={28}
+            className="text-blue-800  font-bold"
+          />
+        )}
+        {showDrawer && (
+          <AiFillCloseCircle
+            onClick={() => setShowDrawer(false)}
+            size={28}
+            className="text-blue-800  font-bold"
+          />
+        )}
       </div>
 
       {showDrawer && (
