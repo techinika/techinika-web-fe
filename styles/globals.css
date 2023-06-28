@@ -153,7 +153,3 @@
 .team-row {
     @apply flex flex-row flex-wrap gap-2 my-2;
 }
-
-.nav-link {
-    
-}
