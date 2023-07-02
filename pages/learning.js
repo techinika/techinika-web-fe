@@ -70,7 +70,7 @@ export default function Learning() {
             </div>
           </div>
           <div className="py-5 flex justify-between flex-wrap gap-5 flex-row ">
-            <div className="md:w-6/12">
+            <div className="lg:w-6/12">
               <h2 className="card-title">Self-Learning?</h2>
               <p>
                 We recognize the importance of self learning and consuming
@@ -115,7 +115,7 @@ export default function Learning() {
                 </div>
               </div>
             </div>
-            <div className="md:w-4/12 bg-bg rounded p-5">
+            <div className=" lg:w-4/12  bg-bg rounded p-5">
               <LearningForm />
             </div>
           </div>

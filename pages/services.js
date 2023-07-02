@@ -27,8 +27,8 @@ export default function Services() {
       <div>
         <Nav />
         <PageTitle title="Services" />
-        <div className="md:w-9/12 mx-auto p-2">
-          <div className="flex flex-row flex-wrap gap-2 my-2">
+        <div className="md:w-9/12 mx-auto p-5">
+          <div className="flex flex-row flex-wrap gap-4 my-2">
             <div className="card">
               <h2 className="card-title">Corporate trainings</h2>
               <p>
@@ -55,7 +55,7 @@ export default function Services() {
             </div>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-2 my-2">
+          <div className="flex flex-row flex-wrap gap-4 my-4">
             <div className="card">
               <h2 className="card-title">Digital Marketing</h2>
               <p>
@@ -82,7 +82,7 @@ export default function Services() {
             </div>
           </div>
           <div className="py-5 flex justify-between flex-wrap gap-5 flex-row">
-            <div className="md:w-6/12">
+            <div className="lg:w-6/12">
               <h2 className="card-title">Why should you work with us?</h2>
               <p>
                 {
@@ -110,7 +110,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="md:w-4/12 bg-bg rounded p-5">
+            <div className= " w-full lg:w-4/12 bg-bg rounded p-5">
               <WorkForm />
             </div>
           </div>
