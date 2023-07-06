@@ -9,7 +9,7 @@ export const Events = () => {
   const [moreDiscourse, setMoreDiscourse] = useState(false);
   return (
     <>
-      <div className="w-9/12 mx-auto mb-5 mt-3">
+      <div className="w-full p-4 md:p-0 md:w-9/12 mx-auto mb-5 mt-3">
         <h2 className="big-title">Some community activities!</h2>
         <div className="my-3">
           <div className="h-card">

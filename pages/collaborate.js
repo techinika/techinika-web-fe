@@ -20,7 +20,13 @@ export default function Collaborate() {
         />
         <meta name="author" content="Techinika Devs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Collaborate with us | Techinika</title>
+        <title>
+          Techinika Community - Join the Tech Enthusiasts in Rwanda and Africa
+        </title>
+        <meta
+          name="description"
+          content="Techinika Community is a platform where tech enthusiasts come together to share knowledge, collaborate, and network. Join our vibrant community and be part of the tech revolution in Rwanda and Africa."
+        />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <div>

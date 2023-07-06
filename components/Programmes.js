@@ -4,7 +4,7 @@ export const Programmes = () => {
   return (
     <>
       <div className="bg-gray-50 bg-no-repeat bg-cover py-4">
-        <div className="md:w-10/12 xs:w-full mx-auto text-white p-8">
+        <div className="md:w-10/12 xs:w-full mx-auto text-white p-4 md:p-8">
           <div className="flex flex-wrap justify-center items-start mx-auto mt-8 md:w-11/12 gap-4">
             <div className="card">
               <h2 className="card-title">Technology?</h2>

@@ -33,7 +33,7 @@ export default function Community() {
           <Events />
         </div>
         <div className="bg-mainBlue w-full text-white">
-          <div className="w-9/12 mx-auto p-10">
+          <div className=" w-full md:w-9/12 mx-auto p-10">
             <p className="text-xl leading-loose">
               {`Are you passionate about technology and making a positive impact? Join our team and work with us to educate schools, villages, and companies about emerging technologies through captivating workshops and our engaging Digital Discourse podcast. Together, let's empower individuals, foster tech literacy, and shape a better future.`}
             </p>

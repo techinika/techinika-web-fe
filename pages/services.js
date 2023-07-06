@@ -15,13 +15,17 @@ export default function Services() {
           name="description"
           content="The community of individuals interested in using technology to tackle world's problems."
         />
-        <meta
-          name="keywords"
-          content="Everyone has a right to understand technology, Web development, Graphic design, modern technologies, ICT Training to your staff"
-        />
         <meta name="author" content="Techinika Devs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Services | Techinika</title>
+        {/* <title>Services | Techinika</title> */}
+        <title>
+          Techinika Services - Innovative Technology Solutions for Individuals
+          and Businesses in Rwanda
+        </title>
+        <meta
+          name="description"
+          content="Techinika offers a range of services including software development, web and Graphic design, IT consulting, and more in Rwanda. Our team of experts is dedicated to delivering innovative and tailored solutions."
+        />
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <div>
@@ -110,14 +114,14 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className= " w-full lg:w-4/12 bg-bg rounded p-5">
+            <div className=" w-full lg:w-4/12 bg-bg rounded p-5">
               <WorkForm />
             </div>
           </div>
         </div>
 
         <div className="bg-mainBlue w-full text-white">
-          <div className="w-9/12 mx-auto p-10">
+          <div className=" w-full md:w-9/12 mx-auto p-10">
             <p className="text-xl leading-loose">
               {`While focusing on the services we mentioned earlier, we understand the importance of collaboration. We are actively seeking partnerships to deliver these services effectively. By joining forces with us, you become an integral part of our journey towards positive impact and transformation. Together, let's shape a brighter future through technology and empower individuals with the tools they need to succeed.`}
             </p>

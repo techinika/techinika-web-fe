@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="py-20 w-9/12 mx-auto">
+    <section className="py-20 p-4 w-full md:w-9/12 mx-auto">
       <div>
         <h1 className="big-title">Explore how we can help you!</h1>
       </div>

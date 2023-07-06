@@ -16,13 +16,21 @@ export default function Learning() {
           name="description"
           content="Information services company in Kigali"
         />
-        <meta
+        {/* <meta
           name="keywords"
           content="Everyone has a right to understand technology, Web development, Graphic design, modern technologies, ICT Training to your staff, "
-        />
+        /> */}
+        <title>
+          Techinika Learning - Enhance Your Tech Skills with Our Courses and
+          content
+        </title>
+        <meta
+          name="description"
+          content="Techinika Learning offers a wide range of tech courses  and content designed to enhance your skills and knowledge. Learn from industry experts and stay updated with the latest technologies."
+        ></meta>
         <meta name="author" content="Techinika Devs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Learning Programs | Techinika</title>
+        {/* <title>Learning Programs | Techinika</title> */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <div>
@@ -30,7 +38,7 @@ export default function Learning() {
           <Nav />
         </div>
         <PageTitle title={"Learning Programs"} />
-        <div className="md:w-9/12 mx-auto p-10">
+        <div className="md:w-9/12 mx-auto p-4 md:p-10">
           <div className="flex flex-row flex-wrap justify-between gap-2 bg-gray-50">
             <div className="card">
               <h2 className="card-title">Articles</h2>
@@ -144,7 +152,7 @@ export default function Learning() {
         </div>
         <Quote />
         <div className="bg-mainBlue w-full text-white">
-          <div className="w-9/12 mx-auto p-10">
+          <div className=" w-full md:w-9/12 mx-auto p-10">
             <p className="text-xl leading-loose">
               {`Join our mission to make a difference in the lives of thousands in Rwanda and Burundi. Since 2020, we have been creating valuable content and gaining insights into people's needs. Moving forward, we aim to educate over 150,000 individuals in technology and empower them with in-demand skills, leading to a 60% employment rate. You can contribute by volunteering, sharing your expertise, skills, or spreading the word among your network.`}
             </p>

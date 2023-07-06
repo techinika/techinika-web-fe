@@ -78,7 +78,7 @@
 }
 
 .footer {
-  @apply flex justify-center items-center flex-col gap-4 py-7;
+  @apply flex w-full justify-center items-center flex-col gap-4 py-7;
 }
 
 .copyright {
