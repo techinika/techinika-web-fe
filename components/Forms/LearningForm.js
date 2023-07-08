@@ -2,7 +2,7 @@ import React from "react";
 
 class LearningForm extends React.Component {
   render() {
-    return <div id="flearn-compose"></div>;
+    return <div id="flearn-compose" className=""></div>;
   }
   componentDidMount() {
     let script = document.createElement("script");

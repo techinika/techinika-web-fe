@@ -22,20 +22,23 @@ export default function Contact() {
           name="description"
           content="Information services company in Kigali"
         />
-        <meta
-          name="keywords"
-          content="Everyone has a right to understand technology, Web development, Graphic design, modern technologies, ICT Training to your staff, "
-        />
+
+        <title>Contact Techinika - Get in Touch with Us in Rwanda</title>
+
         <meta name="author" content="Techinika Devs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Techinika</title>
+        {/* <title>Contact Techinika</title> */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+        <meta
+          name="description"
+          content="Contact Techinika for any inquiries, partnership opportunities, or to discuss your tech needs. We are here to assist you and provide innovative technology solutions."
+        />
       </Head>
       <div>
         <Nav />
         <PageTitle title={"Contact Techinika"} />
         <div className="flex flex-row flex-wrap md:w-8/12 mx-auto gap-3 p-4">
-          <div className="flex-1">
+          <div className="flex-1 p-4 md:p-0">
             <h2 className="card-title">{"Let's connect..."}</h2>
             <p>
               {
@@ -84,7 +87,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="bg-mainBlue w-full text-white">
-          <div className="w-9/12 mx-auto p-10">
+          <div className="w-full md:w-9/12 mx-auto p-10">
             <p className="text-xl leading-loose">
               {`We are very eager to hear from you. Tell us what you are doing, your project and let us start discussions on how we can help each other. Book appointment with us and learn more about how we can help you achieve your project goals.`}
             </p>

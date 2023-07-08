@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Content = (props) => {
   return (
@@ -8,10 +9,19 @@ const Content = (props) => {
           <p className="text-7xl">Welcome to,</p>
           <p className="text-7xl font-bold">Techinika.</p>
         </div>
-        <p className="md:w-1/2 md:text-xl md:text-gray-200">Our main objective is equip people with technology skills that are in demand and keeps them relevant with the most ever changing world of tech. We also provide technical and learning support and consultancy to businesses and individuals. </p>
+        <p className="md:w-1/2 md:text-xl md:text-gray-200">
+          Our main objective is equip people with technology skills that are in
+          demand and keeps them relevant with the most ever changing world of
+          tech. We also provide technical and learning support and consultancy
+          to businesses and individuals.{" "}
+        </p>
         <div className="btn-group">
-          <button className="btn-yellow">Let's help you!</button>
-          <button className="btn-white">Join us!</button>
+          <Link href={"/contact "}>
+            <button className="btn-yellow">Let's help you!</button>
+          </Link>
+          <Link href="/community">
+            <button className="btn-white">Join us!</button>
+          </Link>
         </div>
       </main>
     </div>

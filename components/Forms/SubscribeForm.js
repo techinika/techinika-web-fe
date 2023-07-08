@@ -2,7 +2,7 @@ import React from "react";
 
 class SubscribeForm extends React.Component {
   render() {
-    return <div id="fsub-compose"></div>;
+    return <div className="py-10 md:py-0" id="fsub-compose"></div>;
   }
   componentDidMount() {
     let script = document.createElement("script");
