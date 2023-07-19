@@ -1,18 +1,18 @@
 import React from "react";
 
-class DDForm extends React.Component {
-  render() {
-    return <div id="fpod-compose"></div>;
-  }
-  componentDidMount() {
-    let script = document.createElement("script");
-    script.id = "ff-script";
-    script.src =
-      "https://formfacade.com/include/107280370120201254320/form/1FAIpQLSdIrh3Nmqvugth0aY9VFBtI0Kpt7of65Qu7Ak0PTlS-Uwx8Uw/classic.js?div=fpod-compose";
-    script.defer = true;
-    script.async = true;
-    document.body.appendChild(script);
-  }
-}
+const DDForm = () => {
+  return (
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdIrh3Nmqvugth0aY9VFBtI0Kpt7of65Qu7Ak0PTlS-Uwx8Uw/viewform?embedded=true"
+      height="1500"
+      style={{width: "100%"}}
+      frameborder="1"
+      marginheight="0"
+      marginwidth="0"
+    >
+      Loading…
+    </iframe>
+  );
+};
 
 export default DDForm;
