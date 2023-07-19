@@ -1,18 +1,18 @@
 import React from "react";
 
-class CollaborateForm extends React.Component {
-  render() {
-    return <div id="fcollab-compose"></div>;
-  }
-  componentDidMount() {
-    let script = document.createElement("script");
-    script.id = "ff-script";
-    script.src =
-      "https://formfacade.com/include/107280370120201254320/form/1FAIpQLSfF4HvjCdhPLbITR0vaPeGJ0rWjPgS431oB_SWI4enRXgYOlA/classic.js?div=fcollab-compose";
-    script.defer = true;
-    script.async = true;
-    document.body.appendChild(script);
-  }
-}
+const CollaborateForm = () => {
+  return (
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfF4HvjCdhPLbITR0vaPeGJ0rWjPgS431oB_SWI4enRXgYOlA/viewform?embedded=true"
+      height="1400"
+      className="w-full"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+    >
+      Loading…
+    </iframe>
+  );
+};
 
 export default CollaborateForm;
