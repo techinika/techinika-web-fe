@@ -2,8 +2,8 @@ import Image from "next/image";
 import Francois from "../../public/team/Francois.jpg";
 import Achille from "../../public/team/songa achille c.jpg";
 import Ganza from "../../public/team/ganza.jpg";
-import Gustave from "../../public/team/Gustave.jpg"
-import robert from "../../public/team/robert.png"
+import Gustave from "../../public/team/Gustave.jpg";
+import robert from "../../public/team/robert.png";
 
 export const Team = () => {
   const teamMembers = [
@@ -11,11 +11,6 @@ export const Team = () => {
       name: "Cishahayo Songa Achille",
       role: "Founder & Software Developer",
       image: Achille,
-    },
-    {
-      name: "Usanase Aime Francois",
-      role: "Events & Programs Coordinator",
-      image: Francois,
     },
     {
       name: "Ganza Kelvin Valentin",
