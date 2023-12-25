@@ -46,10 +46,10 @@ export default function Learning() {
                 Our articles are our primary and best medium to bring you
                 knowledge and skills that you need and will be happy to possess!
               </p>
-              <Link href="https://techinika.com">
-                <a target="_blank">
+              <Link href="https://techinika.com" target="_blank">
+                <p>
                   <button className="btn-card">Read them</button>
-                </a>
+                </p>
               </Link>
             </div>
             <div className="card">
@@ -58,10 +58,10 @@ export default function Learning() {
                 Our articles are our primary and best medium to bring you
                 knowledge and skills that you need and will be happy to possess!
               </p>
-              <Link href="https://tv.techinika.com">
-                <a target="_blank">
+              <Link href="https://tv.techinika.com"  target="_blank">
+                <p>
                   <button className="btn-card">Watch them</button>
-                </a>
+                </p>
               </Link>
             </div>
             <div className="card">
@@ -70,10 +70,10 @@ export default function Learning() {
                 Our articles are our primary and best medium to bring you
                 knowledge and skills that you need and will be happy to possess!
               </p>
-              <Link href="https://instagram.com/techinika">
-                <a target="_blank">
+              <Link href="https://instagram.com/techinika" target="_blank">
+                <p>
                   <button className="btn-card">Check them</button>
-                </a>
+                </p>
               </Link>
             </div>
           </div>

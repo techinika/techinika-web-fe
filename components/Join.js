@@ -11,7 +11,7 @@ export const JoinUs = () => {
                         <p className="text-white py-4">We are a team of highly motivated individuals working to create the country where Rwandans are able to use technology equipments available for them.</p>
                         <div className="my-4">
                             <Link href="/careers">
-                                <a className="btn btn-yellow">Apply Now</a>
+                                <p className="btn btn-yellow">Apply Now</p>
                             </Link>
                         </div>
                         
@@ -23,7 +23,7 @@ export const JoinUs = () => {
                         <p className="text-white py-4">We are a team of highly motivated individuals working to create the country where Rwandans are able to use technology equipments available for them.</p>
                         <div className="my-4">
                             <Link href="/collaborate">
-                                <a className="btn btn-white">Join Us</a>
+                                <p className="btn btn-white">Join Us</p>
                             </Link>
                         </div>
                     </div>

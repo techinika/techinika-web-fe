@@ -28,8 +28,8 @@ const Services = () => {
                 "Since 2020, we have been creating contents with only one purpose. We want to make you the tech savvy. You can learn from our articles, videos, and short form contents available on all of our platforms, or join our training programs. Contents are found in Kinyarwanda and English, and they are all free."
               }
             </p>
-            <Link href="/learning">
-              <a className="btn-main">Start Today</a>
+            <Link href="/learning" className="btn-main">
+              <p>Start Today</p>
             </Link>
           </div>
         </div>
@@ -41,8 +41,8 @@ const Services = () => {
                 "We are creating a community of individuals who are well informed on what is happening in technology space and how it affects their lives, their occupations and their businesses. By joining us, you get access to our weekly conversation and meeting like minded people who inspire a change in you."
               }
             </p>
-            <Link href="/community">
-              <a className="btn-main">Join Today</a>
+            <Link href="/community" className="btn-main">
+              <p>Join Today</p>
             </Link>
           </div>
           <div className="image-hold hidden md:block">
@@ -71,10 +71,10 @@ const Services = () => {
               }
             </p>
             <div className="btn-group">
-              <Link href="services">
-                <a className="btn-main">
+              <Link href="services" className="btn-main">
+                <p>
                   Learn more
-                </a>
+                </p>
               </Link>
             </div>
           </div>

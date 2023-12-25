@@ -40,10 +40,10 @@ export default function Community() {
             <div className="flex justify-between my-5">
               <div></div>
               <div className="flex gap-2 flex-wrap">
-                <Link href="https://whatsapp.techinika.com">
-                  <a target="_blank" className="btn-yellow">
+                <Link href="https://whatsapp.techinika.com" target="_blank" className="btn-yellow">
+                  <p>
                     {"Join our community"}
-                  </a>
+                  </p>
                 </Link>
                 <Link href="/collaborate">
                   <button className="btn-white">{"Let's work together"}</button>

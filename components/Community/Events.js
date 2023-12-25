@@ -48,10 +48,10 @@ export const Events = () => {
                 </button>
               )}
               <div className="btn-group">
-                <Link href="/community/podcast-register">
-                  <a className="btn-main">
+                <Link href="/community/podcast-register" className="btn-main">
+                  <p>
                     Register to attend
-                  </a>
+                  </p>
                 </Link>
               </div>
             </div>
@@ -94,8 +94,8 @@ export const Events = () => {
                 </button>
               )}
               <div className="btn-group">
-                <Link href="/community/calendar">
-                  <a className="btn-main">Calendar</a>
+                <Link href="/community/calendar" className="btn-main">
+                  <p>Calendar</p>
                 </Link>
               </div>
             </div>

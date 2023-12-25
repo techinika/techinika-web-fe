@@ -13,13 +13,9 @@ export default function Home() {
       <Head>
         <meta charset="UTF-8" />
         <meta
-          name="description"
-          content="Information services company in Kigali"
-        />
-        {/* <meta
           name="keywords"
           content="Everyone has a right to understand technology, Web development, Graphic design, modern technologies, ICT Training to your staff, "
-        /> */}
+        />
         <meta name="author" content="Techinika Devs" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <title>Techinika | For The Future</title> */}
@@ -27,7 +23,6 @@ export default function Home() {
           Techinika - Technology Solutions for Everyone in Rwanda and Africa
         </title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-
         <meta
           name="description"
           content="Techinika is a tech company based in Rwanda, dedicated to providing accessible technology solutions that solve problems for individuals and businesses in Rwanda and across Africa."
