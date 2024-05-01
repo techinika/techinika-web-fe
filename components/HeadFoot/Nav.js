@@ -25,65 +25,11 @@ const Nav = () => {
       </div>
       <div className="">
         <ul className=" md:items-center hidden md:flex text-lg">
-          {links
-            ? links.map((link) => (
-                <li
-                  className={`hover:text-main hover:border-b-4 hover:border-b-main p-6 ${
-                    link.link === current &&
-                    "border-b-main border-b-4 text-main"
-                  }`}
-                  key={link.id}
-                >
-                  <Link href={link.link}>{link.name}</Link>
-                </li>
-              ))
-            : null}
           <li className="btn-main">
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">BOOK A DEMO</Link>
           </li>
         </ul>
       </div>
-      <div className="block md:hidden cursor-pointer">
-        {!showDrawer && (
-          <AiOutlineMenuUnfold
-            onClick={() => setShowDrawer(true)}
-            size={28}
-            className="text-blue-800  font-bold"
-          />
-        )}
-        {showDrawer && (
-          <AiFillCloseCircle
-            onClick={() => setShowDrawer(false)}
-            size={28}
-            className="text-blue-800  font-bold"
-          />
-        )}
-      </div>
-
-      {showDrawer && (
-        <div className="h-screen bg-bg w-2/3 fixed left-0 top-0 bottom-0 shadow-lg">
-          <div className="w-full text-center p-5 bg-mainBlue text-white">
-            <h1 className="text-xl font-bold">
-              <Link href="/">Techinika.</Link>
-            </h1>
-          </div>
-          <ul className="flex flex-col gap-3">
-            {links
-              ? links.map((link) => (
-                  <li
-                    className="p-5 hover:text-blue-800 hover:bg-white hover:shadow"
-                    key={link.id}
-                  >
-                    <Link href={link.link}>{link.name}</Link>
-                  </li>
-                ))
-              : null}
-            <li className="btn-main">
-              <Link href="/contact">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
-      )}
     </nav>
   );
 };
