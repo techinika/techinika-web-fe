@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,9 @@
 
 * {
   @apply font-main box-border leading-loose;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
+  font-family: Lato;
 }
 
 .btn-yellow {
@@ -26,11 +30,11 @@
 }
 
 .card {
-  @apply flex-1 shadow-lg  bg-white p-10 rounded-lg border-2 border-dashed border-mainBlue;
+  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-mainBlue flex items-center justify-center text-center;
 }
 
 .card-title {
-  @apply text-mainBlue font-bold text-4xl py-4;
+  @apply text-mainBlue font-bold text-2xl;
 }
 
 .card-body {

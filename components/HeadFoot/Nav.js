@@ -1,34 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
-import { AiFillCloseCircle, AiOutlineMenuUnfold } from "react-icons/ai";
-import React, { useState } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 
 const Nav = () => {
-  const router = useRouter();
-
-  const [showDrawer, setShowDrawer] = useState(false);
-  const [current, setCurrent] = useState(router.pathname);
-
-  const links = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Learning", link: "/learning" },
-    { id: 3, name: "Services", link: "/services" },
-    { id: 4, name: "Community", link: "/community" },
-    { id: 5, name: "About Us", link: "/about" },
-  ];
   return (
-    <nav className="flex fixed items-center content-center px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
+    <nav className="flex fixed items-center md:px-8 sm:px-3 justify-between shadow-md w-full top-0 z-20 bg-white items-center p-5">
       <div>
         <h1 className="text-xl font-bold">
-          <Link href="/">Techinika.</Link>
+          <Link href="/">
+            <Image src="/techinika-logo.png" width={160} height={40} />
+          </Link>
         </h1>
       </div>
-      <div className="">
-        <ul className=" md:items-center hidden md:flex text-lg">
-          <li className="btn-main">
-            <Link href="/contact">BOOK A DEMO</Link>
-          </li>
-        </ul>
+      <div className="p-2">
+        <Link
+          href="https://calendly.com/techinika/work"
+          className="bg-mainBlue p-3 rounded-xl text-white"
+          target="_blank"
+        >
+          BOOK A DEMO
+        </Link>
       </div>
     </nav>
   );
