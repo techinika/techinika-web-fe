@@ -15,7 +15,7 @@ const Nav = () => {
       <div className="p-2">
         <Link
           href="https://calendly.com/techinika/work"
-          className="bg-mainBlue p-3 rounded-xl text-white"
+          className="btn-main"
           target="_blank"
         >
           BOOK A DEMO
