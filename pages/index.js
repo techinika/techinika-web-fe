@@ -3,9 +3,9 @@ import Nav from "../components/HeadFoot/Nav";
 import Content from "../components/Content";
 import { Programmes } from "../components/Programmes";
 import Services from "../components/Services";
-import { Subscribe } from "../components/Subscribe";
 import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
+import { Quote } from "../components/HeadFoot/Quote";
 
 export default function Home() {
   return (
@@ -25,16 +25,17 @@ export default function Home() {
           content="Techinika is an edtech company in Rwanda that provides solutions for training institutions, schools, international organizations and the government to nurture the technologists in rwanda and africa."
         ></meta>
       </Head>
-      <div className="relative h-screen w-screen">
+      <div className="relative h-screen">
         <div className="font-main">
           <Nav />
         </div>
         <div className="bg-white font-main mx-auto">
           <Content />
           <Programmes />
+          <Quote />
           <Services />
+          
           <JoinUs />
-          <Subscribe />
           <Footer />
         </div>
       </div>

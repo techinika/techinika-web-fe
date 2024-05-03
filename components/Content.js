@@ -25,12 +25,11 @@ const Content = (props) => {
     <div className="mx-auto relative">
       <main className="m-auto w-10/12 h-screen items-center text-center justify-center flex flex-col gap-3">
         <div className="text-center">
-          <p className="text-5xl font-bold text-mainBlue">
-            We are Techinika!
-          </p>
+          <p className="text-5xl font-bold text-mainBlue">We are Techinika!</p>
         </div>
         <p className="md:w-1/2 md:text-2xl sm:text-lg">
-          We enhance your learning outcomes through software solutions, training, online courses and the community.
+          We enhance your learning outcomes through software solutions,
+          training, online courses and the community.
         </p>
         <div className="btn-group">
           <Link href={"/contact "}>
@@ -38,7 +37,7 @@ const Content = (props) => {
           </Link>
           <Link href="/community">
             <button className="btn-white border border-mainBlue">
-              Join us!
+              Join Our Team!
             </button>
           </Link>
         </div>
