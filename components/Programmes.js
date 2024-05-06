@@ -6,8 +6,10 @@ export const Programmes = () => {
     <>
       <div className="bg-gray-50 bg-no-repeat bg-cover py-4">
         <div className="md:w-10/12 xs:w-full mx-auto p-4 md:p-8">
-          <p className="text-mainBlue font-bold text-center">Products you can get from us:</p>
-          <div className="flex flex-wrap justify-center items-stretch mx-auto mt-8 md:w-11/12 gap-4">
+          <p className="text-mainBlue font-bold text-center">
+            Products you can get from us:
+          </p>
+          <div className="grid grid-cols-4 justify-center items-stretch mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-2 xs: grid-cols-1">
             <div className="card">
               <Image src="/learning.png" width={200} height={40} />
             </div>

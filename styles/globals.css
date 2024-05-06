@@ -67,7 +67,7 @@
 }
 
 .btn-group {
-  @apply mt-3 flex flex-row flex-wrap gap-5;
+  @apply mt-3 flex flex-row items-center justify-center flex-wrap gap-5;
 }
 
 .input {
