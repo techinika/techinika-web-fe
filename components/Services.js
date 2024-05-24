@@ -1,27 +1,26 @@
 const Services = () => {
   return (
-    <section className="py-20 w-full">
-      <div className="bg-gray-100 px-6 py-10">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 w-[80%] mx-auto items-center">
-          <div>
-            <img
-              src="/consulting.png"
-              className="md:w-[50%] mx-auto sm:w-full"
-            />
-          </div>
+    <div className="bg-gray-100 text-justify">
+      <section className="w-10/12 mx-auto grid grid-cols-3 bg-gray-100">
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/consulting.png" className="w-full object-cover" />
+          </div> */}
           <div className="flex flex-col justify-center items-start">
             <h1 className="big-title">For Organizations!</h1>
             <p>
               We fulfill upskilling needs of your organization! We offer
               trainings in digital skills to your team, beneficiaries, your
-              clients, and a fully customizable software in case you would like
-              to do it yourself!
+              clients! We have a software that you can also use to carry out
+              training online, onboard trainees, and trainers and also be able
+              to sell training as a subscription.
             </p>
           </div>
         </div>
-      </div>
-      <div className="px-6 py-10">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 w-[80%] mx-auto sm:column-reverse items-center">
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/achools.png" className="w-full object-cover" />
+          </div> */}
           <div className="flex flex-col justify-center items-start">
             <h1 className="big-title">For Schools!</h1>
             <p>
@@ -32,19 +31,11 @@ const Services = () => {
               our community, Rwanda Technology Community!
             </p>
           </div>
-          <div className="sm:order-first">
-            <img src="/achools.png" className="md:w-[50%] mx-auto sm:w-full" />
-          </div>
         </div>
-      </div>
-      <div className="bg-gray-100 px-6 py-10">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 w-[80%] mx-auto items-center">
-          <div className="sm:hidden xs:hidden md:block">
-            <img
-              src="/individuals.png"
-              className="md:w-[50%] mx-auto sm:w-full"
-            />
-          </div>
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/individuals.png" className=" w-full object-cover border border-gray-100" />
+          </div> */}
           <div className="flex flex-col justify-center items-start">
             <h1 className="big-title">For Individuals!</h1>
             <p>
@@ -54,8 +45,8 @@ const Services = () => {
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
