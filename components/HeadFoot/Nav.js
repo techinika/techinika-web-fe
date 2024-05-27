@@ -4,11 +4,11 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <nav className="flex fixed items-center md:px-8 sm:px-3 justify-between shadow-md w-full top-0 z-20 bg-white items-center p-5">
+    <nav className="flex fixed items-center md:px-8 justify-between shadow-md w-full top-0 z-20 bg-white items-center p-5">
       <div>
-        <h1 className="text-xl font-bold">
+        <h1 className="font-bold">
           <Link href="/">
-            <Image src="/techinika-logo.png" width={160} height={40} />
+            <Image src="/techinika-logo.png" width={140} height={40} />
           </Link>
         </h1>
       </div>

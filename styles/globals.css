@@ -23,7 +23,7 @@
 }
 
 .btn-main {
-  @apply px-7 py-2 bg-mainBlue text-white rounded hover:bg-main cursor-pointer;
+  @apply px-2 py-2 bg-mainBlue text-white rounded hover:bg-main cursor-pointer;
 }
 
 .btn-card {
