@@ -1,7 +1,7 @@
 const Services = () => {
   return (
     <div className="bg-gray-100 text-justify">
-      <section className="w-10/12 mx-auto grid grid-cols-3 bg-gray-100">
+      <section className="md:w-10/12 mx-auto grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-gray-100">
         <div className="items-center  flex flex-col p-10">
           {/* <div className="h-30 border border-gray-100">
             <img src="/consulting.png" className="w-full object-cover" />
