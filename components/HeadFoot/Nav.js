@@ -14,11 +14,11 @@ const Nav = () => {
       </div>
       <div className="p-2">
         <Link
-          href="https://calendly.com/techinika/work"
+          href="https://forms.gle/wNBe86jYxMusZRFr8"
           className="btn-main"
           target="_blank"
         >
-          BOOK A DEMO
+          JOIN THE WAITLIST
         </Link>
       </div>
     </nav>

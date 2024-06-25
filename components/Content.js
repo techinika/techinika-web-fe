@@ -16,11 +16,11 @@ const Content = (props) => {
         </p>
         <div className="btn-group">
           <Link href={"https://calendly.com/techinika/work"} target="_blank">
-            <button className="btn-yellow">Get Started</button>
+            <button className="btn-yellow">Learn More</button>
           </Link>
           <Link href="https://forms.gle/QqxZcTN9Pyn9vFAfA" target="_blank">
             <button className="btn-white border border-mainBlue">
-              Join Our Team!
+              Join Our Team
             </button>
           </Link>
         </div>
