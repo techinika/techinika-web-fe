@@ -1,7 +1,7 @@
 const Services = () => {
   return (
-    <div className="bg-gray-100 text-justify">
-      <h2 className="font-bold text-md p-5 text-center text-mainBlue">
+    <div className="bg-gray-100 text-justify py-10">
+      <h2 className="font-bold text-md p-5 text-center text-mainBlue text-4xl">
         This is How we Help
       </h2>
       <section className="md:w-10/12 text-center mx-auto grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-gray-100">

@@ -6,26 +6,43 @@ function Partners() {
       id: 1,
       name: "Classera",
       logo: "/Classera-Logo.png",
+      website: "https://classera.com/",
     },
     {
       id: 2,
       name: "PieceX",
       logo: "/piecex.png",
+      website: "https://www.piecex.com?affiliate=688",
     },
     {
       id: 3,
       name: "BAG",
       logo: "/BAG.svg",
+      website: "https://bag.work/",
     },
     {
       id: 4,
       name: "Ganza Nation",
       logo: "/ganzanation.png",
+      website: "https://ganzanation.com/",
     },
     {
       id: 5,
       name: "The Magnet Institute",
       logo: "/magnetinstitute.svg",
+      website: "https://themagnetinstitute.com/home",
+    },
+    {
+      id: 6,
+      name: "Green Home Group",
+      logo: "/greenhomegroup.jpeg",
+      website: "https://greenhomegroup.rw/",
+    },
+    {
+      id: 7,
+      name: "Rwanda ICT Chamber",
+      logo: "/ictchamber.jpeg",
+      website: "https://ictchamber.rw/",
     },
   ];
   return (
@@ -38,13 +55,16 @@ function Partners() {
           {partners &&
             partners.map((partner) => {
               return (
-                <li>
-                  <img
-                    className="h-8"
-                    src={partner?.logo}
-                    alt={partner?.name}
-                  />
-                </li>
+                <a target="_blank" href={partner?.website}>
+                  <li>
+                    <img
+                      title={partner?.name}
+                      className="h-8"
+                      src={partner?.logo}
+                      alt={partner?.name}
+                    />
+                  </li>
+                </a>
               );
             })}
         </ul>
@@ -55,13 +75,16 @@ function Partners() {
           {partners &&
             partners.map((partner) => {
               return (
-                <li>
-                  <img
-                    className="h-8"
-                    src={partner?.logo}
-                    alt={partner?.name}
-                  />
-                </li>
+                <a target="_blank" href={partner?.website}>
+                  <li>
+                    <img
+                      className="h-8"
+                      title={partner?.name}
+                      src={partner?.logo}
+                      alt={partner?.name}
+                    />
+                  </li>
+                </a>
               );
             })}
         </ul>
