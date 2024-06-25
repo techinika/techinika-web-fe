@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
 import { Quote } from "../components/HeadFoot/Quote";
+import Partners from "../components/Partners";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           <Programmes />
           <Quote />
           <Services />
+          <Partners/>
           <JoinUs />
           <Footer />
         </div>

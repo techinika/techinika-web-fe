@@ -43,7 +43,7 @@
 }
 
 .big-title {
-  @apply text-mainBlue font-semibold text-xl py-5;
+  @apply text-mainBlue font-semibold text-center text-xl py-5;
 }
 
 .h-card {
