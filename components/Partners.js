@@ -44,6 +44,12 @@ function Partners() {
       logo: "/ictchamber.jpeg",
       website: "https://ictchamber.rw/",
     },
+    {
+      id: 8,
+      name: "She Can Code School",
+      logo: "/shecancode.png",
+      website: "https://www.shecancodeschool.org/",
+    },
   ];
   return (
     <div className="md:w-[60%] mx-auto py-10">
