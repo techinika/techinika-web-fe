@@ -33,9 +33,14 @@ export default function Home() {
         <div className="bg-white font-main mx-auto">
           <Content />
           <Programmes />
-          <Quote />
+          <Quote
+            quote={
+              "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road."
+            }
+            speaker={"Stewart Brand, Writer"}
+          />
           <Services />
-          <Partners/>
+          <Partners />
           <JoinUs />
           <Footer />
         </div>

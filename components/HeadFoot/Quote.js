@@ -1,18 +1,14 @@
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-export const Quote = () => {
+export const Quote = ({quote, speaker}) => {
   return (
     <div className="flex justify-center w-full items-center py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
       <FaQuoteLeft className="text-3xl"></FaQuoteLeft>
-      <h2 className="quote-text h-1/2">
-        {
-          "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road."
-        }
-      </h2>
+      <h2 className="quote-text h-1/2">{quote}</h2>
 
       <FaQuoteRight className="text-3xl"></FaQuoteRight>
       <p>
-        <i>{"Stewart Brand, Writer"}</i>
+        <i>{speaker}</i>
       </p>
     </div>
   );

@@ -12,7 +12,10 @@ const Nav = () => {
           </Link>
         </h1>
       </div>
-      <div className="p-2">
+      <div className="p-2 flex items-center gap-4">
+        <Link href="/story" className="font-bold">
+          Our Story
+        </Link>
         <Link
           href="https://forms.gle/wNBe86jYxMusZRFr8"
           className="btn-main"
