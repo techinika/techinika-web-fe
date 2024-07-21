@@ -29,7 +29,7 @@ export const JoinUs = () => {
               Let's talk and explore the possibilities.
             </p>
             <div className="my-4 flex items-center justify-center">
-              <Link href="https://calendly.com/techinika/work" target="_blank">
+              <Link href="/request" target="_blank">
                 <p className="btn btn-white text-center">Get Started</p>
               </Link>
             </div>
