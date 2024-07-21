@@ -63,19 +63,24 @@ export default function Story() {
                 {`We build talents, test talents, and expose them.`}
               </h2>
             </div>
-            <img
-              src="/iot session by techinika.jpg"
-              className="rounded-lg"
-              id="im"
-              title="A session we carried out at African Leadership University through
+            <figure>
+              <img
+                src="/iot session by techinika.jpg"
+                className="rounded-lg"
+                id="im"
+                title="A session we carried out at African Leadership University through
               Rwanda Technology Community"
-              alt="A session we carried out at African Leadership University through
+                alt="A session we carried out at African Leadership University through
               Rwanda Technology Community"
-            />
-            <caption itemID="im" className="w-full text-xs italic">
-              A session we carried out at African Leadership University through
-              Rwanda Technology Community
-            </caption>
+              />
+              <figcaption
+                itemID="im"
+                className="w-full text-xs italic text-center p-1"
+              >
+                A session we carried out at African Leadership University
+                through Rwanda Technology Community
+              </figcaption>
+            </figure>
             <p>{`Today, we have also partnered with Classera, an American EdTech company to bring their solutions to the Rwandan market. These are solutions for schools, education institutions and government to help them give more choices to their students, improve student's engagement, and learning outcomes.`}</p>
             <br></br>
             <h2 className="card-title">Techinika in the Future,</h2>
