@@ -5,10 +5,6 @@ const Content = (props) => {
   return (
     <div className="mx-auto relative">
       <main className="m-auto w-10/12 h-screen items-center text-center justify-center flex flex-col gap-3">
-        <img
-          src="/bg.png"
-          className="absolute h-screen rotate-90 left-0 right-0 w-full"
-        />
         <div className="text-center">
           <p className="text-5xl font-bold text-mainBlue">We are Techinika!</p>
         </div>
