@@ -92,11 +92,11 @@ export default function Story() {
               <li className="flex items-center gap-2">
                 <b>Techinika Learning (ongoing):</b>
                 <p>
-                  Our platform, Our community, and other programs to nurture
-                  talents.
+                  Our platform, Our community, and other programs to develop
+                  digital skills of beneficiaries.
                 </p>
               </li>
-              <li className="flex items-center gap-2">
+              {/* <li className="flex items-center gap-2">
                 <b>Techinika Ventures:</b>
                 <p>
                   Helping, guiding and investing in our talents to build
@@ -109,7 +109,7 @@ export default function Story() {
                   Helping, guiding and connecting our successful talents to
                   employment.
                 </p>
-              </li>
+              </li> */}
             </ul>
             <br></br>
             <h2 className="card-title">Our ask from you,</h2>
