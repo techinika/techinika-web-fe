@@ -268,6 +268,10 @@ export default function Request() {
     setLoading(true);
     try {
       const emailBody = generateEmailHTML(data);
+      if (data?.contact === "") {
+        setFeedback("You have to provide at least one way to contact you!");
+        return false;
+      }
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
