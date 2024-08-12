@@ -78,8 +78,6 @@ function generateEmailHTML(data) {
               </ul>
               <h2>When are you available to start?</h2>
                 <p>${data.startDate}</p>
-              <h2>Are you willing to Pay?</h2>
-                <p>${data.willingToPay}</p>
               <h2>How You Found Us</h2>
               <ul>
                 ${data.source.map((src) => `<li>${src}</li>`).join("")}
@@ -103,7 +101,7 @@ export default function Training() {
     email: "",
     services: [],
     need: "",
-    willingToPay: "",
+    // willingToPay: "",
     otherTraining: "",
     startDate: "",
     source: [],
@@ -438,7 +436,7 @@ export default function Training() {
                   ></textarea>
                 </div>
               </div>
-              <div>
+              {/* <div>
                 <label className="text-mainBlue font-bold">
                   Are you willing to pay for the Training
                 </label>
@@ -456,7 +454,7 @@ export default function Training() {
                     No
                   </option>
                 </select>
-              </div>
+              </div> */}
               <div>
                 <label className="text-mainBlue font-bold">
                   When are you available to start?
