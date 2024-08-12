@@ -68,8 +68,14 @@ function generateEmailHTML(data) {
                   .map((service) => `<li>${service}</li>`)
                   .join("")}
               </ul>
+              <h2>If you chose other:</h2>
+              <p>${data.otherTraining}</p>
               <h2>Description</h2>
               <p>${data.need}</p>
+              <h2>What best defines you?</h2>
+              <ul>
+                ${data.entities.map((src) => `<li>${src}</li>`).join("")}
+              </ul>
               <h2>When are you available to start?</h2>
                 <p>${data.startDate}</p>
               <h2>Are you willing to Pay?</h2>
@@ -98,8 +104,10 @@ export default function Training() {
     services: [],
     need: "",
     willingToPay: "",
+    otherTraining: "",
     startDate: "",
     source: [],
+    entities: [],
     message: "",
   };
   const [data, setData] = useState(initialData);
@@ -132,6 +140,10 @@ export default function Training() {
     {
       id: 4,
       title: "Mastering Prompting AI (1 week)",
+    },
+    {
+      id: 5,
+      title: "Other",
     },
   ];
 
@@ -186,6 +198,21 @@ export default function Training() {
     },
   ];
 
+  const entities = [
+    {
+      id: 1,
+      title: "Individual",
+    },
+    {
+      id: 2,
+      title: "Group",
+    },
+    {
+      id: 3,
+      title: "Corporate or Government",
+    },
+  ];
+
   const handleSendingData = async () => {
     setLoading(true);
     try {
@@ -229,7 +256,7 @@ export default function Training() {
         <meta charset="UTF-8" />
         <meta
           name="keywords"
-          content="learning management system, tech community in rwanda, rwanda technology community,hp classeasy,leadxera,classera,techinika at your service,request a service,web developers for your business website,"
+          content="digital marketing skills,coding skills, web development training, digital skills, software development skills, learn new skills in rech,training in digital skills, digital skills talents in rwanda,digital skills training in rwanda"
         />
         <meta name="author" content="Techinika Developers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -237,7 +264,7 @@ export default function Training() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <meta
           name="description"
-          content="digital marketing skills,coding skills, web development training, digital skills, software development skills, learn new skills in rech,training in digital skills, digital skills talents in rwanda,digital skills training in rwanda"
+          content="It starts with developing your technological skills. Understanding how technology works, gaining deep understanding of concepts, and practicing building and using it. Our training programs are here for that!"
         ></meta>
       </Head>
       <div className="relative h-screen">
@@ -280,28 +307,6 @@ export default function Training() {
                   />
                 </div>
               </div>
-              {/* <div>
-                <label className="text-mainBlue font-bold">
-                  Your preferred contact method:
-                </label>
-                <select
-                  className="flex flex-wrap gap-5 items-center w-full rounded-lg"
-                  onChange={(e) => setContactMethod(e.target.value)}
-                  disabled={loading}
-                >
-                  {preferences &&
-                    preferences.map((item) => (
-                      <option
-                        value={item?.title}
-                        key={item?.id}
-                        className="p-3"
-                        disabled={loading}
-                      >
-                        {item?.title}
-                      </option>
-                    ))}
-                </select>
-              </div> */}
               <div className="my-3">
                 <label className="text-mainBlue font-bold">Your Email</label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -359,6 +364,57 @@ export default function Training() {
                               setData({
                                 ...data,
                                 services: [...data.services, e.target.value],
+                              });
+                            }
+                          }}
+                        />
+                        <label>{item?.title}</label>
+                      </div>
+                    ))}
+                </div>
+              </div>
+              <div className="my-3">
+                <label className="text-mainBlue font-bold">
+                  If you chose Other, which training do you need?
+                </label>
+                <div className="flex flex-wrap gap-5 items-center">
+                  <input
+                    type="text"
+                    disabled={loading}
+                    value={data?.otherTraining}
+                    onChange={(e) => {
+                      setData({ ...data, otherTraining: e.target.value });
+                    }}
+                    placeholder="Custom training"
+                    className="w-full rounded-lg"
+                  />
+                </div>
+              </div>
+              <div className="my-3">
+                <label className="text-mainBlue font-bold">
+                  What best defines you?
+                </label>
+                <div className="flex flex-wrap gap-5 items-center">
+                  {entities &&
+                    entities.map((item) => (
+                      <div key={item?.id} className="flex items-center gap-2">
+                        <input
+                          disabled={loading}
+                          value={item?.title}
+                          type="checkbox"
+                          onChange={(e) => {
+                            if (data.entities.includes(e.target.value)) {
+                              let newservices = data.entities.filter(
+                                (item) => item !== e.target.value
+                              );
+                              setData({
+                                ...data,
+                                entities: newservices,
+                              });
+                            } else {
+                              setData({
+                                ...data,
+                                entities: [...data.entities, e.target.value],
                               });
                             }
                           }}
