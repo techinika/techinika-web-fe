@@ -477,31 +477,16 @@ export default function Training() {
               </div> */}
               <div>
                 <label className="text-mainBlue font-bold">
-                  When are you available to start?
+                  When do you want to start?
                 </label>
-                <select
+                <input
+                  type="date"
                   className="flex flex-wrap gap-5 items-center w-full rounded-lg"
                   onChange={(e) =>
                     setData({ ...data, startDate: e.target.value })
                   }
                   disabled={loading}
-                >
-                  <option value={"Immediately"} disabled={loading}>
-                    Immediately
-                  </option>
-                  <option value={"OneWeek"} disabled={loading}>
-                    One Week
-                  </option>
-                  <option value={"TwoWeek"} disabled={loading}>
-                    In Two Weeks
-                  </option>
-                  <option value={"NextMonth"} disabled={loading}>
-                    Next Month
-                  </option>
-                  <option value={"Undecided"} disabled={loading}>
-                    Undecided
-                  </option>
-                </select>
+                />
               </div>
               <div className="my-3">
                 <label className="text-mainBlue font-bold">
