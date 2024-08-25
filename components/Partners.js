@@ -15,22 +15,10 @@ function Partners() {
       website: "https://www.piecex.com?affiliate=688",
     },
     {
-      id: 3,
-      name: "BAG",
-      logo: "/BAG.svg",
-      website: "https://bag.work/",
-    },
-    {
       id: 4,
       name: "Ganza Nation",
       logo: "/ganzanation.png",
       website: "https://ganzanation.com/",
-    },
-    {
-      id: 5,
-      name: "The Magnet Institute",
-      logo: "/magnetinstitute.svg",
-      website: "https://themagnetinstitute.com/home",
     },
     {
       id: 6,
