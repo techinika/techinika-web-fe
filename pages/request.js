@@ -123,30 +123,36 @@ export default function Request() {
   const services = [
     {
       id: 1,
-      title: "Techinika Learning",
+      title: "Training",
       description:
         "This includes learning on our platform, and enrolling in our training programs.",
     },
     {
       id: 2,
-      title: "Rwanda Technology Community",
+      title: "Working with the Community",
       description:
         "A community of tech enthusiasts, who help each other grow and collaborate on project.",
     },
     {
       id: 3,
-      title: "HP Classeasy",
+      title: "Using HP Classeasy",
       description:
         "A super learning platform for schools to digitize all learning related operations.",
     },
     {
       id: 4,
-      title: "LeadXera",
+      title: "Using LeadXera",
       description:
         "A super learning platform for government and private institutions to digitize all learning related operations.",
     },
     {
       id: 5,
+      title: "Software / Web Development",
+      description:
+        "A super learning platform for government and private institutions to digitize all learning related operations.",
+    },
+    {
+      id: 6,
       title: "Other",
       description:
         "A super learning platform for government and private institutions to digitize all learning related operations.",
@@ -408,7 +414,7 @@ export default function Request() {
                     services.map((item) => (
                       <div
                         key={item?.id}
-                        title={item?.description}
+                        // title={item?.description}
                         className="flex items-center gap-2"
                       >
                         <input

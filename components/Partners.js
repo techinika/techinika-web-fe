@@ -14,6 +14,12 @@ function Partners() {
       logo: "/piecex.png",
       website: "https://www.piecex.com?affiliate=688",
     },
+    // {
+    //   id: 3,
+    //   name: "BAG",
+    //   logo: "/BAG.svg",
+    //   website: "https://bag.work/",
+    // },
     {
       id: 4,
       name: "Ganza Nation",
