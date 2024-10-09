@@ -125,43 +125,7 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "Digital Marketing for Beginners",
-    },
-    {
-      id: 2,
-      title: "Web Development for Beginners",
-    },
-    {
-      id: 3,
-      title: "SolidWorks for Beginners",
-    },
-    {
-      id: 4,
-      title: "Mastering Prompting AI",
-    },
-    {
-      id: 5,
-      title: "Build Websites with WordPress (No-Code)",
-    },
-    {
-      id: 6,
-      title: "CyberSecurity for Beginners",
-    },
-    {
-      id: 7,
-      title: "Mobile Development for Beginners (Flutter Development)",
-    },
-    {
-      id: 8,
-      title: "Advanced Microsoft Excel",
-    },
-    {
-      id: 9,
-      title: "Basic Computer Skills for Beginners",
-    },
-    {
-      id: 10,
-      title: "Other",
+      title: "Figma Masterclass",
     },
   ];
 

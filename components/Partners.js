@@ -3,23 +3,11 @@ import React from "react";
 function Partners() {
   const partners = [
     {
-      id: 1,
-      name: "Classera",
-      logo: "/Classera-Logo.png",
-      website: "https://classera.com/",
-    },
-    {
       id: 2,
       name: "PieceX",
       logo: "/piecex.png",
       website: "https://www.piecex.com?affiliate=688",
     },
-    // {
-    //   id: 3,
-    //   name: "BAG",
-    //   logo: "/BAG.svg",
-    //   website: "https://bag.work/",
-    // },
     {
       id: 4,
       name: "Ganza Nation",
