@@ -42,12 +42,8 @@ const Nav = () => {
           </button>
         </div>
         <div className="hidden md:flex md:items-center md:gap-4 flex-wrap items-center gap-4">
-          <Link href="/training" className="text-xl">
-            Apply for Training
-          </Link>
-          <Link href="/request" className="text-xl">
-            Request Demo/Service
-          </Link>
+          <Link href="/training">Apply for Training</Link>
+          <Link href="/request">Request Demo/Service</Link>
           <Link href="/story" className="font-bold">
             Our Story
           </Link>

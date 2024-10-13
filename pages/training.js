@@ -82,6 +82,8 @@ function generateEmailHTML(data) {
               <ul>
                 ${data.source.map((src) => `<li>${src}</li>`).join("")}
               </ul>
+              <h2>Who Referred you?</h2>
+              <p>${data.referral}</p>
               <h2>Message</h2>
               <p>${data.message}</p>
             </div>
@@ -107,6 +109,7 @@ export default function Training() {
     source: [],
     entities: [],
     message: "",
+    referral: "",
   };
   const [data, setData] = useState(initialData);
   const [feedback, setFeedback] = useState("");
@@ -261,7 +264,7 @@ export default function Training() {
               </h1>
               <p>{`In the world where technology reigns, who do you want to be? Do you want to be an observer? A creator? An innovator? Or an inventor?`}</p>
               <p className="italic font-semibold">{`Whatever you want to become, it starts with developing your technological skills. Understanding how technology works, gaining deep understanding of concepts, and practicing building and using it.`}</p>
-              <p>{`Our training programs are here for that!`}</p>
+              <p>{`Use this form to apply for our Masterclass!`}</p>
             </div>
           </div>
           <div className="md:w-[60%] lg:w-[60%] sm:w-[90%] mx-auto text-xl py-4 p-2">
@@ -488,6 +491,25 @@ export default function Training() {
                         <label>{item?.title}</label>
                       </div>
                     ))}
+                </div>
+              </div>
+              <div className="my-3">
+                <label className="text-mainBlue font-bold">
+                  Who referred you?
+                </label>
+                <div className="flex flex-wrap gap-5 items-center">
+                  <input
+                    type="text"
+                    disabled={loading}
+                    value={data?.referral}
+                    onChange={(e) =>
+                      setData({ ...data, referral: e.target.value })
+                    }
+                    placeholder={
+                      "Add an email or phone number of your referral"
+                    }
+                    className="w-full rounded-lg"
+                  />
                 </div>
               </div>
               <div className="my-3">
