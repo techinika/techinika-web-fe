@@ -39,7 +39,7 @@ export default function Home() {
             }
             speaker={"Stewart Brand, Writer"}
           />
-          <Services />
+          {/* <Services /> */}
           <Partners />
           <JoinUs />
           <Footer />

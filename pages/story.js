@@ -38,7 +38,7 @@ export default function Story() {
             <p className="italic">Hi, there!</p>
             <p>
               Thank you for visiting our website. I am taking this time to
-              welcome you, and tell you the story of how we can to be, what we
+              welcome you, and tell you the story of how we came to be, what we
               are doing today, and the plans for the future. Enjoy reading.
             </p>
             {/* <h2 className="card-title">The beginning,</h2>
@@ -47,7 +47,7 @@ export default function Story() {
             <br></br>
             <h2 className="card-title">The Foundation,</h2>
             <p>{`In 2020, after graduating high school, many people were coming to me seeking support on simple things that they should be able to do themselves on their phones, computers or even on the internet. In June, I started a blog and started writing articles on how they can do most of the things themselves, and I was writing in Kinyarwanda.`}</p>
-            <p>{`This blog boosted in a short time, and I was advised to turn it into a business. One year later in 2021, Techinika was born, but it wasn't registered until March 2023. It is now registered as a private company limited by shares, and governed by laws of Rwanda.`}</p>
+            <p>{`One year later in 2021, Techinika was born, but it wasn't registered until March 2023. It is now registered as a private company limited by shares, and governed by laws of Rwanda.`}</p>
             <div className="p-4 text-center my-3 text-mainBlue text-2xl font-bold border rounded-lg border-mainBlue">
               <h2 className="italic">
                 {`Our offer was simple, "Learn from our content, if you need further support, we help you through a private training."`}
@@ -57,7 +57,7 @@ export default function Story() {
             <p>{`Currently, 10+ people went through our training, and 50,000+ have consumed our content online.`}</p>
             <br></br>
             <h2 className="card-title">Techinika Today,</h2>
-            <p>{`Our blog is no longer just a blog. *It's a go-to platform for anyone looking to start or boost a career in tech.* It supports your journey by making a customized course plan to reach your goal (in this case, your desired career), by offering challenges that ressembles real world tasks you will be carrying out in your job, and, through showcasing your profile to potential employers.`}</p>
+            <p>{`Today, we are building what is set out to be the biggest digital skills learning platform. Our platform allows members to acquire skills, carry our test activities, connect with the communities, and connect with companies boosting their employment opportunities.`}</p>
             <div className="p-4 text-center my-3 text-mainBlue text-2xl font-bold border rounded-lg border-mainBlue">
               <h2 className="italic">
                 {`We build talents, test talents, and expose them.`}
@@ -81,10 +81,17 @@ export default function Story() {
                 through Rwanda Technology Community
               </figcaption>
             </figure>
-            <p>{`Today, we have also partnered with Classera, an American EdTech company to bring their solutions to the Rwandan market. These are solutions for schools, education institutions and government to help them give more choices to their students, improve student's engagement, and learning outcomes.`}</p>
+            <p>{`We are running the Monthly Masterclass, where our participants get to learn new skills every month, skills that can be used right away. For people who are unable to join our Masterclasses, we have Rwanda Technology Community, a community that keeps members up to date on emerging technologies.`}</p>
             <br></br>
             <h2 className="card-title">Techinika in the Future,</h2>
-            <p>{`Our goals won't change anytime soon. Our delivery methods might change, our platform might change, but *we are constantly running towards building people who use digital tools, and build digital tools to solve problems.*`}</p>
+            <p>
+              Our goals won't change anytime soon. Our delivery methods might
+              change, our platform might change, but{" "}
+              <b>
+                *we are constantly running towards building people who use
+                digital tools, and build digital tools to solve problems.*
+              </b>
+            </p>
             <p className="italic font-bold text-mainBlue">
               Some of the programs incoming include:
             </p>

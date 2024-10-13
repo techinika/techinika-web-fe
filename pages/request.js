@@ -134,18 +134,6 @@ export default function Request() {
         "A community of tech enthusiasts, who help each other grow and collaborate on project.",
     },
     {
-      id: 3,
-      title: "Using HP Classeasy",
-      description:
-        "A super learning platform for schools to digitize all learning related operations.",
-    },
-    {
-      id: 4,
-      title: "Using LeadXera",
-      description:
-        "A super learning platform for government and private institutions to digitize all learning related operations.",
-    },
-    {
       id: 5,
       title: "Software / Web Development",
       description:

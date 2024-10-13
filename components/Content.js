@@ -9,18 +9,16 @@ const Content = (props) => {
           <p className="text-5xl font-bold text-mainBlue">We are Techinika!</p>
         </div>
         <p className="md:w-1/2 md:text-2xl sm:text-lg">
-          Do you want to start a career in tech? Do you run a training
-          institution, a school, or want to upskill your employees? Are you
-          looking for a software and a team to make your initiative smooth? We
-          can help you!
+          We empower you with skills that boosts your employment opportunities.
+          And software solutions that streamline your business operations.
         </p>
         <div className="btn-group">
-          <Link href={"/request"}>
-            <button className="btn-yellow">Learn More</button>
+          <Link href={"/training"}>
+            <button className="btn-yellow">Apply Now</button>
           </Link>
-          <Link href="https://forms.gle/QqxZcTN9Pyn9vFAfA" target="_blank">
+          <Link href="/request" target="_blank">
             <button className="btn-white border border-mainBlue">
-              Join Our Team
+              Request Service
             </button>
           </Link>
         </div>
