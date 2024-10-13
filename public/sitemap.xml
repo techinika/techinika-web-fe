@@ -12,67 +12,13 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://techinika.co.rw/about</loc>
+        <loc>https://techinika.co.rw/story</loc>
         <lastmod>2023-06-24T15:21:45.204Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://techinika.co.rw/careers</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/collaborate</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/community</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/community/calendar</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/community/podcast-register</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/contact</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/learning</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/services</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/study/is-your-job-secure</loc>
-        <lastmod>2023-06-24T15:21:45.204Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://techinika.co.rw/study/technology-and-the-future</loc>
+        <loc>https://techinika.co.rw/request</loc>
         <lastmod>2023-06-24T15:21:45.204Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>

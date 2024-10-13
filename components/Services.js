@@ -1,86 +1,55 @@
-import Image from "next/image";
-import community from "../public/community.png";
-import learning from "../public/learning.png";
-import consulting from "../public/consulting.png";
-import Link from "next/link";
-
 const Services = () => {
   return (
-    <section className="py-20 p-4 w-full md:w-9/12 mx-auto">
-      <div>
-        <h1 className="big-title">Explore how we can help you!</h1>
-      </div>
-
-      <div className="flex flex-col gap-5 my-5">
-        <div className="h-card">
-          <div className="image-hold hidden md:block">
-            <Image
-              src={learning}
-              height={300}
-              width={500}
-              className="card-image"
-            />
-          </div>
-          <div className="h-card-body">
-            <h2 className="card-title">Learn from us</h2>
-            <p className="card-body">
-              {
-                "Since 2020, we have been creating contents with only one purpose. We want to make you the tech savvy. You can learn from our articles, videos, and short form contents available on all of our platforms, or join our training programs. Contents are found in Kinyarwanda and English, and they are all free."
-              }
+    <div className="bg-gray-100 text-justify py-10">
+      <h2 className="font-bold text-md p-5 text-center text-mainBlue text-4xl">
+        This is How we Help
+      </h2>
+      <section className="md:w-10/12 text-center mx-auto grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-gray-100">
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/consulting.png" className="w-full object-cover" />
+          </div> */}
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="big-title">Organizations!</h1>
+            <p>
+              We fulfill upskilling needs of your organization! We offer
+              trainings in digital skills to your team, beneficiaries, your
+              clients! We have a software that you can also use to carry out
+              training online, onboard trainees, and trainers and also be able
+              to sell training as a subscription.
             </p>
-            <Link href="/learning" className="btn-main">
-              <p>Start Today</p>
-            </Link>
           </div>
         </div>
-        <div className="h-card">
-          <div className="h-card-body">
-            <h2 className="card-title">Join our community</h2>
-            <p className="card-body">
-              {
-                "We are creating a community of individuals who are well informed on what is happening in technology space and how it affects their lives, their occupations and their businesses. By joining us, you get access to our weekly conversation and meeting like minded people who inspire a change in you."
-              }
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/achools.png" className="w-full object-cover" />
+          </div> */}
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="big-title">Schools!</h1>
+            <p>
+              We help you digitize your schools operations, through HP
+              Classeasy, a comprehensive Learning Management System with super
+              abilities to manage multiple departments of your school. We also
+              help you drive innovation and creativity in your students through
+              our community, Rwanda Technology Community!
             </p>
-            <Link href="/community" className="btn-main">
-              <p>Join Today</p>
-            </Link>
-          </div>
-          <div className="image-hold hidden md:block">
-            <Image
-              src={community}
-              height={300}
-              width={300}
-              className="card-image"
-            />
           </div>
         </div>
-        <div className="h-card">
-          <div className="image-hold hidden md:block">
-            <Image
-              src={consulting}
-              height={300}
-              width={300}
-              className="card-image"
-            />
-          </div>
-          <div className="h-card-body">
-            <h2 className="card-title">Consult with professionals</h2>
-            <p className="card-body">
-              {
-                "We know technology changes every day and there is a need for businesses to keep up with the changes that are happening. If they don't, their services or products might become obsolete or irrelevant. That is why we are committed to helping your business stay up to date and relevant on the market. Let us talk!"
-              }
+        <div className="items-center  flex flex-col p-10">
+          {/* <div className="h-30 border border-gray-100">
+            <img src="/individuals.png" className=" w-full object-cover border border-gray-100" />
+          </div> */}
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="big-title">Individuals!</h1>
+            <p>
+              We offer you private and fully customized training that gives you
+              employable skills in software development, digital marketing, and
+              basic computer literacy skills.
             </p>
-            <div className="btn-group">
-              <Link href="services" className="btn-main">
-                <p>
-                  Learn more
-                </p>
-              </Link>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

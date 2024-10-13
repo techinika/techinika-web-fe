@@ -1,90 +1,135 @@
+import Image from "next/image";
 import Link from "next/link";
-import { AiFillCloseCircle, AiOutlineMenuUnfold } from "react-icons/ai";
 import React, { useState } from "react";
-import { useRouter } from "next/router";
 
 const Nav = () => {
-  const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [showDrawer, setShowDrawer] = useState(false);
-  const [current, setCurrent] = useState(router.pathname);
-
-  const links = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Learning", link: "/learning" },
-    { id: 3, name: "Services", link: "/services" },
-    { id: 4, name: "Community", link: "/community" },
-    { id: 5, name: "About Us", link: "/about" },
-  ];
   return (
-    <nav className="flex fixed items-center content-center px-8 justify-between shadow-md w-full top-0 z-20 bg-white">
-      <div>
-        <h1 className="text-xl font-bold">
-          <Link href="/">Techinika.</Link>
-        </h1>
-      </div>
-      <div className="">
-        <ul className=" md:items-center hidden md:flex text-lg">
-          {links
-            ? links.map((link) => (
-                <li
-                  className={`hover:text-main hover:border-b-4 hover:border-b-main p-6 ${
-                    link.link === current &&
-                    "border-b-main border-b-4 text-main"
-                  }`}
-                  key={link.id}
-                >
-                  <Link href={link.link}>{link.name}</Link>
-                </li>
-              ))
-            : null}
-          <li className="btn-main">
-            <Link href="/contact">Contact Us</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="block md:hidden cursor-pointer">
-        {!showDrawer && (
-          <AiOutlineMenuUnfold
-            onClick={() => setShowDrawer(true)}
-            size={28}
-            className="text-blue-800  font-bold"
-          />
-        )}
-        {showDrawer && (
-          <AiFillCloseCircle
-            onClick={() => setShowDrawer(false)}
-            size={28}
-            className="text-blue-800  font-bold"
-          />
-        )}
-      </div>
+    <>
+      <nav className="flex fixed items-center justify-between shadow-md w-full top-0 z-20 bg-white p-5 md:px-8">
+        <div className="flex items-center">
+          <h1 className="font-bold">
+            <Link href="/">
+              <Image
+                src="/techinika-logo.png"
+                width={140}
+                height={40}
+                alt="Techinika Logo"
+              />
+            </Link>
+          </h1>
+        </div>
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="focus:outline-none"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div className="hidden md:flex md:items-center md:gap-4 flex-wrap items-center gap-4">
+          <Link href="/training" className="text-xl">
+            Apply for Training
+          </Link>
+          <Link href="/request" className="text-xl">
+            Request Demo/Service
+          </Link>
+          <Link href="/story" className="font-bold">
+            Our Story
+          </Link>
+          <Link
+            href="https://forms.gle/wNBe86jYxMusZRFr8"
+            className="btn-main"
+            target="_blank"
+          >
+            JOIN THE WAITLIST
+          </Link>
+        </div>
+      </nav>
 
-      {showDrawer && (
-        <div className="h-screen bg-bg w-2/3 fixed left-0 top-0 bottom-0 shadow-lg">
-          <div className="w-full text-center p-5 bg-mainBlue text-white">
-            <h1 className="text-xl font-bold">
-              <Link href="/">Techinika.</Link>
-            </h1>
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col items-center justify-center z-30">
+          <div className="absolute top-5 right-5">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="focus:outline-none text-white"
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <ul className="flex flex-col gap-3">
-            {links
-              ? links.map((link) => (
-                  <li
-                    className="p-5 hover:text-blue-800 hover:bg-white hover:shadow"
-                    key={link.id}
-                  >
-                    <Link href={link.link}>{link.name}</Link>
-                  </li>
-                ))
-              : null}
-            <li className="btn-main">
-              <Link href="/contact">Contact Us</Link>
-            </li>
-          </ul>
+          <div className="bg-white text-mainBlue p-5 flex items-center justify-start flex-col">
+            <h1 className="font-bold mb-8">
+              <Link href="/">
+                <Image
+                  src="/techinika-logo.png"
+                  width={140}
+                  height={40}
+                  alt="Techinika Logo"
+                />
+              </Link>
+            </h1>
+            <div className="flex flex-col items-center gap-4">
+              <Link
+                href="/training"
+                className="text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Apply for Training
+              </Link>
+              <Link
+                href="/request"
+                className="text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Service Request
+              </Link>
+              <Link
+                href="/story"
+                className="text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Our Story
+              </Link>
+              <Link
+                href="https://forms.gle/wNBe86jYxMusZRFr8"
+                className="btn-main text-xl"
+                target="_blank"
+                onClick={() => setIsOpen(false)}
+              >
+                JOIN THE WAITLIST
+              </Link>
+            </div>
+          </div>
         </div>
       )}
-    </nav>
+    </>
   );
 };
 

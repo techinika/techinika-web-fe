@@ -3,9 +3,10 @@ import Nav from "../components/HeadFoot/Nav";
 import Content from "../components/Content";
 import { Programmes } from "../components/Programmes";
 import Services from "../components/Services";
-import { Subscribe } from "../components/Subscribe";
 import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
+import { Quote } from "../components/HeadFoot/Quote";
+import Partners from "../components/Partners";
 
 export default function Home() {
   return (
@@ -14,30 +15,33 @@ export default function Home() {
         <meta charset="UTF-8" />
         <meta
           name="keywords"
-          content="Everyone has a right to understand technology, Web development, Graphic design, modern technologies, ICT Training to your staff, "
+          content="technology education in africa, edtech rwanda, tech rwanda, tech education in africa, digital skills education in rwanda, software development training in rwanda, technology internship in Rwanda, rwanda educating the future of educators in technology, courses about technology in kinyarwanda, school management software in Rwanda, hp classeasy in rwanda, leadxera in rwanda"
         />
-        <meta name="author" content="Techinika Devs" />
+        <meta name="author" content="Techinika Developers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <title>Techinika | For The Future</title> */}
-        <title>
-          Techinika - Technology Solutions for Everyone in Rwanda and Africa
-        </title>
+        <title>Techinika - Digitizing People and Institutions</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <meta
           name="description"
-          content="Techinika is a tech company based in Rwanda, dedicated to providing accessible technology solutions that solve problems for individuals and businesses in Rwanda and across Africa."
+          content="Techinika is an edtech company in Rwanda that provides solutions for training institutions, schools, international organizations and the government to nurture the technologists in rwanda and africa."
         ></meta>
       </Head>
-      <div>
-        <div className="font-main bg-bg">
+      <div className="relative h-screen">
+        <div className="font-main">
           <Nav />
         </div>
         <div className="bg-white font-main mx-auto">
           <Content />
           <Programmes />
+          <Quote
+            quote={
+              "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road."
+            }
+            speaker={"Stewart Brand, Writer"}
+          />
           <Services />
+          <Partners />
           <JoinUs />
-          <Subscribe />
           <Footer />
         </div>
       </div>

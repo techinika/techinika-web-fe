@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,30 +8,34 @@
 
 * {
   @apply font-main box-border leading-loose;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
+  font-family: Lato;
+  box-sizing: border-box;
 }
 
 .btn-yellow {
-  @apply px-7 py-2 bg-mainYellow rounded-sm text-mainBlue hover:bg-main hover:text-white cursor-pointer;
+  @apply px-7 py-2 bg-mainYellow rounded text-mainBlue hover:bg-main hover:text-white cursor-pointer;
 }
 
 .btn-white {
-  @apply px-7 py-2 bg-white text-mainBlue rounded-sm hover:bg-main hover:text-white cursor-pointer;
+  @apply px-7 py-2 bg-white text-mainBlue rounded hover:bg-main hover:text-white cursor-pointer;
 }
 
 .btn-main {
-  @apply px-7 py-2 bg-mainBlue text-white rounded-sm hover:bg-main cursor-pointer;
+  @apply px-2 py-2 bg-mainBlue text-white rounded hover:bg-main cursor-pointer;
 }
 
 .btn-card {
-  @apply bg-mainBlue rounded-sm text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
+  @apply bg-mainBlue rounded text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
 }
 
 .card {
-  @apply flex-1 shadow-lg  bg-white p-10 rounded-lg border-2 border-dashed border-mainBlue;
+  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-mainBlue flex items-center justify-center text-center cursor-pointer;
 }
 
 .card-title {
-  @apply text-mainBlue font-bold text-4xl py-4;
+  @apply text-mainBlue font-bold text-2xl;
 }
 
 .card-body {
@@ -38,11 +43,11 @@
 }
 
 .big-title {
-  @apply text-mainBlue font-bold text-5xl text-center py-5;
+  @apply text-mainBlue font-semibold text-center text-xl py-5;
 }
 
 .h-card {
-  @apply bg-bg flex  flex-col lg:flex-row shadow-lg border-2 border-gray-200 justify-between rounded-lg items-center min-h-fit p-10;
+  @apply bg-bg flex shadow-lg border border-gray-200 justify-around rounded-lg items-center min-h-fit p-10;
 }
 
 .image-hold {
@@ -62,7 +67,7 @@
 }
 
 .btn-group {
-  @apply mt-3 flex flex-row flex-wrap gap-5;
+  @apply mt-3 flex flex-row items-center justify-center flex-wrap gap-5;
 }
 
 .input {
@@ -78,7 +83,7 @@
 }
 
 .footer {
-  @apply flex w-full justify-center items-center flex-col gap-4 py-7;
+  @apply flex w-full justify-center items-center flex-col gap-4 py-7 bg-gray-50;
 }
 
 .copyright {
