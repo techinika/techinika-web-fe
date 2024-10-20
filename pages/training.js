@@ -128,7 +128,7 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "Figma Masterclass",
+      title: "3D Manufacturing Designing with SolidWorks",
     },
   ];
 
