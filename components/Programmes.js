@@ -6,11 +6,26 @@ export const Programmes = () => {
     <>
       <div className="bg-gray-50 bg-no-repeat bg-cover py-4">
         <div className="md:w-10/12 xs:w-full mx-auto p-4 md:p-8">
-          <p className="text-mainBlue font-bold text-center">Our Products:</p>
-          <div className="grid grid-cols-2 justify-center items-stretch mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-2 xs: grid-cols-1">
+          <p className="text-mainBlue font-bold text-center">
+            Our Products & Services
+          </p>
+          <div className="grid grid-cols-3 justify-center items-stretch mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-3 xs: grid-cols-3">
             <Link href="https://techinika.com" target="_blank">
               <div className="card">
                 <Image src="/learning.png" width={200} height={40} />
+                <p>
+                  Our online learning platform for students and business
+                  employees.
+                </p>
+              </div>
+            </Link>
+            <Link href="https://techinika.co.rw/masterclass" target="_blank">
+              <div className="card">
+                <Image src="/masterclass.png" width={200} height={40} />
+                <p>
+                  Monthly training with technical skills in designing,
+                  programming and data.
+                </p>
               </div>
             </Link>
             <Link
@@ -23,6 +38,7 @@ export const Programmes = () => {
                   width={200}
                   height={40}
                 />
+                <p>The most active and useful tech community in Rwanda.</p>
               </div>
             </Link>
           </div>

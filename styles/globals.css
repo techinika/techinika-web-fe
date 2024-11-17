@@ -31,7 +31,7 @@
 }
 
 .card {
-  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-mainBlue flex items-center justify-center text-center cursor-pointer;
+  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-mainBlue flex flex-col items-center justify-center text-center cursor-pointer;
 }
 
 .card-title {

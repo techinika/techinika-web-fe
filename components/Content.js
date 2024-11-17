@@ -4,13 +4,15 @@ import { FaArrowDown } from "react-icons/fa";
 const Content = (props) => {
   return (
     <div className="mx-auto relative">
-      <main className="m-auto w-10/12 h-screen items-center text-center justify-center flex flex-col gap-3">
+      <main className="m-auto w-10/12 h-[70vh] items-center text-center justify-center flex flex-col gap-3">
         <div className="text-center">
-          <p className="text-5xl font-bold text-mainBlue">We are Techinika!</p>
+          <p className="text-5xl font-bold text-mainBlue">
+            Digital Transformation Partner
+          </p>
         </div>
         <p className="md:w-1/2 md:text-2xl sm:text-lg">
-          We empower you with skills that boosts your employment opportunities.
-          And software solutions that streamline your business operations.
+          We equip you with skills that unlocks new employment opportunities.
+          And build software solutions that streamline your business operations.
         </p>
         <div className="btn-group">
           <Link href={"/training"}>
