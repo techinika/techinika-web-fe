@@ -130,7 +130,7 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "3D Manufacturing Designing with SolidWorks",
+      title: "CHRISTMAS GIFT: Building websites with no code (WORDPRESS)",
     },
   ];
 
