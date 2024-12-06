@@ -15,7 +15,7 @@ const Content = (props) => {
           And build software solutions that streamline your business operations.
         </p>
         <div className="btn-group">
-          <Link href={"/training"}>
+          <Link href={"/masterclass/wordpress-masterclass"}>
             <button className="btn-yellow">Apply Now</button>
           </Link>
           <Link href="/request" target="_blank">

@@ -12,7 +12,7 @@ function Partners() {
       id: 4,
       name: "Ganza Nation",
       logo: "/ganzanation.png",
-      website: "https://ganzanation.com/",
+      website: "https://www.instagram.com/ganza_nation/",
     },
     {
       id: 6,
