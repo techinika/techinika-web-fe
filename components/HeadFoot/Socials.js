@@ -31,7 +31,7 @@ export const Socials = () => {
       </Link>
 
       <Link
-        href="https://twitter.com/techinika"
+        href="https://x.com/techinika"
         className="cursor-pointer"
         target="_blank"
       >
@@ -61,7 +61,7 @@ export const Socials = () => {
       </Link>
 
       <Link
-        href="https://youtube.com/@TechinikaEnglish"
+        href="https://youtube.com/@TechinikaBusiness"
         className="cursor-pointer"
         target="_blank"
       >
