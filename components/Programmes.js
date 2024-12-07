@@ -28,10 +28,7 @@ export const Programmes = () => {
                 </p>
               </div>
             </Link>
-            <Link
-              href="https://www.linkedin.com/showcase/rwanda-technology-community/"
-              target="_blank"
-            >
+            <Link href="https://nas.io/tech-rw" target="_blank">
               <div className="card">
                 <Image
                   src="/RWANDA TECHNOLOGY COMMUNITY LOGO.png"
