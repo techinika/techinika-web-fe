@@ -15,7 +15,7 @@ export default function Masterclass() {
         "Learn all te basics you need to start designing beautiful and professional websites and software.",
       when: "19 October 2024",
       position: 1,
-      picture: "",
+      picture: "/figma.png",
       progress: "ENDED",
       link: "#",
     },
@@ -34,7 +34,7 @@ export default function Masterclass() {
       id: 3,
       title: "Mastering building websites fast and easy with WordPress",
       description:
-        "Learn all the basics you need to start designing 3D designs for manufacturing with SolidWorks.",
+        "Learn all the basics you need to start building all kinds of professional websites without writing code, fast and easily.",
       when: "23 December 2024",
       position: 3,
       picture: "",
@@ -104,7 +104,7 @@ export default function Masterclass() {
                           <img
                             src={mclass.picture}
                             alt={`${mclass.title} cover`}
-                            className="w-full h-40 object-cover"
+                            className="w-full h-64 object-cover"
                           />
                         ) : (
                           <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500">
