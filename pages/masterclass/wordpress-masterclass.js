@@ -56,7 +56,8 @@ export default function Story() {
               </li>
               <li>
                 <b>Training Fee: </b>
-                <i>Standard:</i> 80,000 RWF, <i>Students: </i>50,000 RWF
+                <i>Standard:</i> <s>80,000 RWF</s> 50,000 RWF (before 15th Dec),{" "}
+                <i>Students: </i>50,000 RWF
               </li>
               <li>
                 <b>Venue: </b>Gikondo, Kigali, Techinika Office.
