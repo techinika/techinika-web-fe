@@ -32,6 +32,18 @@ function Partners() {
       logo: "/shecancode.png",
       website: "https://www.shecancodeschool.org/",
     },
+    {
+      id: 9,
+      name: "ICP Rwanda",
+      logo: "/icp.png",
+      website: "https://x.com/icp_Rwanda_",
+    },
+    {
+      id: 10,
+      name: "HackNoel",
+      logo: "/hacknoel.png",
+      website: "https://hacknoel.live",
+    },
   ];
   return (
     <div className="md:w-[60%] mx-auto py-10">

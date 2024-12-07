@@ -19,7 +19,7 @@ export const Programmes = () => {
                 </p>
               </div>
             </Link>
-            <Link href="https://techinika.co.rw/masterclass" target="_blank">
+            <Link href="https://techinika.co.rw/masterclass">
               <div className="card">
                 <Image src="/masterclass.png" width={200} height={40} />
                 <p>
