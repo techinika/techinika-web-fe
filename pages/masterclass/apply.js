@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Nav from "../../components/HeadFoot/Nav";
 import Footer from "../../components/HeadFoot/Footer";
-import { Quote } from "../../components/HeadFoot/Quote";
 import Partners from "../../components/Partners";
 import { useEffect, useState } from "react";
 
@@ -10,41 +9,55 @@ function generateEmailHTML(data) {
       <html>
         <head>
           <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+            * {
+              font-family: Inter, sans-serif;
+            }
+
             body {
-              font-family: Arial, sans-serif;
+              font-family: Inter, sans-serif;
               line-height: 1.6;
             }
+
             .container {
               width: 80%;
               margin: auto;
             }
+              
             .header {
               background-color: #17327b;
               color: white;
               padding: 10px 0;
               text-align: center;
             }
+
             .content {
               padding: 20px;
               background-color: #f9f9f9;
               border: 1px solid #ddd;
             }
+
             .content h2 {
               color: #333;
             }
+
             .content p {
               margin: 10px 0;
             }
+
             .content ul {
               list-style-type: none;
               padding: 0;
             }
+
             .content ul li {
               background: #e2e2e2;
               margin: 5px 0;
               padding: 10px;
               border-radius: 5px;
             }
+
             .footer {
               margin-top: 20px;
               text-align: center;
@@ -96,6 +109,112 @@ function generateEmailHTML(data) {
         </body>
       </html>
     `;
+}
+
+function generateTrainingEmailHTML(data, name) {
+  return `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Training Registration Confirmation</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+          }
+          .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+          }
+          .header {
+            text-align: center;
+            background-color: #0073e6;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+          }
+          .header h1 {
+            margin: 0;
+            font-size: 24px;
+          }
+          .content {
+            padding: 20px;
+            line-height: 1.6;
+            color: #333333;
+          }
+          .content p {
+            margin: 10px 0;
+          }
+          .button {
+            display: inline-block;
+            background-color: #0073e6;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+          }
+          .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            margin-top: 20px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="email-container">
+          <div class="header">
+            <h1>Masterclass Registration Confirmed!</h1>
+          </div>
+          <div class="content">
+            <p>Hi ${name},</p>
+            <p>Thank you for registering for our training program. We're excited to have you on board!</p>
+            <p><strong>Training Details:</strong></p>
+            <ul>
+              <li><strong>Training Name:</strong> ${data.trainingName}</li>
+              <li><strong>Date:</strong> ${data.trainingDate}</li>
+              <li><strong>Time:</strong> ${data.trainingTime}</li>
+              <li><strong>Location:</strong> ${data.trainingLocation}</li>
+            </ul>
+            <p><strong>Payment Details:</strong></p>
+            <ul>
+              <li><strong>Amount:</strong> ${data.paymentAmount}</li>
+              <li><strong>Payment Method:</strong> ${data.paymentMethod}</li>
+              <li><strong>Reference:</strong> ${data.paymentReference}</li>
+            </ul>
+            <p>Please complete your payment by ${
+              data.paymentDeadline
+            } to confirm your spot.</p>
+            <p>If you have any questions or need assistance, feel free to contact us:</p>
+            <ul>
+              <li><strong>Email:</strong> ${data.contactEmail}</li>
+              <li><strong>Phone:</strong> ${data.contactPhone}</li>
+            </ul>
+            <p>We look forward to seeing you!</p>
+            <p>Best regards,</p>
+            <p>The ${data.companyName} Team</p>
+            <div style="width: 100%;display: flex;justify-content: center;items-align: center;"><a href="${
+              data.website
+            }" class="button" style="color: #fff;">Visit Our Website</a></div>
+          </div>
+          <div class="footer">
+            <p>&copy; ${new Date().getFullYear()} ${
+    data.companyName
+  }. All Rights Reserved.</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `;
 }
 
 export default function Training() {
@@ -200,30 +319,70 @@ export default function Training() {
     },
   ];
 
+  const trainingData = {
+    trainingName: "Master WordPress: Build Websites Fast and Easy",
+    trainingDate: "23/12/2024 - 03/01/2025",
+    trainingTime: "08:00 AM - 01:00 PM",
+    trainingLocation: "Kigali, Gikondo, Techinika Office",
+    paymentAmount: "80,000RWF",
+    paymentDiscount: "",
+    paymentMethod: "MoMo Pay - 791446",
+    paymentReference: "WPMasterclass",
+    paymentDeadline: "20th December 2024",
+    contactEmail: "info@techinika.com",
+    contactPhone: "+250791377446",
+    companyName: "Techinika",
+    website: "www.techinika.co.rw",
+  };
+
   const handleSendingData = async () => {
     setLoading(true);
     try {
       const emailBody = generateEmailHTML(data);
+      const email2Applicant = generateTrainingEmailHTML(
+        trainingData,
+        data.name
+      );
+
       if (data?.email === "" && data?.phone === "") {
         setFeedback("You have to provide at least one way to contact you!");
         return false;
       }
+
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          subject: `New Training Request - ${data?.name}`,
+          subject: `New Masterclass Request - ${data?.name}`,
           body: emailBody,
+          receiver: "niguterwanda@gmail.com",
         }),
       });
 
       if (response.ok) {
         console.log("Email sent successfully");
-        setFeedback(
-          "We have successfully received your request and we will reach out very soon! See you!"
-        );
+        const response = await fetch("/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            subject: `Masterclass Registration Confirmation - Secure your spot`,
+            body: email2Applicant,
+            receiver: data?.email,
+          }),
+        });
+        if (response.ok) {
+          setFeedback(
+            "We have successfully received your request. Please check your email for next steps."
+          );
+        } else {
+          setFeedback(
+            "We have successfully received your request. We will reach out soon!"
+          );
+        }
         setData(initialData);
       } else {
         console.error("Failed to send email");
@@ -262,12 +421,12 @@ export default function Training() {
           <div className="bg-gray-50">
             <div className="py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
               <h1 className="text-mainBlue font-bold text-xl">
-                Apply for the Masterclass
+                Apply for the WordPress Masterclass
               </h1>
               <p>{`We equip you with skills that unlock new opportunities for your career, and boosts your value on the market. By participating, you become part of Techinika Insiders, and get access to internal opportunities and networks.`}</p>
             </div>
           </div>
-          <div className="md:w-[60%] lg:w-[60%] sm:w-[90%] mx-auto text-xl py-4 p-2">
+          <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
             <form className="rounded-lg p-5">
               <h2 className="font-bold text-lg italic py-4">
                 Apply using this form, We will contact you as soon as possible:
@@ -425,7 +584,7 @@ export default function Training() {
               </div>
               <div>
                 <label className="text-mainBlue font-bold">
-                  Are you willing to pay for the Training
+                  Are you willing to pay 80,000 RWF for the Training
                 </label>
                 <select
                   className="flex flex-wrap gap-5 items-center w-full rounded-lg"

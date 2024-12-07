@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { subject, body } = req.body;
+    const { subject, body, receiver } = req.body;
 
     let transporter = nodemailer.createTransport({
       service: "gmail",
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
     var mailOptions = {
       from: process.env.NEXT_PUBLIC_SEND_EMAIL,
-      to: process.env.NEXT_PUBLIC_RECEIVE_EMAIL,
+      to: receiver,
       subject: subject,
       html: body,
     };

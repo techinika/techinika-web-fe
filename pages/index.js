@@ -7,6 +7,8 @@ import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
 import { Quote } from "../components/HeadFoot/Quote";
 import Partners from "../components/Partners";
+import Carousels from "../components/Carousel/Carousel";
+import { slides } from "../components/Carousel/Slides";
 
 export default function Home() {
   return (
@@ -31,6 +33,7 @@ export default function Home() {
           <Nav />
         </div>
         <div className="bg-white font-main mx-auto">
+          {/* <Carousels slides={slides} /> */}
           <Content />
           <Programmes />
           <Quote
