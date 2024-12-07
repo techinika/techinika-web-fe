@@ -6,7 +6,42 @@ import Partners from "../../components/Partners";
 import Link from "next/link";
 import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
 
-export default function Story() {
+export default function Masterclass() {
+  const mclasses = [
+    {
+      id: 1,
+      title: "Figma Masterclass: Become a UI/UX Designer",
+      description:
+        "Learn all te basics you need to start designing beautiful and professional websites and software.",
+      when: "19 October 2024",
+      position: 1,
+      picture: "",
+      progress: "ENDED",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "Building 3D designs with SolidWorks",
+      description:
+        "Learn all the basics you need to start designing 3D designs for manufacturing with SolidWorks.",
+      when: "29 November 2024",
+      position: 2,
+      picture: "",
+      progress: "IN PROGRESS",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "Mastering building websites fast and easy with WordPress",
+      description:
+        "Learn all the basics you need to start designing 3D designs for manufacturing with SolidWorks.",
+      when: "23 December 2024",
+      position: 3,
+      picture: "",
+      progress: "UPCOMING",
+      link: "wordpress-masterclass",
+    },
+  ];
   return (
     <>
       <Head>
@@ -39,78 +74,86 @@ export default function Story() {
           </div>
           <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
             <br></br>
-            
+
             <h2 className="card-title">Description,</h2>
-            <p>{`This training aims to equip entrepreneurs, business owners, Innovators, Founders, and students in Rwanda with the skills necessary to create and manage their own WordPress websites. In an era where digital presence is key to business success, participants will gain hands-on experience in developing professional websites that can enhance their businesses or personal brands. The training focuses on providing cost-effective, practical skills for building websites without relying on expensive developers.`}</p>
+            <p>{`Our monthly Masterclass Program is designed to empower individuals with practical, industry-relevant skills to unlock new opportunities, increase their income, and bring their ideas to life. Each session focuses on a specific skill or topic, offering hands-on training led by experienced professionals.`}</p>
+            <p>{`Whether you want to enhance your career, start a project, or build your own business, our masterclasses provide the tools, knowledge, and confidence you need to succeed. Join us and take the next step toward achieving your goals!`}</p>
 
             <br></br>
-            <h2 className="card-title">What can participants expect?</h2>
-            <p>{`By participating in this masterclass, you can expect to learn:`}</p>
-            <div className="p-4 text-center my-3 text-mainBlue text-lg font-bold border rounded-lg border-mainBlue">
-              <h2 className="italic">
-                {`We will teach you how to build all kinds of websites, in a short time, and host them.`}
-              </h2>
-            </div>
-            <ul></ul>
-            <ul class="list list-square">
-              <li>
-                <b>Build websites of all kinds without using codes: </b>Create
-                diverse websites using easy-to-use tools and platforms without
-                needing to write code.
-              </li>
-              <li>
-                <b>Building websites in a short time: </b>Learn methods and
-                tools to quickly design and launch websites.
-              </li>
-              <li>
-                <b>Problem-solving mechanisms: </b>Understand how to
-                troubleshoot and solve common website-related issues.
-              </li>
-              <li>
-                <b>Choosing and buying domain names: </b>Learn how to set up and
-                manage a hosting environment for your websites.
-              </li>
-            </ul>
-
+            <h2 className="card-title">Masterclass Sessions,</h2>
             <br></br>
-            <h2 className="card-title">Key Content,</h2>
-            <p>{`Some key components of our curriculum:`}</p>
-            <br></br>
-            <ul class="list list-square">
-              <li>
-                <b>Setting up cPanel on a hosting server: </b>Learn how to
-                install and use cPanel to manage hosting accounts, files,
-                databases, and emails.
-              </li>
-              <li>
-                <b>Installing and configuring WordPress on a server: </b>
-                Understand how to install WordPress and set it up for use on
-                your hosting server.
-              </li>
-              <li>
-                <b>Choosing, installing, and configuring WordPress themes: </b>
-                Select, install, and customize WordPress themes to match your
-                website’s design needs.
-              </li>
-              <li>
-                <b>Choosing, installing, and configuring WordPress Plugins: </b>
-                Discover plugins to extend WordPress functionality and configure
-                them for optimal performance.
-              </li>
-              <li>
-                <b>Configuring WordPress Settings: </b>Set up essential
-                WordPress settings like site title, permalinks, user roles, and
-                more to ensure smooth website operation.
-              </li>
-              <li>
-                <b>
-                  Optimizing Search Engine Optimization for WordPress websites:{" "}
-                </b>
-                Learn SEO best practices for improving website visibility and
-                ranking on search engines.
-              </li>
-            </ul>
+            {mclasses.length > 0 ? (
+              <div className="grid grid-cols-1 gap-6">
+                {[...mclasses]
+                  .sort((a, b) => {
+                    const statusOrder = {
+                      UPCOMING: 1,
+                      "IN PROGRESS": 2,
+                      ENDED: 3,
+                    };
+                    return statusOrder[a.progress] - statusOrder[b.progress];
+                  })
+                  .map((mclass) => (
+                    <div
+                      key={mclass.id}
+                      className="card bg-white shadow-md rounded-lg overflow-hidden border border-gray-200"
+                    >
+                      {/* Image Section */}
+                      <div className="image-container w-full">
+                        {mclass.picture ? (
+                          <img
+                            src={mclass.picture}
+                            alt={`${mclass.title} cover`}
+                            className="w-full h-40 object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500">
+                            No Image Available
+                          </div>
+                        )}
+                      </div>
 
+                      {/* Content Section */}
+                      <div className="p-4 flex flex-col justify-between h-full">
+                        <div>
+                          <h3 className="text-lg font-bold text-mainBlue">
+                            {mclass.title}
+                          </h3>
+                          <p className="text-gray-600 mt-2">
+                            {mclass.description}
+                          </p>
+                          <p className="text-gray-500 mt-1 text-sm">
+                            <strong>When:</strong> {mclass.when}
+                          </p>
+                        </div>
+
+                        {/* Footer Section */}
+                        <div className="flex justify-between items-center mt-4">
+                          <span
+                            className={`status-badge px-3 py-1 rounded-full text-sm ${
+                              mclass.progress === "UPCOMING"
+                                ? "bg-green-100 text-green-700"
+                                : mclass.progress === "IN PROGRESS"
+                                ? "bg-yellow-100 text-yellow-700"
+                                : "bg-gray-100 text-gray-700"
+                            }`}
+                          >
+                            {mclass.progress}
+                          </span>
+                          <Link
+                            href={`/masterclass/${mclass.link}`}
+                            className="text-mainBlue underline text-sm"
+                          >
+                            View Details
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            ) : (
+              <p>{`No masterclass sessions yet!`}</p>
+            )}
             <br></br>
 
             <p className="italic font-bold text-mainBlue">
@@ -128,11 +171,6 @@ export default function Story() {
               +250780630465.
             </p>
             <br></br>
-            <div className="flex items-center justify-center">
-              <Link href="/masterclass/apply" className="btn-main">
-                APPLY NOW
-              </Link>
-            </div>
           </div>
           <Partners />
           <Footer />
