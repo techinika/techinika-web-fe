@@ -7,26 +7,42 @@ import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
 import { Quote } from "../components/HeadFoot/Quote";
 import Partners from "../components/Partners";
-import Carousels from "../components/Carousel/Carousel";
-import { slides } from "../components/Carousel/Slides";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    url: "https://techinika.co.rw",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://techinika.co.rw/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   return (
     <>
       <Head>
         <meta charset="UTF-8" />
-        <meta
-          name="keywords"
-          content="technology education in africa, edtech rwanda, tech rwanda, tech education in africa, digital skills education in rwanda, software development training in rwanda, technology internship in Rwanda, rwanda educating the future of educators in technology, courses about technology in kinyarwanda, school management software in Rwanda, hp classeasy in rwanda, leadxera in rwanda"
-        />
-        <meta name="author" content="Techinika Developers" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Techinika - Digitizing People and Institutions</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+        <title>Techinika - Empowering Digital Education</title>
         <meta
           name="description"
-          content="Techinika is an edtech company in Rwanda that provides solutions for training institutions, schools, international organizations and the government to nurture the technologists in rwanda and africa."
-        ></meta>
+          content="Techinika provides digital solutions tailored for education and skills development in Rwanda. Discover our story, services, and programs."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          property="og:title"
+          content="Techinika - Empowering Digital Education"
+        />
+        <meta
+          property="og:description"
+          content="Techinika provides digital solutions tailored for education and skills development in Rwanda."
+        />
+        <meta property="og:url" content="https://techinika.co.rw/" />
+        <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">

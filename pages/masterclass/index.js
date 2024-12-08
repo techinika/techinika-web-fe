@@ -7,6 +7,14 @@ import Link from "next/link";
 import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
 
 export default function Masterclass() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "Masterclass - Techinika",
+    url: "https://techinika.co.rw/masterclass",
+    description:
+      "Techinika's Masterclass offers professional courses to enhance your digital skills in various domains.",
+  };
   const mclasses = [
     {
       id: 1,
@@ -48,16 +56,20 @@ export default function Masterclass() {
         <meta charset="UTF-8" />
         <meta
           name="keywords"
-          content="wordpress in rwanda, wordpress developer in rwanda, learn wordpress"
+          content="digital masterclass rwanda, learning to build websites"
         />
         <meta name="author" content="Techinika Developers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WordPress Masterclass - Techinika</title>
+        <title>Masterclass - Techinika</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <meta
           name="description"
-          content="WordPress is a software that is used to build websites without writing codes"
+          content="Masterclass is our montly digital skills empowerment Program"
         ></meta>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">

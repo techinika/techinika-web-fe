@@ -223,6 +223,14 @@ function generateTrainingEmailHTML(data, name) {
 }
 
 export default function Training() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Apply for Masterclass",
+    url: "https://techinika.co.rw/masterclass/apply",
+    description:
+      "Apply for Techinika's Masterclass and take your digital skills to the next level.",
+  };
   const initialData = {
     phone: "",
     name: "",
@@ -417,6 +425,10 @@ export default function Training() {
           name="description"
           content="It starts with developing your technological skills. Understanding how technology works, gaining deep understanding of concepts, and practicing building and using it. Our training programs are here for that!"
         ></meta>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">

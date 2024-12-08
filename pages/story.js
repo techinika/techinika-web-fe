@@ -6,6 +6,14 @@ import Partners from "../components/Partners";
 import Link from "next/link";
 
 export default function Story() {
+  const storyStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    url: "https://techinika.co.rw/story",
+    name: "Our Story - Techinika",
+    description:
+      "Learn about Techinika’s journey, mission, and dedication to enhancing education through digital solutions.",
+  };
   const team = [
     {
       id: 1,
@@ -96,6 +104,12 @@ export default function Story() {
           name="description"
           content="Techinika is an edtech company in Rwanda that provides solutions for training institutions, schools, international organizations and the government to nurture the technologists in rwanda and africa."
         ></meta>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(storyStructuredData),
+          }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">

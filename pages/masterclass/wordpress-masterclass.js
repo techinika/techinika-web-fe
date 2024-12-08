@@ -6,22 +6,42 @@ import Partners from "../../components/Partners";
 import Link from "next/link";
 
 export default function Story() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: "WordPress Masterclass",
+    url: "https://techinika.co.rw/masterclass/wordpress-masterclass",
+    description:
+      "A comprehensive WordPress Masterclass to help you build and manage websites effectively.",
+    provider: {
+      "@type": "Organization",
+      name: "Techinika",
+      url: "https://techinika.co.rw",
+    },
+  };
   return (
     <>
       <Head>
         <meta charset="UTF-8" />
-        <meta
-          name="keywords"
-          content="wordpress in rwanda, wordpress developer in rwanda, learn wordpress"
-        />
-        <meta name="author" content="Techinika Developers" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WordPress Masterclass - Techinika</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <meta
           name="description"
-          content="WordPress is a software that is used to build websites without writing codes"
-        ></meta>
+          content="A comprehensive WordPress Masterclass to build and manage websites effectively."
+        />
+        <meta property="og:title" content="WordPress Masterclass - Techinika" />
+        <meta
+          property="og:description"
+          content="A comprehensive WordPress Masterclass to build and manage websites effectively."
+        />
+        <meta
+          property="og:url"
+          content="https://techinika.co.rw/masterclass/wordpress-masterclass"
+        />
+        <meta property="og:type" content="website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">

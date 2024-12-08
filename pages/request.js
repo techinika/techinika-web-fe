@@ -95,6 +95,19 @@ function generateEmailHTML(data) {
 }
 
 export default function Request() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: "Request a Service",
+    url: "https://techinika.co.rw/request",
+    description:
+      "Request a tailored digital solution for your education or business needs from Techinika.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+2500000000", // Add your contact number
+      contactType: "Customer Service",
+    },
+  };
   const initialData = {
     contact: "",
     name: "",
@@ -124,8 +137,7 @@ export default function Request() {
     {
       id: 1,
       title: "Business Assessment",
-      description:
-        "Assess business operations and tools to do the job.",
+      description: "Assess business operations and tools to do the job.",
     },
     {
       id: 2,
@@ -136,14 +148,12 @@ export default function Request() {
     {
       id: 5,
       title: "Developing web and software solutions",
-      description:
-        "Building solutions for your business",
+      description: "Building solutions for your business",
     },
     {
       id: 7,
       title: "Tech in Business Advisory",
-      description:
-        "Advising on how to use technology in your business",
+      description: "Advising on how to use technology in your business",
     },
     {
       id: 6,
@@ -317,6 +327,10 @@ export default function Request() {
           name="description"
           content="Techinika is an edtech company in Rwanda that provides solutions for training institutions, schools, international organizations and the government to nurture the technologists in rwanda and africa."
         ></meta>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </Head>
       <div className="relative h-screen">
         <div className="font-main">
