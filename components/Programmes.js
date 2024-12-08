@@ -30,11 +30,7 @@ export const Programmes = () => {
             </Link>
             <Link href="https://nas.io/tech-rw" target="_blank">
               <div className="card">
-                <Image
-                  src="/RWANDA TECHNOLOGY COMMUNITY LOGO.png"
-                  width={200}
-                  height={40}
-                />
+                <Image src="/community.png" width={200} height={40} />
                 <p>
                   We are building the most active and useful tech community in
                   Rwanda.
