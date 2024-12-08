@@ -123,9 +123,9 @@ export default function Request() {
   const services = [
     {
       id: 1,
-      title: "Training",
+      title: "Business Assessment",
       description:
-        "This includes learning on our platform, and enrolling in our training programs.",
+        "Assess business operations and tools to do the job.",
     },
     {
       id: 2,
@@ -135,9 +135,15 @@ export default function Request() {
     },
     {
       id: 5,
-      title: "Software / Web Development",
+      title: "Developing web and software solutions",
       description:
-        "A super learning platform for government and private institutions to digitize all learning related operations.",
+        "Building solutions for your business",
+    },
+    {
+      id: 7,
+      title: "Tech in Business Advisory",
+      description:
+        "Advising on how to use technology in your business",
     },
     {
       id: 6,
