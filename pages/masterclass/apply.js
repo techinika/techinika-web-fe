@@ -187,7 +187,12 @@ function generateTrainingEmailHTML(data, name) {
             </ul>
             <p><strong>Payment Details:</strong></p>
             <ul>
-              <li><strong>Amount:</strong> ${data.paymentAmount}</li>
+              <li><strong>Amount:</strong>${
+                data.paymentDiscount
+                  ? `<span style="text-decoration: line-through; color: gray;">${data.paymentAmount}</span> 
+         <span style="color: green; font-weight: bold;">${data.paymentDiscount}</span>`
+                  : data.paymentAmount
+              }</li>
               <li><strong>Payment Method:</strong> ${data.paymentMethod}</li>
               <li><strong>Reference:</strong> ${data.paymentReference}</li>
             </ul>
@@ -325,7 +330,7 @@ export default function Training() {
     trainingTime: "08:00 AM - 01:00 PM",
     trainingLocation: "Kigali, Gikondo, Techinika Office",
     paymentAmount: "80,000RWF",
-    paymentDiscount: "",
+    paymentDiscount: "50,000RWF",
     paymentMethod: "MoMo Pay - 791446",
     paymentReference: "WPMasterclass",
     paymentDeadline: "20th December 2024",
