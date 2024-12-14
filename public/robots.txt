@@ -1,9 +1,0 @@
-# Allow all user agents to crawl the site
-User-agent: *
-Allow: /
-
-# Disallowed paths (none currently)
-# Disallow: /admin/
-
-# Sitemap for search engines
-Sitemap: https://techinika.co.rw/sitemap.xml
