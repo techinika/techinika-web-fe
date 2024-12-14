@@ -3,6 +3,7 @@ import Nav from "../../components/HeadFoot/Nav";
 import Footer from "../../components/HeadFoot/Footer";
 import Partners from "../../components/Partners";
 import { useEffect, useState } from "react";
+import { google } from "googleapis";
 
 function generateEmailHTML(data) {
   return `
@@ -220,6 +221,11 @@ function generateTrainingEmailHTML(data, name) {
       </body>
     </html>
   `;
+}
+
+export async function getServerSideProps({ query }) {
+  const auth = await google.auth.getClient({scopes: []});
+
 }
 
 export default function Training() {

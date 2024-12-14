@@ -44,49 +44,55 @@ function Partners() {
       logo: "/hacknoel.png",
       website: "https://hacknoel.live",
     },
+    {
+      id: 11,
+      name: "HangaPitchFest",
+      logo: "/hanga.png",
+      website: "https://www.hangapitchfest.rw/",
+    },
   ];
+
   return (
     <div className="md:w-[60%] mx-auto py-10">
       <h2 className="font-bold text-md p-5 text-center text-mainBlue text-4xl">
         Brands we work with
       </h2>
-      <div className="p-10 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          {partners &&
-            partners.map((partner) => {
-              return (
-                <a target="_blank" href={partner?.website}>
-                  <li>
-                    <img
-                      title={partner?.name}
-                      className="h-8"
-                      src={partner?.logo}
-                      alt={partner?.name}
-                    />
-                  </li>
-                </a>
-              );
-            })}
-        </ul>
-        <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-          aria-hidden="true"
-        >
-          {partners &&
-            partners.map((partner) => {
-              return (
-                <a target="_blank" href={partner?.website}>
-                  <li>
-                    <img
-                      className="h-8"
-                      title={partner?.name}
-                      src={partner?.logo}
-                      alt={partner?.name}
-                    />
-                  </li>
-                </a>
-              );
-            })}
+      <div className="relative overflow-hidden group">
+        <ul className="flex animate-infinite-scroll group-hover:paused">
+          {partners.map((partner, index) => (
+            <a
+              key={partner.id}
+              target="_blank"
+              href={partner.website}
+              rel="noopener noreferrer"
+            >
+              <li className="mx-8">
+                <img
+                  title={partner.name}
+                  className="h-10 object-contain transition-transform duration-300 hover:scale-110"
+                  src={partner.logo}
+                  alt={partner.name}
+                />
+              </li>
+            </a>
+          ))}
+          {partners.map((partner, index) => (
+            <a
+              key={`duplicate-${partner.id}`}
+              target="_blank"
+              href={partner.website}
+              rel="noopener noreferrer"
+            >
+              <li className="mx-8">
+                <img
+                  title={partner.name}
+                  className="h-10 object-contain transition-transform duration-300 hover:scale-110"
+                  src={partner.logo}
+                  alt={partner.name}
+                />
+              </li>
+            </a>
+          ))}
         </ul>
       </div>
     </div>
