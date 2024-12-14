@@ -4,7 +4,6 @@ Allow: /
 
 # Disallowed paths (none currently)
 # Disallow: /admin/
-Disallow: /training
 
 # Sitemap for search engines
 Sitemap: https://techinika.co.rw/sitemap.xml
