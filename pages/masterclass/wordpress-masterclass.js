@@ -19,6 +19,7 @@ export default function Story() {
       url: "https://techinika.co.rw",
     },
   };
+  
   return (
     <>
       <Head>
