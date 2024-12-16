@@ -41,8 +41,8 @@ function Partners() {
     {
       id: 10,
       name: "HackNoel",
-      logo: "/hacknoel.png",
-      website: "https://hacknoel.live",
+      logo: "/youthcode.png",
+      website: "https://www.youthcodecamp.live/",
     },
     {
       id: 11,
