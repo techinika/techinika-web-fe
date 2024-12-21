@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Nav from "../../components/HeadFoot/Nav";
 import Footer from "../../components/HeadFoot/Footer";
-import { Quote } from "../../components/HeadFoot/Quote";
 import Partners from "../../components/Partners";
 import Link from "next/link";
 import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
@@ -35,7 +34,7 @@ export default function Masterclass() {
       when: "29 November 2024",
       position: 2,
       picture: "",
-      progress: "IN PROGRESS",
+      progress: "ENDED",
       link: "#",
     },
     {

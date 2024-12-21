@@ -37,7 +37,7 @@ export const Programmes = () => {
                 </p>
               </div>
             </Link>
-            <Link href="/request">
+            <Link href="/consultancy">
               <div className="card">
                 <Image src="/consultancy.png" width={200} height={40} />
                 <p>
