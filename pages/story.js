@@ -36,7 +36,7 @@ export default function Story() {
       name: "Robert Niyitanga",
       position: "Tech Lead & Frontend SE",
       picture:
-        "https://media.licdn.com/dms/image/v2/D4D03AQHfxpdegLPORg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1708679141577?e=1738800000&v=beta&t=AtyyFcfjkZERvtVUS-Kl4nMKguODZgkWTtm9WTpXiug",
+        "https://media.licdn.com/dms/image/v2/D4D03AQF4w06WXJ9PwQ/profile-displayphoto-shrink_800_800/B4DZO7HMvyHcAc-/0/1734011048001?e=1740009600&v=beta&t=dFgTWtlnajdpOo8XET8KORVvjV_isuF5u6L63TeGrqY",
       linkedin: "https://www.linkedin.com/in/robert-niyitanga/",
     },
     {
@@ -161,7 +161,7 @@ export default function Story() {
                         <img
                           src={member.picture}
                           alt={`${member.name}`}
-                          className="w-full md:h-40 lg:h-40 sm:h-64 xs:h-64 object-cover rounded-lg"
+                          className="w-full md:h-48 lg:h-48 sm:h-64 xs:h-64 object-cover rounded-lg"
                         />
                       ) : (
                         <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500">

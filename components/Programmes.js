@@ -28,7 +28,7 @@ export const Programmes = () => {
                 </p>
               </div>
             </Link>
-            <Link href="https://nas.io/tech-rw" target="_blank">
+            <Link href="/community">
               <div className="card">
                 <Image src="/community.png" width={200} height={40} />
                 <p>

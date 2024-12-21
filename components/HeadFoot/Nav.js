@@ -45,6 +45,7 @@ const Nav = () => {
           <Link href="/">Home</Link>
           <Link href="/masterclass">Masterclass</Link>
           <Link href="/consultancy">Services</Link>
+          <Link href="/community">Community</Link>
           <Link href="/story" className="font-bold">
             Our Story
           </Link>
@@ -113,6 +114,13 @@ const Nav = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Services
+              </Link>
+              <Link
+                href="/community"
+                className="text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Community
               </Link>
               <Link
                 href="/story"
