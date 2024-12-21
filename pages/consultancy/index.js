@@ -144,6 +144,11 @@ export default function Consultancy() {
               +250780630465.
             </p>
             <br></br>
+            <div className="flex items-center justify-center">
+              <Link href="/request" className="btn-main">
+                REQUEST SERVICE
+              </Link>
+            </div>
           </div>
           <Partners />
           <Footer />

@@ -18,7 +18,7 @@ const Content = (props) => {
           <Link href={"/masterclass/wordpress-masterclass"}>
             <button className="btn-yellow">Apply Now</button>
           </Link>
-          <Link href="/request" target="_blank">
+          <Link href="/consultancy" target="_blank">
             <button className="btn-white border border-mainBlue">
               Request Service
             </button>
