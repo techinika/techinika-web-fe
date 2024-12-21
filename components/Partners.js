@@ -50,6 +50,18 @@ function Partners() {
       logo: "/hanga.png",
       website: "https://www.hangapitchfest.rw/",
     },
+    {
+      id: 12,
+      name: "Sherrie Silver Foundation",
+      logo: "/sherrie.jpg",
+      website: "https://www.sherriesilverfoundation.org/",
+    },
+    {
+      id: 13,
+      name: "YALI Rwanda Chapter",
+      logo: "/yali.png",
+      website: "https://yalirwandachapter.org/",
+    },
   ];
 
   return (

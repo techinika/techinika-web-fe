@@ -42,6 +42,7 @@ const Nav = () => {
           </button>
         </div>
         <div className="hidden md:flex md:items-center md:gap-4 flex-wrap items-center gap-4">
+          <Link href="/">Home</Link>
           <Link href="/masterclass">Masterclass</Link>
           <Link href="/request">Request Demo/Service</Link>
           <Link href="/story" className="font-bold">
@@ -92,6 +93,13 @@ const Nav = () => {
               </Link>
             </h1>
             <div className="flex flex-col items-center gap-4">
+              <Link
+                href="/"
+                className="text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
               <Link
                 href="/masterclass"
                 className="text-xl"
