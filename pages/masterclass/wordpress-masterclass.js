@@ -19,7 +19,7 @@ export default function Story() {
       url: "https://techinika.co.rw",
     },
   };
-  
+
   return (
     <>
       <Head>
@@ -107,7 +107,7 @@ export default function Story() {
               </h2>
             </div>
             <ul></ul>
-            <ul class="list list-square">
+            <ul className="list list-square">
               <li>
                 <b>Build websites of all kinds without using codes: </b>Create
                 diverse websites using easy-to-use tools and platforms without
@@ -131,7 +131,7 @@ export default function Story() {
             <h2 className="card-title">Key Content,</h2>
             <p>{`Some key components of our curriculum:`}</p>
             <br></br>
-            <ul class="list list-square">
+            <ul className="list list-square">
               <li>
                 <b>Setting up cPanel on a hosting server: </b>Learn how to
                 install and use cPanel to manage hosting accounts, files,

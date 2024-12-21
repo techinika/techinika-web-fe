@@ -219,7 +219,7 @@ export default function Story() {
               Here are some of them:
             </p>
             <ul className="list list-decimal">
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/pulse/hanga-weekly-roundup-ep-25-hanga-pitchfest-3jxke/"
@@ -228,7 +228,7 @@ export default function Story() {
                   Hanga Weekly Roundup EP 25: Features Techinika
                 </a>
               </li>
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://meamarkets.digital/winners/techinika-limited/"
@@ -237,7 +237,7 @@ export default function Story() {
                   Techinika Limited (2024 Winner: African Excellence Awards)
                 </a>
               </li>
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://www.wearetech.africa/en/fils-uk/tech-stars/rwanda-cishahayo-songa-achille-democrtizes-digital-skills-through-techinika"
@@ -247,7 +247,7 @@ export default function Story() {
                   Through Techinika
                 </a>
               </li>
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://www.ktpress.rw/2023/06/edtech-partners-show-need-for-accelerated-blended-learning-models/"
@@ -257,7 +257,7 @@ export default function Story() {
                   Models (Techinika Featured)
                 </a>
               </li>
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://youtu.be/9Kpaohzu_-I"
@@ -267,7 +267,7 @@ export default function Story() {
                   #Technika | Songa Achille's journey
                 </a>
               </li>
-              <li className="flex items-center gap-2 list-item">
+              <li className="items-center gap-2 list-item">
                 <a
                   target="_blank"
                   href="https://www.225tech.info/le-rwandais-cishahayo-songa-achille-fournit-aux-particuliers-et-aux-entreprises-des-competences-numeriques-modernes/"

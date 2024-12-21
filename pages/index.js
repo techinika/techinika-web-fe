@@ -2,7 +2,6 @@ import Head from "next/head";
 import Nav from "../components/HeadFoot/Nav";
 import Content from "../components/Content";
 import { Programmes } from "../components/Programmes";
-import Services from "../components/Services";
 import { JoinUs } from "../components/Join";
 import Footer from "../components/HeadFoot/Footer";
 import { Quote } from "../components/HeadFoot/Quote";
