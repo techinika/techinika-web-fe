@@ -59,10 +59,13 @@ export default function Story() {
           </div>
           <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
             <br></br>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-between">
               <Link href="#" className="btn-disabled">
                 APPLY NOW
               </Link>
+              <p className="text-mainBlue font-bold border-2 p-2">
+                IN PROGRESS
+              </p>
             </div>
             <br></br>
             <h2 className="card-title">Key Information,</h2>
