@@ -60,7 +60,7 @@ export default function Story() {
           <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
             <br></br>
             <div className="flex items-center justify-center">
-              <Link href="/masterclass/apply" className="btn-main">
+              <Link href="#" className="btn-disabled">
                 APPLY NOW
               </Link>
             </div>

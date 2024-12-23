@@ -45,7 +45,7 @@ export default function Masterclass() {
       when: "23 December 2024",
       position: 3,
       picture: "",
-      progress: "UPCOMING",
+      progress: "IN PROGRESS",
       link: "wordpress-masterclass",
     },
   ];

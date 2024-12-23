@@ -24,6 +24,10 @@
   @apply px-2 py-2 bg-mainBlue text-white rounded hover:bg-main cursor-pointer;
 }
 
+.btn-disabled {
+  @apply px-2 py-2 bg-gray-500 text-white rounded;
+}
+
 .btn-card {
   @apply bg-mainBlue rounded text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
 }
