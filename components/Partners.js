@@ -62,6 +62,18 @@ function Partners() {
       logo: "/yali.png",
       website: "https://yalirwandachapter.org/",
     },
+    {
+      id: 14,
+      name: "BICE Mechatrotech Ltd",
+      logo: "/bice.png",
+      website: "#",
+    },
+    {
+      id: 15,
+      name: "National Cyber Security Authority",
+      logo: "/ncsa.png",
+      website: "https://cyber.gov.rw/home/",
+    },
   ];
 
   return (
