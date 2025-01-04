@@ -60,12 +60,8 @@ export default function Story() {
           <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
             <br></br>
             <div className="flex items-center justify-between">
-              <Link href="#" className="btn-disabled">
-                APPLY NOW
-              </Link>
-              <p className="text-mainBlue font-bold border-2 p-2">
-                IN PROGRESS
-              </p>
+              <Link href="/masterclass/apply">APPLY NOW</Link>
+              <p className="text-mainBlue font-bold border-2 p-2">UPCOMING</p>
             </div>
             <br></br>
             <h2 className="card-title">Key Information,</h2>
@@ -76,12 +72,12 @@ export default function Story() {
                 without coding using WordPress
               </li>
               <li>
-                <b>Date: </b>From 23 December 224 to 03 January 2025
+                <b>Date: </b>From 20 January 2025 to 31 January 2025
               </li>
               <li>
                 <b>Training Fee: </b>
-                <i>Standard:</i> <s>80,000 RWF</s> 50,000 RWF (before 15th Dec),{" "}
-                <i>Students: </i>50,000 RWF
+                <i>Standard:</i> <s>80,000 RWF</s> 50,000 RWF (before 15th
+                January), <i>Students: </i>50,000 RWF
               </li>
               <li>
                 <b>Venue: </b>Gikondo, Kigali, Techinika Office.

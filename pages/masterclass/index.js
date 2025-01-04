@@ -45,8 +45,30 @@ export default function Masterclass() {
       when: "23 December 2024",
       position: 3,
       picture: "",
-      progress: "IN PROGRESS",
+      progress: "ENDED",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "WordPress for Beginners Masterclass: Cohort 2",
+      description:
+        "Learn all the basics you need to start building all kinds of professional websites without writing code, fast and easily.",
+      when: "20 January 2025",
+      position: 4,
+      picture: "",
+      progress: "UPCOMING",
       link: "wordpress-masterclass",
+    },
+    {
+      id: 5,
+      title: "Coding for Beginners Masterclass: Cohort 1 (3 months program)",
+      description:
+        "Learn all the basics you need to start building all kinds of professional websites with HTML, CSS and JavaScript.",
+      when: "20 January 2025",
+      position: 5,
+      picture: "",
+      progress: "UPCOMING",
+      link: "#",
     },
   ];
   return (

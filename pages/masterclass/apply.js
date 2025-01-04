@@ -268,7 +268,11 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "CHRISTMAS GIFT: Building websites with no code (WORDPRESS)",
+      title: "WordPress Masterclass: Cohort 2 (Starts on 20th January 2025)",
+    },
+    {
+      id: 2,
+      title: "Coding for Beginners: Cohort 1 (Starts on 20th January 2025)",
     },
   ];
 
