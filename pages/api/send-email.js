@@ -15,6 +15,7 @@ export default async function handler(req, res) {
     var mailOptions = {
       from: process.env.NEXT_PUBLIC_SEND_EMAIL,
       to: receiver,
+      cc: process.env.NEXT_PUBLIC_COORDINATOR,
       subject: subject,
       html: body,
     };
