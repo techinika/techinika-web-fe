@@ -6,6 +6,8 @@ import Link from "next/link";
 import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
 
 export default function Masterclass() {
+  const today = new Date();
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -14,63 +16,70 @@ export default function Masterclass() {
     description:
       "Techinika's Masterclass offers professional courses to enhance your digital skills in various domains.",
   };
-  const mclasses = [
+
+  const determineStatus = (startDate, endDate) => {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate) : null;
+
+    if (end && today > end) return "ENDED";
+    if (today >= start && (!end || today <= end)) return "IN PROGRESS";
+    if (today < start) return "UPCOMING";
+    return "UNKNOWN";
+  };
+
+  const masterclasses = [
     {
       id: 1,
-      title: "Figma Masterclass: Become a UI/UX Designer",
-      description:
-        "Learn all te basics you need to start designing beautiful and professional websites and software.",
-      when: "19 October 2024",
-      position: 1,
-      picture: "/figma.png",
-      progress: "ENDED",
-      link: "#",
+      title: "WordPress Masterclass",
+      sessions: [
+        { startDate: "2024-12-23", endDate: "2025-01-03" },
+        { startDate: "2025-01-20", endDate: "2025-01-31" },
+        { startDate: "2025-02-17", endDate: "2025-02-28" },
+        { startDate: "2025-03-17", endDate: "2025-03-28" },
+        { startDate: "2025-04-14", endDate: "2025-04-25" },
+        { startDate: "2025-05-19", endDate: "2025-05-30" },
+        { startDate: "2025-06-16", endDate: "2025-06-27" },
+        { startDate: "2025-07-14", endDate: "2025-07-25" },
+        { startDate: "2025-08-18", endDate: "2025-08-29" },
+        { startDate: "2025-09-16", endDate: "2025-09-26" },
+        { startDate: "2025-10-21", endDate: "2025-10-31" },
+        { startDate: "2025-11-17", endDate: "2025-11-28" },
+        { startDate: "2025-12-16", endDate: "2025-12-26" },
+      ],
     },
     {
       id: 2,
-      title: "Building 3D designs with SolidWorks",
-      description:
-        "Learn all the basics you need to start designing 3D designs for manufacturing with SolidWorks.",
-      when: "29 November 2024",
-      position: 2,
-      picture: "",
-      progress: "ENDED",
-      link: "#",
+      title: "SolidWorks Masterclass",
+      sessions: [
+        { startDate: "2025-02-17" },
+        { startDate: "2025-03-17" },
+        { startDate: "2025-04-14" },
+        { startDate: "2025-05-19" },
+        { startDate: "2025-06-16" },
+        { startDate: "2025-07-14" },
+        { startDate: "2025-08-18" },
+        { startDate: "2025-09-16" },
+        { startDate: "2025-10-21" },
+        { startDate: "2025-11-17" },
+        { startDate: "2025-12-16" },
+      ],
     },
     {
       id: 3,
-      title: "Mastering building websites fast and easy with WordPress",
-      description:
-        "Learn all the basics you need to start building all kinds of professional websites without writing code, fast and easily.",
-      when: "23 December 2024",
-      position: 3,
-      picture: "",
-      progress: "ENDED",
-      link: "#",
+      title: "Coding for Beginners",
+      sessions: [
+        { startDate: "2025-01-20", endDate: "2025-04-25" },
+        { startDate: "2025-05-12", endDate: "2025-08-08" },
+        { startDate: "2025-08-25", endDate: "2025-11-21" },
+      ],
     },
     {
       id: 4,
-      title: "WordPress for Beginners Masterclass: Cohort 2",
-      description:
-        "Learn all the basics you need to start building all kinds of professional websites without writing code, fast and easily.",
-      when: "20 January 2025",
-      position: 4,
-      picture: "",
-      progress: "UPCOMING",
-      link: "wordpress-masterclass",
-    },
-    {
-      id: 5,
-      title: "Coding for Beginners Masterclass: Cohort 1 (3 months program)",
-      description:
-        "Learn all the basics you need to start building all kinds of professional websites with HTML, CSS and JavaScript.",
-      when: "20 January 2025",
-      position: 5,
-      picture: "",
-      progress: "UPCOMING",
-      link: "#",
+      title: "UI/UX for Beginners with Figma",
+      sessions: [{ startDate: "2024-10-19", endDate: "2024-10-19" }],
     },
   ];
+
   return (
     <>
       <Head>
@@ -96,114 +105,90 @@ export default function Masterclass() {
         <div className="font-main">
           <Nav />
         </div>
-        <div className="bg-white font-main mx-auto mt-24">
-          <div className="bg-gray-50">
-            <HeadTitle
-              title={`MONTHLY MASTERCLASSES`}
-              tagline={
-                "Equipping you with skills that unlocks new opportunities"
-              }
-            />
-          </div>
-          <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
-            <br></br>
+        <div className="bg-white mt-24 mx-auto">
+          <div className="bg-white font-main mx-auto mt-24">
+            <div className="bg-gray-50">
+              <HeadTitle
+                title={`MONTHLY MASTERCLASSES`}
+                tagline={
+                  "Equipping you with skills that unlocks new opportunities"
+                }
+              />
+            </div>
+            <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
+              <br></br>
 
-            <h2 className="card-title">Description,</h2>
-            <p>{`Our monthly Masterclass Program is designed to empower individuals with practical, industry-relevant skills to unlock new opportunities, increase their income, and bring their ideas to life. Each session focuses on a specific skill or topic, offering hands-on training led by experienced professionals.`}</p>
-            <p>{`Whether you want to enhance your career, start a project, or build your own business, our masterclasses provide the tools, knowledge, and confidence you need to succeed. Join us and take the next step toward achieving your goals!`}</p>
+              <h2 className="card-title">Description,</h2>
+              <p>{`Our monthly Masterclass Program is designed to empower individuals with practical, industry-relevant skills to unlock new opportunities, increase their income, and bring their ideas to life. Each session focuses on a specific skill or topic, offering hands-on training led by experienced professionals.`}</p>
+              <p>{`Whether you want to enhance your career, start a project, or build your own business, our masterclasses provide the tools, knowledge, and confidence you need to succeed. Join us and take the next step toward achieving your goals!`}</p>
 
-            <br></br>
-            <h2 className="card-title">Masterclass Sessions,</h2>
-            <br></br>
-            {mclasses.length > 0 ? (
-              <div className="grid grid-cols-1 gap-6">
-                {[...mclasses]
-                  .sort((a, b) => {
-                    const statusOrder = {
-                      UPCOMING: 1,
-                      "IN PROGRESS": 2,
-                      ENDED: 3,
-                    };
-                    return statusOrder[a.progress] - statusOrder[b.progress];
-                  })
-                  .map((mclass) => (
-                    <div
-                      key={mclass.id}
-                      className="card bg-white shadow-md rounded-lg overflow-hidden border border-gray-200"
-                    >
-                      {/* Image Section */}
-                      <div className="image-container w-full">
-                        {mclass.picture ? (
-                          <img
-                            src={mclass.picture}
-                            alt={`${mclass.title} cover`}
-                            className="w-full h-64 object-cover"
-                          />
-                        ) : (
-                          <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500">
-                            No Image Available
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Content Section */}
-                      <div className="p-4 flex flex-col justify-between h-full">
-                        <div>
-                          <h3 className="text-lg font-bold text-mainBlue">
-                            {mclass.title}
-                          </h3>
-                          <p className="text-gray-600 mt-2">
-                            {mclass.description}
+              <br></br>
+              <h2 className="card-title">Masterclass Sessions,</h2>
+              <br></br>
+              {masterclasses.map((mclass) => (
+                <div key={mclass.id} className="mb-6">
+                  <h3 className="text-lg font-bold text-mainBlue">
+                    {mclass.title}
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                    {mclass.sessions.map((session, index) => {
+                      const status = determineStatus(
+                        session.startDate,
+                        session.endDate
+                      );
+                      return (
+                        <div
+                          key={index}
+                          className="card border border-gray-200 shadow-md p-4 rounded-lg"
+                        >
+                          <p className="text-sm text-gray-600">
+                            <strong>Start:</strong>{" "}
+                            {new Date(session.startDate).toDateString()}
                           </p>
-                          <p className="text-gray-500 mt-1 text-sm">
-                            <strong>When:</strong> {mclass.when}
-                          </p>
-                        </div>
-
-                        {/* Footer Section */}
-                        <div className="flex justify-between items-center mt-4">
+                          {session.endDate && (
+                            <p className="text-sm text-gray-600">
+                              <strong>End:</strong>{" "}
+                              {new Date(session.endDate).toDateString()}
+                            </p>
+                          )}
                           <span
-                            className={`status-badge px-3 py-1 rounded-full text-sm ${
-                              mclass.progress === "UPCOMING"
+                            className={`status-badge inline-block mt-2 px-3 py-1 text-sm rounded-full ${
+                              status === "UPCOMING"
                                 ? "bg-green-100 text-green-700"
-                                : mclass.progress === "IN PROGRESS"
+                                : status === "IN PROGRESS"
                                 ? "bg-yellow-100 text-yellow-700"
                                 : "bg-gray-100 text-gray-700"
                             }`}
                           >
-                            {mclass.progress}
+                            {status}
                           </span>
-                          <Link
-                            href={`/masterclass/${mclass.link}`}
-                            className="text-mainBlue underline text-sm"
-                          >
-                            View Details
-                          </Link>
                         </div>
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            ) : (
-              <p>{`No masterclass sessions yet!`}</p>
-            )}
-            <br></br>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+              <br></br>
 
-            <p className="italic font-bold text-mainBlue">
-              For more information and registration:
-            </p>
-            <br></br>
-            <p>
-              Contact us on email{" "}
-              <b>
-                <Link href={"mailto:info@techinika.com"} className="underline">
-                  info@techinika.com
-                </Link>
-              </b>{" "}
-              or send a text message or WhatsApp message on our phone number
-              +250780630465.
-            </p>
-            <br></br>
+              <p className="italic font-bold text-mainBlue">
+                For more information and registration:
+              </p>
+              <br></br>
+              <p>
+                Contact us on email{" "}
+                <b>
+                  <Link
+                    href={"mailto:info@techinika.com"}
+                    className="underline"
+                  >
+                    info@techinika.com
+                  </Link>
+                </b>{" "}
+                or send a text message or WhatsApp message on our phone number
+                +250780630465.
+              </p>
+              <br></br>
+            </div>
           </div>
           <Partners />
           <Footer />
