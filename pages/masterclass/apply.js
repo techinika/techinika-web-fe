@@ -344,14 +344,14 @@ export default function Training() {
 
   const trainingData = {
     trainingName: "Master WordPress: Build Websites Fast and Easy",
-    trainingDate: "23/12/2024 - 03/01/2025",
-    trainingTime: "08:00 AM - 01:00 PM",
+    trainingDate: "20/01/2025 - 31/01/2025",
+    trainingTime: "09:00 AM - 01:00 PM",
     trainingLocation: "Kigali, Gikondo, Techinika Office",
     paymentAmount: "80,000RWF",
     paymentDiscount: "50,000RWF",
     paymentMethod: "MoMo Pay - 791446",
     paymentReference: "WPMasterclass",
-    paymentDeadline: "20th December 2024",
+    paymentDeadline: "20th January 2024",
     contactEmail: "info@techinika.com",
     contactPhone: "+250791377446",
     companyName: "Techinika",
