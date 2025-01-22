@@ -40,14 +40,6 @@ export default function Story() {
       linkedin: "https://www.linkedin.com/in/robert-niyitanga/",
     },
     {
-      id: 4,
-      name: "Sam Mugisha",
-      position: "Marketing Lead",
-      picture:
-        "https://media.licdn.com/dms/image/v2/D4D03AQESKxYz7uhmBg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714065994567?e=1738800000&v=beta&t=QkgDEtt3jEb5_65GETi3wrcNXqW_t-NDtU_cMHMvSf0",
-      linkedin: "https://www.linkedin.com/in/sam-mugisha-42a351284/",
-    },
-    {
       id: 5,
       name: "Umbereye Carine",
       position: "Frontend SE",
