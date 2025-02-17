@@ -268,7 +268,8 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "WordPress Masterclass: Cohort 2 (Starts on 01st March 2025 - Weekends)",
+      title:
+        "WordPress Masterclass: Cohort 2 (Starts on 01st March 2025 - Weekends)",
     },
     {
       id: 2,
@@ -276,7 +277,8 @@ export default function Training() {
     },
     {
       id: 3,
-      title: "Extended Javascript for Beginners: Cohort 1 (Starts on 03rd March 2025)",
+      title:
+        "Extended Javascript for Beginners: Cohort 1 (Starts on 03rd March 2025)",
     },
   ];
 
@@ -617,20 +619,15 @@ export default function Training() {
                 <label className="text-mainBlue font-bold">
                   How much are you willing to pay for the Training?
                 </label>
-                <select
+                <input
+                  type="number"
+                  value={data?.willingToPay}
                   className="flex flex-wrap gap-5 items-center w-full rounded-lg"
                   onChange={(e) =>
                     setData({ ...data, willingToPay: e.target.value })
                   }
                   disabled={loading}
-                >
-                  <option value={"No"} disabled={loading}>
-                    Yes
-                  </option>
-                  <option value={"Yes"} disabled={loading}>
-                    No
-                  </option>
-                </select>
+                />
               </div>
               <div>
                 <label className="text-mainBlue font-bold">
