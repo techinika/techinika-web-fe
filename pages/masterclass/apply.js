@@ -268,7 +268,7 @@ export default function Training() {
   const services = [
     {
       id: 1,
-      title: "WordPress Masterclass: Cohort 2 (Starts on 01st March 2025)",
+      title: "WordPress Masterclass: Cohort 2 (Starts on 01st March 2025 - Weekends)",
     },
     {
       id: 2,
