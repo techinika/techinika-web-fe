@@ -615,7 +615,7 @@ export default function Training() {
               </div>
               <div>
                 <label className="text-mainBlue font-bold">
-                  Are you willing to pay 80,000 RWF for the Training
+                  How much are you willing to pay for the Training?
                 </label>
                 <select
                   className="flex flex-wrap gap-5 items-center w-full rounded-lg"
