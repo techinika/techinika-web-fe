@@ -3,7 +3,6 @@ import Nav from "../../components/HeadFoot/Nav";
 import Footer from "../../components/HeadFoot/Footer";
 import Partners from "../../components/Partners";
 import { useEffect, useState } from "react";
-// import { google } from "googleapis";
 
 function generateEmailHTML(data) {
   return `
@@ -223,11 +222,6 @@ function generateTrainingEmailHTML(data, name) {
   `;
 }
 
-// export async function getServerSideProps({ query }) {
-//   const auth = await google.auth.getClient({scopes: []});
-
-// }
-
 export default function Training() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -349,16 +343,16 @@ export default function Training() {
   ];
 
   const trainingData = {
-    trainingName: "Master WordPress: Build Websites Fast and Easy",
-    trainingDate: "20/01/2025 - 31/01/2025",
+    trainingName: "Build Websites with WP and Coding",
+    trainingDate: "Starting in March",
     trainingTime: "09:00 AM - 01:00 PM",
     trainingLocation: "Kigali, Gikondo, Techinika Office",
-    paymentAmount: "80,000RWF",
-    paymentDiscount: "50,000RWF",
+    paymentAmount: "30,000RWF",
+    paymentDiscount: "",
     paymentMethod: "MoMo Pay - 791446",
-    paymentReference: "WPMasterclass",
-    paymentDeadline: "20th January 2024",
-    contactEmail: "info@techinika.com",
+    paymentReference: "Masterclass",
+    paymentDeadline: "25th February 2025",
+    contactEmail: "niguterwanda@gmail.com",
     contactPhone: "+250791377446",
     companyName: "Techinika",
     website: "www.techinika.co.rw",

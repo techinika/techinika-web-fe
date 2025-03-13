@@ -140,7 +140,7 @@ export default function Story() {
             <br></br>
             <h2 className="card-title">Meet our team,</h2>
             <br />
-            {team.length > 0 ? (
+            {/* {team.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {team.map((member) => (
                   <div
@@ -148,7 +148,7 @@ export default function Story() {
                     className="card bg-white shadow-md rounded-lg overflow-hidden border border-gray-200"
                   >
                     {/* Image Section */}
-                    <div className="image-container w-full rounded-lg">
+                    {/* <div className="image-container w-full rounded-lg">
                       {member.picture ? (
                         <img
                           src={member.picture}
@@ -160,10 +160,10 @@ export default function Story() {
                           No Image Available
                         </div>
                       )}
-                    </div>
+                    </div> */}
 
                     {/* Content Section */}
-                    <div className="p-2 text-center">
+                    {/* <div className="p-2 text-center">
                       <h3 className="text-lg font-bold text-mainBlue">
                         {member.name}
                       </h3>
@@ -188,10 +188,10 @@ export default function Story() {
                     </div>
                   </div>
                 ))}
-              </div>
-            ) : (
+              </div> */}
+            {/* ) : (
               <p>{`No team members to display yet!`}</p>
-            )}
+            )} */}
             <br />
 
             <p>{`We work with the best to ensure we deliver the best experience to people who trust us. And together, we are shaping the future of technology in Rwanda and abroad.`}</p>
