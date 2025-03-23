@@ -50,11 +50,11 @@ const Nav = () => {
             Our Story
           </Link>
           <Link
-            href="https://forms.gle/wNBe86jYxMusZRFr8"
+            href="https://calendly.com/techinika"
             className="btn-main"
             target="_blank"
           >
-            JOIN THE WAITLIST
+            REQUEST DEMO
           </Link>
         </div>
       </nav>
@@ -130,12 +130,12 @@ const Nav = () => {
                 Our Story
               </Link>
               <Link
-                href="https://forms.gle/wNBe86jYxMusZRFr8"
+                href="https://calendly.com/techinika"
                 className="btn-main text-xl"
                 target="_blank"
                 onClick={() => setIsOpen(false)}
               >
-                JOIN THE WAITLIST
+                REQUEST DEMO
               </Link>
             </div>
           </div>
