@@ -57,7 +57,6 @@ export default function Home() {
             }
             speaker={"Stewart Brand, Writer"}
           />
-          {/* <Services /> */}
           <Partners />
           <JoinUs />
           <Footer />
