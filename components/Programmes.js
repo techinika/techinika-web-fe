@@ -9,13 +9,22 @@ export const Programmes = () => {
           <p className="text-mainBlue font-bold text-center">
             Our Products & Services
           </p>
-          <div className="grid lg:grid-cols-4 md:grid-cols-3 justify-center items-stretch mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-3 xs:grid-cols-3">
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 items-start justify-center mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-3 xs:grid-cols-3">
             <Link href="https://apprena.netlify.app" target="_blank">
               <div className="card">
                 <Image src="/apprena.png" width={200} height={40} />
                 <p>
                   <b>-Pending launch-</b> Operating system for education
-                  institutions + a source of rich education.
+                  institutions and a source of rich education.
+                </p>
+              </div>
+            </Link>
+            <Link href="https://techinika.com" target="_blank">
+              <div className="card">
+                <Image src="/original.png" width={200} height={40} />
+                <p>
+                  <b>-Original-</b> Publication platform with a purpose of
+                  helping people do it themselves.
                 </p>
               </div>
             </Link>
@@ -23,8 +32,7 @@ export const Programmes = () => {
               <div className="card">
                 <Image src="/masterclass.png" width={200} height={40} />
                 <p>
-                  Monthly training with technical skills in designing,
-                  programming and data.
+                 <b>-For B2C & B2B-</b> A highly customized training program to help you stay competitive on a job market.
                 </p>
               </div>
             </Link>
@@ -32,8 +40,7 @@ export const Programmes = () => {
               <div className="card">
                 <Image src="/community.png" width={200} height={40} />
                 <p>
-                  We are building the most active and useful tech community in
-                  Rwanda.
+                 <b>-Non-Profit-</b> We are building a community to ignite talents to learn and support them as they build.
                 </p>
               </div>
             </Link>
@@ -41,7 +48,7 @@ export const Programmes = () => {
               <div className="card">
                 <Image src="/consultancy.png" width={200} height={40} />
                 <p>
-                  We help your business determine right tools for the job, or
+                  <b>-For Businesses-</b> We help your business determine right tools for the job, or
                   build them for you.
                 </p>
               </div>
