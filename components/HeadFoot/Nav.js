@@ -44,7 +44,7 @@ const Nav = () => {
         <div className="hidden md:flex md:items-center md:gap-4 flex-wrap items-center gap-4">
           <Link href="/">Home</Link>
           <Link href="/masterclass">Masterclass</Link>
-          <Link href="/consultancy">Services</Link>
+          <Link href="/consultancy">Consultation</Link>
           <Link href="/community">Community</Link>
           <Link href="/story" className="font-bold">
             Our Story
@@ -54,7 +54,7 @@ const Nav = () => {
             className="btn-main"
             target="_blank"
           >
-            REQUEST DEMO
+            REQUEST APPRENA DEMO
           </Link>
         </div>
       </nav>
@@ -113,7 +113,7 @@ const Nav = () => {
                 className="text-xl"
                 onClick={() => setIsOpen(false)}
               >
-                Services
+                Consultation
               </Link>
               <Link
                 href="/community"
@@ -135,7 +135,7 @@ const Nav = () => {
                 target="_blank"
                 onClick={() => setIsOpen(false)}
               >
-                REQUEST DEMO
+                REQUEST APPRENA DEMO
               </Link>
             </div>
           </div>

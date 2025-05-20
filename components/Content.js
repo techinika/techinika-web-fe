@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 const Content = (props) => {
   return (
     <div className="mx-auto relative">
-      <main className="m-auto w-10/12 h-[70vh] items-center text-center justify-center flex flex-col gap-3">
+      <main className="m-auto w-10/12 h-[70vh] items-center text-center justify-center flex flex-col gap-8">
         <div className="text-center">
           <p className="text-5xl font-bold text-mainBlue">
             Digital Transformation Partner
@@ -16,18 +16,21 @@ const Content = (props) => {
         </p>
         <div className="btn-group">
           <Link href={"/masterclass"}>
-            <button className="btn-yellow">Learn More</button>
+            <button className="btn-yellow">STAY COMPETITIVE</button>
           </Link>
           <Link href="/consultancy">
             <button className="btn-white border border-mainBlue">
-              Request Service
+              GET FREE CONSULTATION
             </button>
           </Link>
         </div>
 
         <div className="absolute bottom-0 p-4">
           <div className="p-4">
-            <FaArrowDown className="animate-bounce text-mainBlue" size={50} />
+            <FaArrowDown
+              className="animate-bounce text-mainBlue hidden md:block"
+              size={50}
+            />
           </div>
         </div>
       </main>

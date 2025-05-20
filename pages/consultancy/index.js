@@ -146,7 +146,7 @@ export default function Consultancy() {
             <br></br>
             <div className="flex items-center justify-center">
               <Link href="/request" className="btn-main">
-                REQUEST SERVICE
+                GET FREE CONSULTATION
               </Link>
             </div>
           </div>

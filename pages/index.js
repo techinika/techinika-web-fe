@@ -47,7 +47,7 @@ export default function Home() {
         <div className="font-main">
           <Nav />
         </div>
-        <div className="bg-white font-main mx-auto">
+        <div className="bg-white font-main mx-auto mt-[19vh] md:mt-[10vh]">
           {/* <Carousels slides={slides} /> */}
           <Content />
           <Programmes />

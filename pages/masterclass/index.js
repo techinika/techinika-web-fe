@@ -39,9 +39,7 @@ export default function Masterclass() {
     {
       id: 2,
       title: "SolidWorks Masterclass",
-      sessions: [
-        { startDate: "2025-02-17", endDate: "2025-03-17" },
-      ],
+      sessions: [{ startDate: "2025-02-17", endDate: "2025-03-17" }],
     },
     {
       id: 3,
@@ -84,7 +82,7 @@ export default function Masterclass() {
           <div className="bg-white font-main mx-auto mt-24">
             <div className="bg-gray-50">
               <HeadTitle
-                title={`MONTHLY MASTERCLASSES`}
+                title={`MASTERCLASS PROGRAM`}
                 tagline={
                   "Equipping you with skills that unlocks new opportunities"
                 }
@@ -94,7 +92,8 @@ export default function Masterclass() {
               <br></br>
 
               <h2 className="card-title">Description,</h2>
-              <p>{`Our monthly Masterclass Program is designed to empower individuals with practical, industry-relevant skills to unlock new opportunities, increase their income, and bring their ideas to life. Each session focuses on a specific skill or topic, offering hands-on training led by experienced professionals.`}</p>
+              <p>{`Our Masterclass Program is designed to empower individuals and teams with practical, industry-relevant skills to unlock new opportunities, increase their income, and bring their ideas to life. Each session focuses on a specific skill or topic, offering hands-on training led by experienced professionals.`}</p>
+              <br></br>
               <p>{`Whether you want to enhance your career, start a project, or build your own business, our masterclasses provide the tools, knowledge, and confidence you need to succeed. Join us and take the next step toward achieving your goals!`}</p>
 
               <br></br>

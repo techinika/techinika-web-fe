@@ -10,7 +10,7 @@ export const Programmes = () => {
             Our Products & Services
           </p>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 items-start justify-center mx-auto mt-8 md:w-11/12 gap-4 sm:grid-cols-3 xs:grid-cols-3">
-            <Link href="https://apprena.netlify.app" target="_blank">
+            <Link href="https://apprena.app" target="_blank">
               <div className="card">
                 <Image src="/apprena.png" width={200} height={40} />
                 <p>
