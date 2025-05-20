@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Nav from "../../components/HeadFoot/Nav";
-import Footer from "../../components/HeadFoot/Footer";
+import Nav from "../HeadFoot/Nav";
+import Footer from "../HeadFoot/Footer";
 import Partners from "../../components/Partners";
 import { useEffect, useState } from "react";
 

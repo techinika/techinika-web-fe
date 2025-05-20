@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Nav from "../../components/HeadFoot/Nav";
-import Footer from "../../components/HeadFoot/Footer";
+import Nav from "../HeadFoot/Nav";
+import Footer from "../HeadFoot/Footer";
 import Partners from "../../components/Partners";
 import Link from "next/link";
-import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
+import { HeadTitle } from "../HeadFoot/HeadTitle";
 
 export default function Community() {
   const structuredData = {
