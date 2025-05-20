@@ -1,8 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+@theme {
+  --background-color-main-blue: #17327b;
+  --background-color-main-yellow: #fbdb5a;
+  --background-color-bg: aliceblue;
+
+  --background-image-cause-bg: url('/dots-bg.jpg');
+
+  --font-main: Space Grotesk, Jua, sans-serif;
+
+  --color-main: #269df8;
+  --color-main-blue: #2844cc;
+  --color-main-bg: #f8f8f8;
+
+  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 * {
   @apply font-main box-border leading-loose;
@@ -13,31 +58,31 @@
 }
 
 .btn-yellow {
-  @apply px-7 py-2 bg-mainYellow rounded text-mainBlue hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
+  @apply px-7 py-2 bg-main-yellow rounded-sm text-main-blue hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
 }
 
 .btn-white {
-  @apply px-7 py-2 bg-white text-mainBlue rounded hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
+  @apply px-7 py-2 bg-white text-main-blue rounded-sm hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
 }
 
 .btn-main {
-  @apply px-2 py-2 bg-mainBlue text-white rounded hover:bg-main cursor-pointer hover:scale-110 active:scale-90;
+  @apply px-2 py-2 bg-main-blue text-white rounded-sm hover:bg-main cursor-pointer hover:scale-110 active:scale-90;
 }
 
 .btn-disabled {
-  @apply px-2 py-2 bg-gray-500 text-white rounded;
+  @apply px-2 py-2 bg-gray-500 text-white rounded-sm;
 }
 
 .btn-card {
-  @apply bg-mainBlue rounded text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
+  @apply bg-main-blue rounded-sm text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
 }
 
 .card {
-  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-mainBlue flex flex-col items-center justify-center text-center cursor-pointer;
+  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-main-blue flex flex-col items-center justify-center text-center cursor-pointer;
 }
 
 .card-title {
-  @apply text-mainBlue font-bold text-2xl;
+  @apply text-main-blue font-bold text-2xl;
 }
 
 .card-body {
@@ -45,7 +90,7 @@
 }
 
 .big-title {
-  @apply text-mainBlue font-semibold text-center text-xl py-5;
+  @apply text-main-blue font-semibold text-center text-xl py-5;
 }
 
 .h-card {
@@ -73,7 +118,7 @@
 }
 
 .input {
-  @apply rounded-sm w-full bg-gray-50 outline border-none outline-none;
+  @apply rounded-xs w-full bg-gray-50 outline-solid border-none outline-hidden;
 }
 
 .form {
@@ -97,11 +142,11 @@
 }
 
 .icon {
-  @apply p-3 rounded-md bg-mainBlue text-white;
+  @apply p-3 rounded-md bg-main-blue text-white;
 }
 
 .icon:hover {
-  @apply bg-mainYellow text-mainBlue;
+  @apply bg-main-yellow text-main-blue;
 }
 
 .text {
@@ -117,7 +162,7 @@
 }
 
 .page-header {
-  @apply bg-mainBlue text-white w-full h-1/2 p-10 py-24 text-center flex justify-center items-center mt-5;
+  @apply bg-main-blue text-white w-full h-1/2 p-10 py-24 text-center flex justify-center items-center mt-5;
   min-height: 50vh;
 }
 
@@ -134,11 +179,11 @@
 }
 
 .text-button {
-  @apply text-mainBlue underline;
+  @apply text-main-blue underline;
 }
 
 .team-card {
-  @apply flex-1 bg-bg border-2 border-mainBlue border-dotted rounded;
+  @apply flex-1 bg-bg border-2 border-main-blue border-dotted rounded-sm;
 }
 
 .team-image-div {
@@ -146,7 +191,7 @@
 }
 
 .team-image {
-  @apply object-cover rounded;
+  @apply object-cover rounded-sm;
 }
 
 .image-placeholder {
@@ -154,7 +199,7 @@
 }
 
 .team-name {
-  @apply font-bold text-xl text-mainBlue;
+  @apply font-bold text-xl text-main-blue;
 }
 
 .team-row {
@@ -181,7 +226,7 @@ ul {
 }
 
 .group {
-  @apply py-10 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)];
+  @apply py-10 overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-200px),transparent_100%)];
 }
 
 .group:hover .animate-infinite-scroll {

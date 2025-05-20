@@ -349,12 +349,12 @@ export default function Request() {
                 Fill This Form, We will contact you as soon as possible:
               </h2>
               {feedback && (
-                <p className="text-center bg-green-300 rounded-md p-4 text-mainBlue">
+                <p className="text-center bg-green-300 rounded-md p-4 text-main-blue">
                   {feedback}
                 </p>
               )}
               <div>
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Your preferred contact method:
                 </label>
                 <select
@@ -377,7 +377,7 @@ export default function Request() {
               </div>
               {contactMethod && (
                 <div className="my-3">
-                  <label className="text-mainBlue font-bold">
+                  <label className="text-main-blue font-bold">
                     {`${contactMethod}:`}
                   </label>
                   <div className="flex flex-wrap gap-5 items-center">
@@ -401,7 +401,7 @@ export default function Request() {
                 </div>
               )}
               <div className="my-3">
-                <label className="text-mainBlue font-bold">You Name:</label>
+                <label className="text-main-blue font-bold">You Name:</label>
                 <div className="flex flex-wrap gap-5 items-center">
                   <input
                     disabled={loading}
@@ -414,7 +414,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Choose a Service you are interested in:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -452,7 +452,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Tell us what you need in details:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -466,7 +466,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   If our conversation is successful, what's your goal:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -504,7 +504,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   If you chose other goal, what is it?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -520,7 +520,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   How did you Learn about us:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -558,7 +558,7 @@ export default function Request() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Anything else we need to know?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">

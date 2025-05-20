@@ -1,12 +1,12 @@
 "use client";
 
-import Nav from "./HeadFoot/Nav";
-import Content from "./Content";
-import { Programmes } from "./Programmes";
-import { JoinUs } from "./Join";
-import Footer from "./HeadFoot/Footer";
-import { Quote } from "./HeadFoot/Quote";
-import Partners from "./Partners";
+import Nav from "../HeadFoot/Nav";
+import Content from "../Parts/Content";
+import { Programmes } from "../Parts/Programmes";
+import { JoinUs } from "../Parts/Join";
+import Footer from "../HeadFoot/Footer";
+import { Quote } from "../HeadFoot/Quote";
+import Partners from "../Parts/Partners";
 
 export default function MainPage() {
   return (

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -6,7 +8,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div>
       <nav className="flex fixed items-center justify-between shadow-md w-full top-0 z-20 bg-white p-5 md:px-8">
         <div className="flex items-center">
           <h1 className="font-bold">
@@ -23,7 +25,7 @@ const Nav = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="focus:outline-none"
+            className="focus:outline-hidden"
           >
             <svg
               className="w-6 h-6"
@@ -64,7 +66,7 @@ const Nav = () => {
           <div className="absolute top-5 right-5">
             <button
               onClick={() => setIsOpen(false)}
-              className="focus:outline-none text-white"
+              className="focus:outline-hidden text-white"
             >
               <svg
                 className="w-8 h-8"
@@ -82,7 +84,7 @@ const Nav = () => {
               </svg>
             </button>
           </div>
-          <div className="bg-white text-mainBlue p-5 flex items-center justify-start flex-col">
+          <div className="bg-white text-main-blue p-5 flex items-center justify-start flex-col">
             <h1 className="font-bold mb-8">
               <Link href="/">
                 <Image
@@ -141,7 +143,7 @@ const Nav = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

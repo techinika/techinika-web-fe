@@ -61,7 +61,7 @@ export default function Story() {
             <br></br>
             <div className="flex items-center justify-between">
               <Link href="/masterclass/apply">APPLY NOW</Link>
-              <p className="text-mainBlue font-bold border-2 p-2">UPCOMING</p>
+              <p className="text-main-blue font-bold border-2 p-2">UPCOMING</p>
             </div>
             <br></br>
             <h2 className="card-title">Key Information,</h2>
@@ -100,7 +100,7 @@ export default function Story() {
             <br></br>
             <h2 className="card-title">What can participants expect?</h2>
             <p>{`By participating in this masterclass, you can expect to learn:`}</p>
-            <div className="p-4 text-center my-3 text-mainBlue text-lg font-bold border rounded-lg border-mainBlue">
+            <div className="p-4 text-center my-3 text-main-blue text-lg font-bold border rounded-lg border-main-blue">
               <h2 className="italic">
                 {`We will teach you how to build all kinds of websites, in a short time, and host them.`}
               </h2>
@@ -167,7 +167,7 @@ export default function Story() {
 
             <br></br>
 
-            <p className="italic font-bold text-mainBlue">
+            <p className="italic font-bold text-main-blue">
               For more information and registration:
             </p>
             <br></br>

@@ -56,11 +56,11 @@ export default function ProjectPage({ project }) {
             <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto">
               <Link
                 href="/consultancy"
-                className="text-mainBlue hover:underline text-lg mb-4 inline-block"
+                className="text-main-blue hover:underline text-lg mb-4 inline-block"
               >
                 &larr; Back
               </Link>
-              <h1 className="text-3xl font-bold text-mainBlue mb-4">
+              <h1 className="text-3xl font-bold text-main-blue mb-4">
                 {project.title}
               </h1>
               <h2 className="text-xl text-gray-700 mb-2">
@@ -73,7 +73,7 @@ export default function ProjectPage({ project }) {
               />
               <p className="text-gray-600 mb-6">{project.description}</p>
 
-              <h3 className="text-2xl font-semibold text-mainBlue mb-3">
+              <h3 className="text-2xl font-semibold text-main-blue mb-3">
                 Technologies Used
               </h3>
               <ul className="list-disc list-inside text-gray-700">

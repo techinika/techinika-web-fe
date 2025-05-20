@@ -82,7 +82,7 @@ export default function Community() {
                   key={index+1}
                   className="bg-white border border-gray-200 shadow-md rounded-lg p-4"
                 >
-                  <h3 className="text-mainBlue font-bold text-lg">
+                  <h3 className="text-main-blue font-bold text-lg">
                     {activity}
                   </h3>
                 </div>
@@ -103,7 +103,7 @@ export default function Community() {
             </div>
             <br></br>
 
-            <p className="italic font-bold text-mainBlue">
+            <p className="italic font-bold text-main-blue">
               Ready to be part of our tech revolution?
             </p>
             <br></br>

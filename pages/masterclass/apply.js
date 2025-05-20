@@ -447,7 +447,7 @@ export default function Training() {
         <div className="bg-white font-main mx-auto mt-24">
           <div className="bg-gray-50">
             <div className="py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
-              <h1 className="text-mainBlue font-bold text-xl">
+              <h1 className="text-main-blue font-bold text-xl">
                 Apply for the WordPress Masterclass
               </h1>
               <p>{`We equip you with skills that unlock new opportunities for your career, and boosts your value on the market. By participating, you become part of Techinika Insiders, and get access to internal opportunities and networks.`}</p>
@@ -459,12 +459,12 @@ export default function Training() {
                 Apply using this form, We will contact you as soon as possible:
               </h2>
               {feedback && (
-                <p className="text-center bg-green-300 rounded-md p-4 text-mainBlue">
+                <p className="text-center bg-green-300 rounded-md p-4 text-main-blue">
                   {feedback}
                 </p>
               )}
               <div className="my-3">
-                <label className="text-mainBlue font-bold">Your Name</label>
+                <label className="text-main-blue font-bold">Your Name</label>
                 <div className="flex flex-wrap gap-5 items-center">
                   <input
                     type="text"
@@ -479,7 +479,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">Your Email</label>
+                <label className="text-main-blue font-bold">Your Email</label>
                 <div className="flex flex-wrap gap-5 items-center">
                   <input
                     type="text"
@@ -494,7 +494,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   You Phone Number:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -511,7 +511,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Choose a Training you are interested in:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -545,7 +545,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   If you chose Other, which training do you need?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -562,7 +562,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   What best defines you?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -596,7 +596,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Tell us what you need in details:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -610,7 +610,7 @@ export default function Training() {
                 </div>
               </div>
               <div>
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   How much are you willing to pay for the Training?
                 </label>
                 <input
@@ -624,7 +624,7 @@ export default function Training() {
                 />
               </div>
               <div>
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   When do you want to start?
                 </label>
                 <input
@@ -637,7 +637,7 @@ export default function Training() {
                 />
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   How did you Learn about us:
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -675,7 +675,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Who referred you?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">
@@ -694,7 +694,7 @@ export default function Training() {
                 </div>
               </div>
               <div className="my-3">
-                <label className="text-mainBlue font-bold">
+                <label className="text-main-blue font-bold">
                   Anything else we need to know?
                 </label>
                 <div className="flex flex-wrap gap-5 items-center">

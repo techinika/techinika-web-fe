@@ -1,6 +1,14 @@
+"use client";
+
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
-export const Quote = ({quote, speaker}) => {
+export const Quote = ({
+  quote,
+  speaker,
+}: {
+  quote: string;
+  speaker: string;
+}) => {
   return (
     <div className="flex justify-center w-full items-center py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
       <FaQuoteLeft className="text-3xl"></FaQuoteLeft>

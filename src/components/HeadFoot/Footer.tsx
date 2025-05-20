@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Socials } from "./Socials";
 
@@ -8,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="logo">
-        <div className="bg-mainBlue rounded-full w-50">
+        <div className="bg-main-blue rounded-full w-50">
           <Image
             src="/techinika-logo.png"
             width={200}

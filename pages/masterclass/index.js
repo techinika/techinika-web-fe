@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "../../src/components/HeadFoot/Nav";
 import Footer from "../../src/components/HeadFoot/Footer";
-import Partners from "../../src/components/Partners";
+import Partners from "../../src/components/Parts/Partners";
 import Link from "next/link";
 import { HeadTitle } from "../../src/components/HeadFoot/HeadTitle";
 
@@ -101,7 +101,7 @@ export default function Masterclass() {
               <br></br>
               {masterclasses.map((mclass) => (
                 <div key={mclass.id} className="mb-6">
-                  <h3 className="text-lg font-bold text-mainBlue">
+                  <h3 className="text-lg font-bold text-main-blue">
                     {mclass.title}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
@@ -144,7 +144,7 @@ export default function Masterclass() {
               ))}
               <br></br>
 
-              <p className="italic font-bold text-mainBlue">
+              <p className="italic font-bold text-main-blue">
                 For more information and registration:
               </p>
               <br></br>

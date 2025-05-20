@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "../../src/components/HeadFoot/Nav";
 import Footer from "../../src/components/HeadFoot/Footer";
-import Partners from "../../src/components/Partners";
+import Partners from "../../src/components/Parts/Partners";
 import Link from "next/link";
 import { HeadTitle } from "../../src/components/HeadFoot/HeadTitle";
 
@@ -112,7 +112,7 @@ export default function Consultancy() {
                       {/* Content Section */}
                       <div className="p-4 flex flex-col justify-between h-full">
                         <div>
-                          <h3 className="text-lg font-bold text-mainBlue">
+                          <h3 className="text-lg font-bold text-main-blue">
                             {project.title}
                           </h3>
                           <p className="text-gray-600 mt-2">
@@ -129,7 +129,7 @@ export default function Consultancy() {
             )}
             <br></br>
 
-            <p className="italic font-bold text-mainBlue">
+            <p className="italic font-bold text-main-blue">
               Ready to transform your business?
             </p>
             <br></br>

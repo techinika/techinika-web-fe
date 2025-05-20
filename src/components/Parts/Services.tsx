@@ -1,14 +1,13 @@
+"use client";
+
 const Services = () => {
   return (
     <div className="bg-gray-100 text-justify py-10">
-      <h2 className="font-bold text-md p-5 text-center text-mainBlue text-4xl">
+      <h2 className="font-bold text-md p-5 text-center text-main-blue text-4xl">
         This is How we Help
       </h2>
       <section className="md:w-10/12 text-center mx-auto grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 bg-gray-100">
         <div className="items-center  flex flex-col p-10">
-          {/* <div className="h-30 border border-gray-100">
-            <img src="/consulting.png" className="w-full object-cover" />
-          </div> */}
           <div className="flex flex-col justify-center items-center">
             <h1 className="big-title">Organizations!</h1>
             <p>
@@ -21,9 +20,6 @@ const Services = () => {
           </div>
         </div>
         <div className="items-center  flex flex-col p-10">
-          {/* <div className="h-30 border border-gray-100">
-            <img src="/achools.png" className="w-full object-cover" />
-          </div> */}
           <div className="flex flex-col justify-center items-center">
             <h1 className="big-title">Schools!</h1>
             <p>
@@ -36,9 +32,6 @@ const Services = () => {
           </div>
         </div>
         <div className="items-center  flex flex-col p-10">
-          {/* <div className="h-30 border border-gray-100">
-            <img src="/individuals.png" className=" w-full object-cover border border-gray-100" />
-          </div> */}
           <div className="flex flex-col justify-center items-center">
             <h1 className="big-title">Individuals!</h1>
             <p>

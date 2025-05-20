@@ -1,12 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { FaArrowDown } from "react-icons/fa";
 
-const Content = (props) => {
+const Content = () => {
   return (
     <div className="mx-auto relative">
       <main className="m-auto w-10/12 h-[70vh] items-center text-center justify-center flex flex-col gap-8">
         <div className="text-center">
-          <p className="text-5xl font-bold text-mainBlue">
+          <p className="text-5xl font-bold text-main-blue">
             Digital Transformation Partner
           </p>
         </div>
@@ -19,7 +21,7 @@ const Content = (props) => {
             <button className="btn-yellow">STAY COMPETITIVE</button>
           </Link>
           <Link href="/consultancy">
-            <button className="btn-white border border-mainBlue">
+            <button className="btn-white border border-main-blue">
               GET FREE CONSULTATION
             </button>
           </Link>
@@ -28,7 +30,7 @@ const Content = (props) => {
         <div className="absolute bottom-0 p-4">
           <div className="p-4">
             <FaArrowDown
-              className="animate-bounce text-mainBlue hidden md:block"
+              className="animate-bounce text-main-blue hidden md:block"
               size={50}
             />
           </div>

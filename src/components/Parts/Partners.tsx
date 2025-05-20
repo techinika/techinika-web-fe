@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 function Partners() {
@@ -78,7 +80,7 @@ function Partners() {
 
   return (
     <div className="md:w-[60%] mx-auto py-10">
-      <h2 className="font-bold text-md p-5 text-center text-mainBlue text-4xl">
+      <h2 className="font-bold text-md p-5 text-center text-main-blue text-4xl">
         Brands we work with
       </h2>
       <div className="relative overflow-hidden group">

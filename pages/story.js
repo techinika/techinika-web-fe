@@ -129,7 +129,7 @@ export default function Story() {
             <h2 className="card-title">The Beginning,</h2>
             <p>{`Since the beginning of our quest in 2020, our core belief is that everyone deserves access to modern education that unlocks new opportunities for them. We started with Nigute (How) as our name, to help people understand how things work, and how they can do it themselves.`}</p>
             <p>{`We started with Rwandans in mind, hoping to help every Rwandan play their role in building a knowledge based economy; however, it has become more evident that the problem is not only in Rwanda, and we can do more than just providing education. We can unlock new opportunities for them, and help them unveil hidden potentials.`}</p>
-            <div className="p-4 text-center my-3 text-mainBlue text-2xl font-bold border rounded-lg border-mainBlue">
+            <div className="p-4 text-center my-3 text-main-blue text-2xl font-bold border rounded-lg border-main-blue">
               <h2 className="italic">
                 {`Unlock new opportunities and potentials with us.`}
               </h2>
@@ -164,7 +164,7 @@ export default function Story() {
 
                     {/* Content Section */}
                     {/* <div className="p-2 text-center">
-                      <h3 className="text-lg font-bold text-mainBlue">
+                      <h3 className="text-lg font-bold text-main-blue">
                         {member.name}
                       </h3>
                       <p className="text-gray-600 text-xs">{member.position}</p>
@@ -207,7 +207,7 @@ export default function Story() {
               and they help us by sharing our story in the media and in other
               publications.
             </p>
-            <p className="italic font-bold text-mainBlue">
+            <p className="italic font-bold text-main-blue">
               Here are some of them:
             </p>
             <ul className="list list-decimal">
@@ -215,7 +215,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/pulse/hanga-weekly-roundup-ep-25-hanga-pitchfest-3jxke/"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   Hanga Weekly Roundup EP 25: Features Techinika
                 </a>
@@ -224,7 +224,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://meamarkets.digital/winners/techinika-limited/"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   Techinika Limited (2024 Winner: African Excellence Awards)
                 </a>
@@ -233,7 +233,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://www.wearetech.africa/en/fils-uk/tech-stars/rwanda-cishahayo-songa-achille-democrtizes-digital-skills-through-techinika"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   Rwanda: Cishahayo Songa Achille Democrtizes Digital Skills
                   Through Techinika
@@ -243,7 +243,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://www.ktpress.rw/2023/06/edtech-partners-show-need-for-accelerated-blended-learning-models/"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   EDTech Partners Show Need for Accelerated Blended Learning
                   Models (Techinika Featured)
@@ -253,7 +253,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://youtu.be/9Kpaohzu_-I"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   From being an MTN agent to becoming a DG of an EdTech company
                   #Technika | Songa Achille's journey
@@ -263,7 +263,7 @@ export default function Story() {
                 <a
                   target="_blank"
                   href="https://www.225tech.info/le-rwandais-cishahayo-songa-achille-fournit-aux-particuliers-et-aux-entreprises-des-competences-numeriques-modernes/"
-                  className="text-mainBlue hover:text-main underline"
+                  className="text-main-blue hover:text-main underline"
                 >
                   Le Rwandais Cishahayo Songa Achille fournit aux particuliers
                   et aux entreprises des compétences numériques modernes
