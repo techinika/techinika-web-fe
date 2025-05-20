@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Nav from "../../components/HeadFoot/Nav";
-import Footer from "../../components/HeadFoot/Footer";
-import Partners from "../../components/Partners";
+import Nav from "../../src/components/HeadFoot/Nav";
+import Footer from "../../src/components/HeadFoot/Footer";
+import Partners from "../../src/components/Partners";
 import Link from "next/link";
-import { HeadTitle } from "../../components/HeadFoot/HeadTitle";
+import { HeadTitle } from "../../src/components/HeadFoot/HeadTitle";
 
 export default function Consultancy() {
   const structuredData = {
