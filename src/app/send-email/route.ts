@@ -1,10 +1,18 @@
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export default async function handler(req: any, res: any) {
-  if (req.method === "POST") {
-    const { subject, body, receiver } = req.body;
+export async function POST(req: NextRequest) {
+  try {
+    const { subject, body, receiver } = await req.json();
 
-    let transporter = nodemailer.createTransport({
+    if (!subject || !body || !receiver) {
+      return NextResponse.json(
+        { error: "Missing required fields: subject, body, or receiver" },
+        { status: 400 }
+      );
+    }
+
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: process.env.NEXT_PUBLIC_SEND_EMAIL,
@@ -12,7 +20,7 @@ export default async function handler(req: any, res: any) {
       },
     });
 
-    var mailOptions = {
+    const mailOptions = {
       from: process.env.NEXT_PUBLIC_SEND_EMAIL,
       to: receiver,
       cc: process.env.NEXT_PUBLIC_COORDINATOR,
@@ -20,14 +28,14 @@ export default async function handler(req: any, res: any) {
       html: body,
     };
 
-    try {
-      let info = await transporter.sendMail(mailOptions);
-      res.status(200).json({ message: "Email sent", info });
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ error: "Failed to send email", details: error });
-    }
-  } else {
-    res.status(405).json({ error: "Method not allowed" });
+    const info = await transporter.sendMail(mailOptions);
+
+    return NextResponse.json({ message: "Email sent", info }, { status: 200 });
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      { error: "Failed to send email", details: error },
+      { status: 500 }
+    );
   }
 }
