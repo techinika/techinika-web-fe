@@ -1,10 +1,39 @@
-import Head from "next/head";
+"use client";
+
 import Nav from "../HeadFoot/Nav";
 import Footer from "../HeadFoot/Footer";
-import Partners from "../../components/Partners";
+import Partners from "../../components/Parts/Partners";
 import { useEffect, useState } from "react";
 
-function generateEmailHTML(data) {
+export interface EmailData {
+  name: string;
+  email: string;
+  phone: string;
+  services: string[];
+  contactEmail: string;
+  contactPhone: string;
+  trainingName: string;
+  paymentAmount: string;
+  paymentDiscount: string;
+  trainingDate: string;
+  trainingTime: string;
+  trainingLocation: string;
+  paymentMethod: string;
+  paymentReference: string;
+  paymentDeadline: string;
+  companyName: string;
+  website: string;
+  source: string[];
+  entities: string[];
+  need: string;
+  otherTraining: string;
+  willingToPay: string;
+  message: string;
+  referral: string;
+  startDate: string;
+}
+
+function generateEmailHTML(data: EmailData) {
   return `
       <html>
         <head>
@@ -111,7 +140,7 @@ function generateEmailHTML(data) {
     `;
 }
 
-function generateTrainingEmailHTML(data, name) {
+function generateTrainingEmailHTML(data: EmailData, name: string) {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -222,30 +251,22 @@ function generateTrainingEmailHTML(data, name) {
   `;
 }
 
-export default function Training() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: "Apply for Masterclass",
-    url: "https://techinika.co.rw/masterclass/apply",
-    description:
-      "Apply for Techinika's Masterclass and take your digital skills to the next level.",
-  };
+export default function TrainingApply() {
   const initialData = {
     phone: "",
     name: "",
     email: "",
-    services: [],
+    services: [] as string[],
     need: "",
     willingToPay: "",
     otherTraining: "",
     startDate: "",
-    source: [],
-    entities: [],
+    source: [] as string[],
+    entities: [] as string[],
     message: "",
     referral: "",
   };
-  const [data, setData] = useState(initialData);
+  const [data, setData] = useState<typeof initialData>(initialData);
   const [feedback, setFeedback] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -361,9 +382,51 @@ export default function Training() {
   const handleSendingData = async () => {
     setLoading(true);
     try {
-      const emailBody = generateEmailHTML(data);
+      const emailBody = generateEmailHTML({
+        ...data,
+        contactEmail: trainingData.contactEmail,
+        contactPhone: trainingData.contactPhone,
+        trainingName: trainingData.trainingName,
+        paymentAmount: trainingData.paymentAmount,
+        paymentDiscount: trainingData.paymentDiscount,
+        trainingDate: trainingData.trainingDate,
+        trainingTime: trainingData.trainingTime,
+        trainingLocation: trainingData.trainingLocation,
+        paymentMethod: trainingData.paymentMethod,
+        paymentReference: trainingData.paymentReference,
+        paymentDeadline: trainingData.paymentDeadline,
+        companyName: trainingData.companyName,
+        website: trainingData.website,
+      });
       const email2Applicant = generateTrainingEmailHTML(
-        trainingData,
+        {
+          ...trainingData,
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          services: data.services,
+          contactEmail: trainingData.contactEmail,
+          contactPhone: trainingData.contactPhone,
+          trainingName: trainingData.trainingName,
+          paymentAmount: trainingData.paymentAmount,
+          paymentDiscount: trainingData.paymentDiscount,
+          trainingDate: trainingData.trainingDate,
+          trainingTime: trainingData.trainingTime,
+          trainingLocation: trainingData.trainingLocation,
+          paymentMethod: trainingData.paymentMethod,
+          paymentReference: trainingData.paymentReference,
+          paymentDeadline: trainingData.paymentDeadline,
+          companyName: trainingData.companyName,
+          website: trainingData.website,
+          source: data.source,
+          entities: data.entities,
+          need: data.need,
+          otherTraining: data.otherTraining,
+          willingToPay: data.willingToPay,
+          message: data.message,
+          referral: data.referral,
+          startDate: data.startDate,
+        },
         data.name
       );
 
@@ -411,322 +474,304 @@ export default function Training() {
         console.error("Failed to send email");
         setFeedback("Failed to send your request! Try again!");
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.log(error);
-      setFeedback(error?.message);
+      if (error instanceof Error) {
+        setFeedback(error.message);
+      } else {
+        setFeedback("An unexpected error occurred.");
+      }
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <>
-      <Head>
-        <meta charset="UTF-8" />
-        <meta
-          name="keywords"
-          content="digital marketing skills,coding skills, web development training, digital skills, software development skills, learn new skills in rech,training in digital skills, digital skills talents in rwanda,digital skills training in rwanda"
-        />
-        <meta name="author" content="Techinika Developers" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Apply for our Masterclass - Techinika Training</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-        <meta
-          name="description"
-          content="It starts with developing your technological skills. Understanding how technology works, gaining deep understanding of concepts, and practicing building and using it. Our training programs are here for that!"
-        ></meta>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-      <div className="relative h-screen">
-        <div className="font-main">
-          <Nav />
-        </div>
-        <div className="bg-white font-main mx-auto mt-24">
-          <div className="bg-gray-50">
-            <div className="py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
-              <h1 className="text-main-blue font-bold text-xl">
-                Apply for the WordPress Masterclass
-              </h1>
-              <p>{`We equip you with skills that unlock new opportunities for your career, and boosts your value on the market. By participating, you become part of Techinika Insiders, and get access to internal opportunities and networks.`}</p>
-            </div>
-          </div>
-          <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
-            <form className="rounded-lg p-5">
-              <h2 className="font-bold text-lg italic py-4">
-                Apply using this form, We will contact you as soon as possible:
-              </h2>
-              {feedback && (
-                <p className="text-center bg-green-300 rounded-md p-4 text-main-blue">
-                  {feedback}
-                </p>
-              )}
-              <div className="my-3">
-                <label className="text-main-blue font-bold">Your Name</label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    type="text"
-                    disabled={loading}
-                    value={data?.name}
-                    onChange={(e) => {
-                      setData({ ...data, name: e.target.value });
-                    }}
-                    placeholder="Full Name"
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">Your Email</label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    type="text"
-                    disabled={loading}
-                    value={data?.email}
-                    onChange={(e) => {
-                      setData({ ...data, email: e.target.value });
-                    }}
-                    placeholder="eg: email@example.com"
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  You Phone Number:
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    disabled={loading}
-                    type="text"
-                    value={data?.phone}
-                    onChange={(e) =>
-                      setData({ ...data, phone: e.target.value })
-                    }
-                    placeholder={"eg: +25078...."}
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  Choose a Training you are interested in:
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  {services &&
-                    services.map((item) => (
-                      <div key={item?.id} className="flex items-center gap-2">
-                        <input
-                          disabled={loading}
-                          value={item?.title}
-                          type="checkbox"
-                          onChange={(e) => {
-                            if (data.services.includes(e.target.value)) {
-                              let newservices = data.services.filter(
-                                (item) => item !== e.target.value
-                              );
-                              setData({
-                                ...data,
-                                services: newservices,
-                              });
-                            } else {
-                              setData({
-                                ...data,
-                                services: [...data.services, e.target.value],
-                              });
-                            }
-                          }}
-                        />
-                        <label>{item?.title}</label>
-                      </div>
-                    ))}
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  If you chose Other, which training do you need?
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    type="text"
-                    disabled={loading}
-                    value={data?.otherTraining}
-                    onChange={(e) => {
-                      setData({ ...data, otherTraining: e.target.value });
-                    }}
-                    placeholder="Custom training"
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  What best defines you?
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  {entities &&
-                    entities.map((item) => (
-                      <div key={item?.id} className="flex items-center gap-2">
-                        <input
-                          disabled={loading}
-                          value={item?.title}
-                          type="checkbox"
-                          onChange={(e) => {
-                            if (data.entities.includes(e.target.value)) {
-                              let newservices = data.entities.filter(
-                                (item) => item !== e.target.value
-                              );
-                              setData({
-                                ...data,
-                                entities: newservices,
-                              });
-                            } else {
-                              setData({
-                                ...data,
-                                entities: [...data.entities, e.target.value],
-                              });
-                            }
-                          }}
-                        />
-                        <label>{item?.title}</label>
-                      </div>
-                    ))}
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  Tell us what you need in details:
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <textarea
-                    disabled={loading}
-                    value={data?.need}
-                    onChange={(e) => setData({ ...data, need: e.target.value })}
-                    className="w-full rounded-lg"
-                    rows={6}
-                  ></textarea>
-                </div>
-              </div>
-              <div>
-                <label className="text-main-blue font-bold">
-                  How much are you willing to pay for the Training?
-                </label>
-                <input
-                  type="number"
-                  value={data?.willingToPay}
-                  className="flex flex-wrap gap-5 items-center w-full rounded-lg"
-                  onChange={(e) =>
-                    setData({ ...data, willingToPay: e.target.value })
-                  }
-                  disabled={loading}
-                />
-              </div>
-              <div>
-                <label className="text-main-blue font-bold">
-                  When do you want to start?
-                </label>
-                <input
-                  type="date"
-                  className="flex flex-wrap gap-5 items-center w-full rounded-lg"
-                  onChange={(e) =>
-                    setData({ ...data, startDate: e.target.value })
-                  }
-                  disabled={loading}
-                />
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  How did you Learn about us:
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  {sources &&
-                    sources.map((item) => (
-                      <div
-                        key={item?.id}
-                        title={item?.description}
-                        className="flex items-center gap-2"
-                      >
-                        <input
-                          disabled={loading}
-                          value={item?.title}
-                          onChange={(e) => {
-                            if (data.source.includes(e.target.value)) {
-                              let newsources = data.source.filter(
-                                (item) => item !== e.target.value
-                              );
-                              setData({
-                                ...data,
-                                source: newsources,
-                              });
-                            } else {
-                              setData({
-                                ...data,
-                                source: [...data.source, e.target.value],
-                              });
-                            }
-                          }}
-                          type="checkbox"
-                        />
-                        <label>{item?.title}</label>
-                      </div>
-                    ))}
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  Who referred you?
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    type="text"
-                    disabled={loading}
-                    value={data?.referral}
-                    onChange={(e) =>
-                      setData({ ...data, referral: e.target.value })
-                    }
-                    placeholder={
-                      "Add an email or phone number of your referral"
-                    }
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="my-3">
-                <label className="text-main-blue font-bold">
-                  Anything else we need to know?
-                </label>
-                <div className="flex flex-wrap gap-5 items-center">
-                  <input
-                    type="text"
-                    disabled={loading}
-                    value={data?.message}
-                    onChange={(e) =>
-                      setData({ ...data, message: e.target.value })
-                    }
-                    placeholder={"Any other message to us"}
-                    className="w-full rounded-lg"
-                  />
-                </div>
-              </div>
-              <button
-                type="submit"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSendingData();
-                }}
-                className="btn-main w-full"
-                disabled={loading}
-              >
-                {loading ? "Sending..." : "Submit"}
-              </button>
-            </form>
-          </div>
-          <Partners />
-          <Footer />
-        </div>
+    <div className="relative h-screen">
+      <div className="font-main">
+        <Nav />
       </div>
-    </>
+      <div className="bg-white font-main mx-auto mt-24">
+        <div className="bg-gray-50">
+          <div className="py-10 md:w-8/12 m-auto flex-col gap-5 px-4">
+            <h1 className="text-main-blue font-bold text-xl">
+              Apply for the WordPress Masterclass
+            </h1>
+            <p>{`We equip you with skills that unlock new opportunities for your career, and boosts your value on the market. By participating, you become part of Techinika Insiders, and get access to internal opportunities and networks.`}</p>
+          </div>
+        </div>
+        <div className="md:w-[60%] lg:w-[50%] sm:w-[90%] mx-auto text-xl py-4 p-2">
+          <form className="rounded-lg p-5">
+            <h2 className="font-bold text-lg italic py-4">
+              Apply using this form, We will contact you as soon as possible:
+            </h2>
+            {feedback && (
+              <p className="text-center bg-green-300 rounded-md p-4 text-main-blue">
+                {feedback}
+              </p>
+            )}
+            <div className="my-3">
+              <label className="text-main-blue font-bold">Your Name</label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  type="text"
+                  disabled={loading}
+                  value={data?.name}
+                  onChange={(e) => {
+                    setData({ ...data, name: e.target.value });
+                  }}
+                  placeholder="Full Name"
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">Your Email</label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  type="text"
+                  disabled={loading}
+                  value={data?.email}
+                  onChange={(e) => {
+                    setData({ ...data, email: e.target.value });
+                  }}
+                  placeholder="eg: email@example.com"
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                You Phone Number:
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  disabled={loading}
+                  type="text"
+                  value={data?.phone}
+                  onChange={(e) => setData({ ...data, phone: e.target.value })}
+                  placeholder={"eg: +25078...."}
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                Choose a Training you are interested in:
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                {services &&
+                  services.map((item) => (
+                    <div key={item?.id} className="flex items-center gap-2">
+                      <input
+                        disabled={loading}
+                        value={item?.title}
+                        type="checkbox"
+                        onChange={(e) => {
+                          if (data.services?.includes(e.target.value)) {
+                            const newservices = data.services?.filter(
+                              (item) => item !== e.target.value
+                            );
+                            setData({
+                              ...data,
+                              services: newservices,
+                            });
+                          } else {
+                            setData({
+                              ...data,
+                              services: [
+                                ...(data.services ?? []),
+                                e.target.value,
+                              ],
+                            });
+                          }
+                        }}
+                      />
+                      <label>{item?.title}</label>
+                    </div>
+                  ))}
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                If you chose Other, which training do you need?
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  type="text"
+                  disabled={loading}
+                  value={data?.otherTraining}
+                  onChange={(e) => {
+                    setData({ ...data, otherTraining: e.target.value });
+                  }}
+                  placeholder="Custom training"
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                What best defines you?
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                {entities &&
+                  entities.map((item) => (
+                    <div key={item?.id} className="flex items-center gap-2">
+                      <input
+                        disabled={loading}
+                        value={item?.title}
+                        type="checkbox"
+                        onChange={(e) => {
+                          if (data.entities.includes(e.target.value)) {
+                            const newEntities = data.entities.filter(
+                              (item) => item !== e.target.value
+                            );
+                            setData({
+                              ...data,
+                              entities: newEntities,
+                            });
+                          } else {
+                            setData({
+                              ...data,
+                              entities: [...data.entities, e.target.value],
+                            });
+                          }
+                        }}
+                      />
+                      <label>{item?.title}</label>
+                    </div>
+                  ))}
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                Tell us what you need in details:
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <textarea
+                  disabled={loading}
+                  value={data?.need}
+                  onChange={(e) => setData({ ...data, need: e.target.value })}
+                  className="w-full rounded-lg"
+                  rows={6}
+                ></textarea>
+              </div>
+            </div>
+            <div>
+              <label className="text-main-blue font-bold">
+                How much are you willing to pay for the Training?
+              </label>
+              <input
+                type="number"
+                value={data?.willingToPay}
+                className="flex flex-wrap gap-5 items-center w-full rounded-lg"
+                onChange={(e) =>
+                  setData({ ...data, willingToPay: e.target.value })
+                }
+                disabled={loading}
+              />
+            </div>
+            <div>
+              <label className="text-main-blue font-bold">
+                When do you want to start?
+              </label>
+              <input
+                type="date"
+                className="flex flex-wrap gap-5 items-center w-full rounded-lg"
+                onChange={(e) =>
+                  setData({ ...data, startDate: e.target.value })
+                }
+                disabled={loading}
+              />
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                How did you Learn about us:
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                {sources &&
+                  sources.map((item) => (
+                    <div
+                      key={item?.id}
+                      title={item?.description}
+                      className="flex items-center gap-2"
+                    >
+                      <input
+                        disabled={loading}
+                        value={item?.title}
+                        onChange={(e) => {
+                          if (data.source?.includes?.(e.target.value)) {
+                            const newsources = data.source?.filter?.(
+                              (item) => item !== e.target.value
+                            );
+                            setData({
+                              ...data,
+                              source: newsources,
+                            });
+                          } else {
+                            setData({
+                              ...data,
+                              source: [...(data.source ?? []), e.target.value],
+                            });
+                          }
+                        }}
+                        type="checkbox"
+                      />
+                      <label>{item?.title}</label>
+                    </div>
+                  ))}
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                Who referred you?
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  type="text"
+                  disabled={loading}
+                  value={data?.referral}
+                  onChange={(e) =>
+                    setData({ ...data, referral: e.target.value })
+                  }
+                  placeholder={"Add an email or phone number of your referral"}
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="my-3">
+              <label className="text-main-blue font-bold">
+                Anything else we need to know?
+              </label>
+              <div className="flex flex-wrap gap-5 items-center">
+                <input
+                  type="text"
+                  disabled={loading}
+                  value={data?.message}
+                  onChange={(e) =>
+                    setData({ ...data, message: e.target.value })
+                  }
+                  placeholder={"Any other message to us"}
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              onClick={(e) => {
+                e.preventDefault();
+                handleSendingData();
+              }}
+              className="btn-main w-full"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "Submit"}
+            </button>
+          </form>
+        </div>
+        <Partners />
+        <Footer />
+      </div>
+    </div>
   );
 }

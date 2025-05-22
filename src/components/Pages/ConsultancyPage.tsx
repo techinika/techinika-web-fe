@@ -5,8 +5,9 @@ import Footer from "../HeadFoot/Footer";
 import Partners from "../Parts/Partners";
 import Link from "next/link";
 import { HeadTitle } from "../HeadFoot/HeadTitle";
+import Image from "next/image";
 
-export default function Consultancy() {
+export default function ConsultancyApply() {
   const portfolio = [
     {
       id: 1,
@@ -66,10 +67,12 @@ export default function Consultancy() {
                     {/* Image Section */}
                     <div className="image-container w-full">
                       {project.picture ? (
-                        <img
+                        <Image
                           src={project.picture}
                           alt={`${project.title} cover`}
                           className="w-full h-64 object-cover"
+                          width={800}
+                          height={400}
                         />
                       ) : (
                         <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500">
@@ -114,7 +117,7 @@ export default function Consultancy() {
           </p>
           <br></br>
           <div className="flex items-center justify-center">
-            <Link href="/request" className="btn-main">
+            <Link href="/consultancy/request" className="btn-main">
               GET FREE CONSULTATION
             </Link>
           </div>

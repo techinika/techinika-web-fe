@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 function Partners() {
@@ -80,44 +81,30 @@ function Partners() {
 
   return (
     <div className="md:w-[60%] mx-auto py-10">
-      <h2 className="font-bold text-md p-5 text-center text-main-blue text-4xl">
+      <h2 className="font-bold text-center text-main-blue text-4xl mb-6">
         Brands we work with
       </h2>
       <div className="relative overflow-hidden group">
-        <ul className="flex animate-infinite-scroll group-hover:paused">
-          {partners.map((partner, index) => (
-            <a
-              key={partner.id}
-              target="_blank"
-              href={partner.website}
-              rel="noopener noreferrer"
-            >
-              <li className="mx-8">
-                <img
+        <ul className="flex animate-infinite-scroll space-x-16 group-hover:pause">
+          {[...partners, ...partners].map((partner, index) => (
+            <li key={`${partner.id}-${index}`} className="flex items-center">
+              <a
+                href={partner.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={partner.name}
+              >
+                <Image
                   title={partner.name}
-                  className="h-10 object-contain transition-transform duration-300 hover:scale-110"
+                  className="w-auto h-10 object-contain transition-transform duration-300 hover:scale-110"
                   src={partner.logo}
                   alt={partner.name}
+                  width={0}
+                  height={0}
+                  sizes="(max-width: 768px) 100vw, 170px"
                 />
-              </li>
-            </a>
-          ))}
-          {partners.map((partner, index) => (
-            <a
-              key={`duplicate-${partner.id}`}
-              target="_blank"
-              href={partner.website}
-              rel="noopener noreferrer"
-            >
-              <li className="mx-8">
-                <img
-                  title={partner.name}
-                  className="h-10 object-contain transition-transform duration-300 hover:scale-110"
-                  src={partner.logo}
-                  alt={partner.name}
-                />
-              </li>
-            </a>
+              </a>
+            </li>
           ))}
         </ul>
       </div>
