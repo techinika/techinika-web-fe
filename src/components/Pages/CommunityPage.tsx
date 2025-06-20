@@ -78,7 +78,11 @@ export default function Community() {
           </p>
           <br></br>
           <div className="flex items-center justify-center">
-            <Link href="https://nas.io/tech-rw" className="btn-main">
+            <Link
+              href="https://nas.io/tech-rw"
+              target="_blank"
+              className="btn-main"
+            >
               JOIN THE COMMUNITY
             </Link>
           </div>

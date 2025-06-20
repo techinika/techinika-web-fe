@@ -117,7 +117,11 @@ export default function ConsultancyApply() {
           </p>
           <br></br>
           <div className="flex items-center justify-center">
-            <Link href="/consultancy/request" className="btn-main">
+            <Link
+              href="https://forms.gle/Gfv8aswpY8f133qM6"
+              className="btn-main"
+              target="_blank"
+            >
               GET FREE CONSULTATION
             </Link>
           </div>
