@@ -20,6 +20,20 @@ export const Programmes = () => {
               </p>
             </div>
           </Link>
+          <Link href="https://securedot.netlify.app" target="_blank">
+            <div className="card">
+              <Image
+                alt="SecureDot"
+                src="/securedot.png"
+                width={200}
+                height={40}
+              />
+              <p>
+                <b>-MVP Launched-</b> Instantly secure your website with
+                trusted, automated SSL certificates.
+              </p>
+            </div>
+          </Link>
           <Link href="https://techinika.com" target="_blank">
             <div className="card">
               <Image
