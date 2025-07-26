@@ -7,8 +7,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Footer from "../HeadFoot/Footer"; // Ensure path is correct
 import Nav from "../HeadFoot/Nav"; // Ensure path is correct
+import { consultancyProjects, Project } from "@/data/portfolio";
 
-// Reusable component for portfolio cards
 const PortfolioCard = ({
   href,
   imageSrc,
@@ -68,26 +68,6 @@ const PortfolioCard = ({
 };
 
 export default function ConsultancyPage() {
-  const portfolio = [
-    {
-      id: 1,
-      title: "Members Management System for Sherrie Silver Foundation",
-      description:
-        "A comprehensive platform designed to streamline the management of members, volunteers, and daily operations for non-profit organizations.",
-      picture: "/sherriekms.png",
-      link: "/consultancy/sherrie-silver-foundation",
-    },
-    {
-      id: 2,
-      title: "Alumni Management System for YALI Rwanda Chapter",
-      description:
-        "A bespoke system developed to help educational and leadership organizations keep their alumni information accurate and engage their network effectively.",
-      picture: "/yaliams.png",
-      link: "/consultancy/yali-alumni-management",
-    },
-    // Add more portfolio items as needed
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Nav />
@@ -319,16 +299,16 @@ export default function ConsultancyPage() {
             Our <span className="text-[#c48820]">Portfolio</span>
           </motion.h2>
 
-          {portfolio.length > 0 ? (
+          {consultancyProjects.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-              {portfolio.map((project) => (
+              {consultancyProjects.map((project: Project) => (
                 <PortfolioCard
                   key={project.id}
-                  href={project.link}
-                  imageSrc={project.picture}
-                  imageAlt={`${project.title} project showcase`}
-                  title={project.title}
-                  description={project.description}
+                  href={`/consultancy/${project?.id}`}
+                  imageSrc={project?.heroImage || ""}
+                  imageAlt={`${project?.title} project showcase`}
+                  title={project?.title}
+                  description={project?.solution || "No description available."}
                 />
               ))}
             </div>

@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const BASE_URL = "https://techinika.co.rw";
+  const BASE_URL =
+    process.env.NEXT_PUBLIC_BASE_URL || "https://techinika.co.rw";
 
   return [
     {
