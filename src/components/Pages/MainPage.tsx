@@ -3,10 +3,12 @@
 import Nav from "../HeadFoot/Nav";
 import Content from "../Parts/Content";
 import { Programmes } from "../Parts/Programmes";
-import { JoinUs } from "../Parts/Join";
+import CallToAction from "../Parts/Join";
 import Footer from "../HeadFoot/Footer";
-import { Quote } from "../HeadFoot/Quote";
-import Partners from "../Parts/Partners";
+import Expertise from "../Parts/HowWeWork";
+import FAQ from "../Parts/FrequentlyAskedQuestions";
+import Testimonials from "../Parts/Testimonials";
+import OurStory from "../Parts/OurStory";
 
 export default function MainPage() {
   return (
@@ -17,14 +19,11 @@ export default function MainPage() {
       <div className="bg-white font-main mx-auto mt-[19vh] md:mt-[10vh]">
         <Content />
         <Programmes />
-        <Quote
-          quote={
-            "Once a new technology rolls over you, if you're not part of the steamroller, you're part of the road."
-          }
-          speaker={"Stewart Brand, Writer"}
-        />
-        <Partners />
-        <JoinUs />
+        <CallToAction />
+        <Expertise />
+        <OurStory />
+        <Testimonials />
+        <FAQ />
         <Footer />
       </div>
     </div>

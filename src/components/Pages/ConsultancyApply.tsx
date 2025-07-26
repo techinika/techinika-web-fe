@@ -2,7 +2,6 @@
 
 import Nav from "../HeadFoot/Nav";
 import Footer from "../HeadFoot/Footer";
-import Partners from "../../components/Parts/Partners";
 import { useEffect, useState } from "react";
 
 export interface EmailData {
@@ -769,7 +768,6 @@ export default function TrainingApply() {
             </button>
           </form>
         </div>
-        <Partners />
         <Footer />
       </div>
     </div>

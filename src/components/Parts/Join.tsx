@@ -1,23 +1,55 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion"; // For subtle animations
 
-export const JoinUs = () => {
+export const CallToAction = () => {
   return (
-    <div className="w-full flex flex-row justify-center items-center" id="join">
-      <div className="flex-1 md:p-10 bg-main-blue text-center flex items-center justify-center">
-        <div className="md:w-6/12 p-10 md:p-24">
-          <h2 className="title">{`Wondering if we're right for you?`}</h2>
-          <p className="text-white py-4">
-            {`Let's talk and explore the possibilities.`}
-          </p>
-          <div className="my-4 flex items-center justify-center">
-            <Link href="/request" target="_blank">
-              <p className="btn btn-white text-center">Get Started</p>
-            </Link>
-          </div>
-        </div>
+    <section className="bg-gradient-to-r from-[#16327b] to-[#1a4092] py-20 md:py-24 text-white text-center">
+      {" "}
+      {/* Dark blue gradient background */}
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Headline */}
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-extrabold leading-tight mb-6"
+        >
+          Ready to <span className="text-[#c48820]">Transform</span> Your
+          Business?
+        </motion.h2>
+
+        {/* Benefit-driven Copy */}
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-3xl mx-auto text-lg md:text-xl opacity-90 mb-10"
+        >
+          {`Let's discuss how our tailored digital tools and expertise can
+          streamline your operations, empower your team, and drive sustainable
+          growth. Your next big leap starts here.`}
+        </motion.p>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <Link href="/consultancy">
+            <button className="px-10 py-4 rounded-full text-[#16327b] bg-white hover:bg-gray-100 transition-all duration-300 font-bold text-lg shadow-xl">
+              Book Your Free Consultation
+            </button>
+          </Link>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
+
+export default CallToAction;

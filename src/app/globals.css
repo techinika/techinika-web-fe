@@ -1,216 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
 layer(base);
 
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@import "tw-animate-css";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/aspect-ratio';
 
-@theme {
-  --background-color-main-blue: #17327b;
-  --background-color-main-yellow: #fbdb5a;
-  --background-color-bg: aliceblue;
-
-  --background-image-cause-bg: url('/dots-bg.jpg');
-
-  --font-main: Space Grotesk, Jua, sans-serif;
-
-  --color-main: #269df8;
-  --color-main-blue: #2844cc;
-  --color-main-bg: #f8f8f8;
-
-  --animate-infinite-scroll: infinite-scroll 25s linear infinite;
-
-  @keyframes infinite-scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
-  }
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #16327b;
+  --primary-foreground: #c48820;
+  --secondary: #c48820;
+  --secondary-foreground: #16327b;
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 * {
-  @apply font-main box-border leading-loose;
-  scroll-behavior: smooth;
-  transition: all 0.3s ease-in-out;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
-.btn-yellow {
-  @apply px-7 py-2 bg-main-yellow rounded-sm text-main-blue hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
-.btn-white {
-  @apply px-7 py-2 bg-white text-main-blue rounded-sm hover:bg-main hover:text-white cursor-pointer hover:scale-110 active:scale-90;
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.btn-main {
-  @apply px-2 py-2 bg-main-blue text-white rounded-sm hover:bg-main cursor-pointer hover:scale-110 active:scale-90;
+.animate-fade-in {
+  animation: fade-in 0.8s ease-in-out forwards;
 }
 
-.btn-disabled {
-  @apply px-2 py-2 bg-gray-500 text-white rounded-sm;
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
 }
 
-.btn-card {
-  @apply bg-main-blue rounded-sm text-white hover:bg-main p-2 w-full mt-5 cursor-pointer;
+.animate-blob {
+  animation: blob 8s infinite;
 }
 
-.card {
-  @apply flex-1 shadow-lg  bg-white p-3 rounded-lg border border-main-blue flex flex-col items-center justify-center text-center cursor-pointer;
+.animation-delay-2000 {
+  animation-delay: 2s;
 }
 
-.card-title {
-  @apply text-main-blue font-bold text-2xl;
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
 
-.card-body {
-  @apply text-black leading-loose;
-}
-
-.big-title {
-  @apply text-main-blue font-semibold text-center text-xl py-5;
-}
-
-.h-card {
-  @apply bg-bg flex shadow-lg border border-gray-200 justify-around rounded-lg items-center min-h-fit p-10;
-}
-
-.image-hold {
-  @apply flex-1 w-full flex justify-center text-center items-center;
-}
-
-.card-image {
-  @apply object-cover;
-}
-
-.h-card-body {
-  @apply md:p-10 flex-1 flex flex-col gap-4 items-start flex-wrap;
-}
-
-.footer-credit {
-  @apply text-white bg-blue-900 text-center text-sm p-2;
-}
-
-.btn-group {
-  @apply mt-3 flex flex-row items-center justify-center flex-wrap gap-5;
-}
-
-.input {
-  @apply rounded-xs w-full bg-gray-50 outline-solid border-none outline-hidden;
-}
-
-.form {
-  @apply flex gap-3 justify-center items-center p-5 flex-wrap;
-}
-
-.quote-text {
-  @apply text-2xl font-bold italic;
-}
-
-.footer {
-  @apply flex w-full justify-center items-center flex-col gap-4 py-7 bg-gray-50;
-}
-
-.copyright {
-  @apply text-center font-bold text-sm;
-}
-
-.social {
-  @apply flex gap-5 p-5;
-}
-
-.icon {
-  @apply p-3 rounded-md bg-main-blue text-white;
-}
-
-.icon:hover {
-  @apply bg-main-yellow text-main-blue;
-}
-
-.text {
-  @apply text-black leading-10;
-}
-
-.title {
-  @apply text-white font-bold text-4xl py-4;
-}
-
-.logo {
-  @apply flex flex-row gap-2;
-}
-
-.page-header {
-  @apply bg-main-blue text-white w-full h-1/2 p-10 py-24 text-center flex justify-center items-center mt-5;
-  min-height: 50vh;
-}
-
-.page-title {
-  @apply font-bold text-5xl mt-5;
-}
-
-.list {
-  @apply list-disc text-gray-900;
-}
-
-.list-item {
-  @apply list-inside;
-}
-
-.text-button {
-  @apply text-main-blue underline;
-}
-
-.team-card {
-  @apply flex-1 bg-bg border-2 border-main-blue border-dotted rounded-sm;
-}
-
-.team-image-div {
-  @apply w-full h-96 relative bg-main;
-}
-
-.team-image {
-  @apply object-cover rounded-sm;
-}
-
-.image-placeholder {
-  @apply absolute top-0 left-0 right-0 bottom-0;
-}
-
-.team-name {
-  @apply font-bold text-xl text-main-blue;
-}
-
-.team-row {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 my-2;
-}
-
-ul {
-  @apply list-outside;
-}
-
-@keyframes infiniteScroll {
+@keyframes infinite-scroll {
   0% {
     transform: translateX(0);
   }
@@ -221,18 +147,10 @@ ul {
 
 .animate-infinite-scroll {
   display: flex;
-  animation: infiniteScroll 20s linear infinite;
-  width: max-content; /* Ensure it only takes the width it needs */
+  animation: infinite-scroll 30s linear infinite;
+  width: max-content;
 }
 
-.group {
-  @apply py-10 overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-200px),transparent_100%)];
-}
-
-.group:hover .animate-infinite-scroll {
+.group-hover\:pause:hover {
   animation-play-state: paused;
-}
-
-img {
-  object-fit: cover; /* Ensure the image fits within its container without stretching */
 }
