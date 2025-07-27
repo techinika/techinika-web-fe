@@ -1,10 +1,12 @@
+// app/sitemap.ts
 import type { MetadataRoute } from "next";
+import { consultancyProjects } from "@/data/portfolio";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const BASE_URL =
     process.env.NEXT_PUBLIC_BASE_URL || "https://techinika.co.rw";
 
-  return [
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,
       lastModified: new Date(),
@@ -42,4 +44,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
   ];
+
+  const dynamicProjectRoutes: MetadataRoute.Sitemap = consultancyProjects.map(
+    (project) => ({
+      url: `${BASE_URL}/consultancy/${project.id}`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.7,
+    })
+  );
+
+  return [...staticRoutes, ...dynamicProjectRoutes];
 }

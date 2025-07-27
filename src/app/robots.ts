@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   const BASE_URL =
@@ -7,10 +7,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: "*",
-        allow: "*",
+        userAgent: "*", // Applies to all web crawlers
+        allow: "/",
       },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: `${BASE_URL}/sitemap.xml`, // Correctly points to your sitemap
   };
 }
