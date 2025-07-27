@@ -1,6 +1,6 @@
 {
   "name": "techinika-web-fe",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is a repository of our company official website.",
   "scripts": {
     "dev": "next dev",
