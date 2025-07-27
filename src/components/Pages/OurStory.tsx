@@ -640,13 +640,14 @@ export default function Story() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <Link
-              href="/community" // Link to the community page for joining
+              href="https://forms.gle/t7o7tdeWi652oPTp7"
+              target="_blank"
               className="px-8 py-4 rounded-full text-[#16327b] bg-white hover:bg-gray-100 transition-colors duration-300 font-semibold text-lg shadow-lg"
             >
               START YOUR CAREER
             </Link>
             <Link
-              href="/contact" // Link to a contact/investor inquiry page (you might want a specific form for investors)
+              href="/contact"
               className="px-8 py-4 rounded-full text-white border-2 border-white hover:bg-white hover:text-[#16327b] transition-colors duration-300 font-semibold text-lg shadow-lg"
             >
               INVEST IN OUR MISSION

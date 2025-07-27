@@ -15,6 +15,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
+  const [isError, setIsError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,38 +31,42 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage("");
+    setIsError(false); // Reset error state
 
-    // In a real application, you would send this data to your backend/API endpoint.
-    // Example:
-    // try {
-    //   const response = await fetch('/api/contact', { // Your API endpoint
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
-    //
-    //   if (response.ok) {
-    //     setSubmitMessage('Your message has been sent successfully! We will get back to you soon.');
-    //     setFormData({ name: '', email: '', subject: '', message: '' }); // Clear form
-    //   } else {
-    //     setSubmitMessage('Failed to send message. Please try again later.');
-    //   }
-    // } catch (error) {
-    //   console.error('Submission error:', error);
-    //   setSubmitMessage('An error occurred. Please try again later.');
-    // } finally {
-    //   setIsSubmitting(false);
-    // }
+    try {
+      const response = await fetch("/api/contact", {
+        // Target your new API endpoint
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Simulating API call for demonstration
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setSubmitMessage(
-      "Thank you for your message! We've received your submission and will get back to you shortly."
-    );
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setIsSubmitting(false);
+      const data = await response.json(); // Parse the JSON response from your API
+
+      if (response.ok) {
+        setSubmitMessage(
+          data.message ||
+            "Your message has been sent successfully! We will get back to you soon."
+        );
+        setFormData({ name: "", email: "", subject: "", message: "" }); // Clear form
+      } else {
+        // Handle API errors
+        setSubmitMessage(
+          data.message || "Failed to send message. Please try again later."
+        );
+        setIsError(true);
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setSubmitMessage(
+        "An unexpected error occurred. Please check your network and try again."
+      );
+      setIsError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -344,7 +349,11 @@ export default function Contact() {
               {isSubmitting ? "Sending Message..." : "Send Message"}
             </motion.button>
             {submitMessage && (
-              <p className="mt-6 text-center text-lg font-medium text-[#16327b]">
+              <p
+                className={`mt-6 text-center text-lg font-medium ${
+                  isError ? "text-red-600" : "text-primary"
+                }`}
+              >
                 {submitMessage}
               </p>
             )}

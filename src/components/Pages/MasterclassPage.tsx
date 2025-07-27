@@ -550,7 +550,7 @@ export default function Masterclass() {
             className="flex flex-col sm:flex-row justify-center items-center gap-6"
           >
             <Link
-              href={"mailto:info@techinika.com"}
+              href="/contact"
               className="inline-flex items-center bg-white text-[#16327b] font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-gray-100 transition-colors duration-300"
             >
               <svg
@@ -567,27 +567,7 @@ export default function Masterclass() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-5 13H8a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2z"
                 />
               </svg>
-              Email Us
-            </Link>
-            <Link
-              href="tel:+250780630465"
-              className="inline-flex items-center bg-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:text-secondary transition-colors duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                />
-              </svg>
-              Call or WhatsApp
+              Contact Us
             </Link>
           </motion.div>
         </div>

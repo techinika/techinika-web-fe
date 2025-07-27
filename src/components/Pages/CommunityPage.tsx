@@ -267,7 +267,7 @@ export default function CommunityPage() {
               JOIN THE COMMUNITY
             </Link>
             <Link
-              href="/donate" // Link to your donation page
+              href="/contact" // Link to your donation page
               className="px-8 py-4 rounded-full text-white border-2 border-white hover:bg-white hover:text-[#16327b] transition-colors duration-300 font-semibold text-lg shadow-lg"
             >
               DONATE TO THE COMMUNITY

@@ -114,11 +114,10 @@ export const FAQ = () => {
           <p className="text-lg text-gray-700 mb-4">
             {`Still have questions? We're here to help!`}
           </p>
-          <Link href="/faq-full-page">
+          <Link href="/contact">
             {" "}
-            {/* Update this link to your actual full FAQ page */}
             <button className="px-8 py-3 rounded-full text-white bg-[#16327b] hover:bg-[#c48820] transition-colors duration-300 font-semibold text-base shadow-lg">
-              Book Free Consultation
+              Contact Us for More Info
             </button>
           </Link>
         </motion.div>

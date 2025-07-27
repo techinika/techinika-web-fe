@@ -105,9 +105,8 @@ export const Testimonials = () => {
           <p className="text-lg text-gray-700 mb-4">
             Want to see how we delivered real impact?
           </p>
-          <Link href="/case-studies">
+          <Link href="/consultancy#portfolio">
             {" "}
-            {/* Link to a dedicated case studies page */}
             <button className="px-8 py-3 rounded-full text-white bg-[#16327b] hover:bg-[#c48820] transition-colors duration-300 font-semibold text-base shadow-lg">
               Explore Our Case Studies
             </button>

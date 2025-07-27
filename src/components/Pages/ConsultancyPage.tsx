@@ -287,7 +287,10 @@ export default function ConsultancyPage() {
       </section>
 
       {/* Our Portfolio Section */}
-      <section className="bg-gradient-to-b from-white to-blue-50 py-16 md:py-24">
+      <section
+        id="portfolio"
+        className="bg-gradient-to-b from-white to-blue-50 py-16 md:py-24"
+      >
         <div className="container mx-auto px-6 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -359,7 +362,7 @@ export default function ConsultancyPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link
-              href="https://forms.gle/Gfv8aswpY8f133qM6"
+              href="https://forms.gle/qFq6N9pJm3yb1CjG9"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full text-[#c48820] bg-white hover:bg-gray-100 transition-colors duration-300 font-semibold text-lg shadow-lg"
@@ -384,7 +387,7 @@ export default function ConsultancyPage() {
               </Link>
             </b>{" "}
             or WhatsApp{" "}
-            <span className="whitespace-nowrap">+250 780 630 465</span>.
+            <span className="whitespace-nowrap">+250 791 377 446</span>.
           </motion.p>
         </div>
       </section>

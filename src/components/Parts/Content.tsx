@@ -110,23 +110,18 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="flex flex-wrap items-center justify-center gap-4 mt-4"
         >
-          <Link href="/solutions">
-            <button // Changed from <Button> to <button> directly for consistent styling
-              className="px-8 py-3 rounded-full text-white bg-[#c48820] hover:bg-[#c48820]/90 transition-colors duration-300 font-semibold text-base shadow-lg"
-            >
-              Explore Our Solutions
+          <Link href="/masterclass">
+            <button className="px-8 py-3 rounded-full text-white bg-[#c48820] hover:bg-[#c48820]/90 transition-colors duration-300 font-semibold text-base shadow-lg">
+              Explore our Masterclasses
             </button>
           </Link>
           <Link href="/consultancy">
-            <button // Changed from <Button> to <button> directly
-              className="px-8 py-3 rounded-full text-white bg-[#16327b] hover:bg-[#16327b]/90 transition-colors duration-300 font-semibold text-base shadow-lg"
-            >
+            <button className="px-8 py-3 rounded-full text-white bg-[#16327b] hover:bg-[#16327b]/90 transition-colors duration-300 font-semibold text-base shadow-lg">
               Book a Free Consultation
             </button>
           </Link>
         </motion.div>
 
-        {/* Trusted By / Partners Logos */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
