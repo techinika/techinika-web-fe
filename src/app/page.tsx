@@ -1,6 +1,6 @@
 import MainPage from "../components/Pages/MainPage";
 
-function page() {
+function Home() {
   return (
     <div>
       <MainPage />
