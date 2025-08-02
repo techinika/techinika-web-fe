@@ -53,10 +53,10 @@ export const Programmes = () => {
           />
           {/* Product Card: Techinika.com */}
           <ProductCard
-            href="https://techinika.com"
+            href="/media"
             imageSrc="/original.png"
             imageAlt="Techinika.com Logo" // More descriptive alt text
-            title="Techinika.com"
+            title="Techinika Media"
             status="-Original-"
             description="Learn how to do it yourself with our comprehensive guides and tutorials."
           />

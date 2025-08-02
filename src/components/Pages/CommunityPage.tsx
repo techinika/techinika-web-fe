@@ -4,10 +4,9 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Footer from "../HeadFoot/Footer"; // Ensure path is correct
-import Nav from "../HeadFoot/Nav"; // Ensure path is correct
+import Footer from "../HeadFoot/Footer";
+import Nav from "../HeadFoot/Nav";
 
-// Data for the flagship projects
 const flagshipProjects = [
   {
     id: 1,
@@ -15,8 +14,22 @@ const flagshipProjects = [
     tagline: "Monthly Hands-On Tech Sessions",
     description:
       "A monthly event where community members learn and engage in hands-on sessions delivered by industry professionals. We help you stay up-to-date with the latest technology trends and acquire practical skills.",
-    icon: "💻", // Using emoji as icon for simplicity, could be an image path
+    icon: "💻",
     bgColor: "bg-blue-50",
+    buttons: [
+      {
+        label: "Attend",
+        href: "https://nas.io/tech-rw",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        label: "Propose a Session",
+        href: "https://forms.gle/DvheU9tXoVYjGkJ17",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    ],
   },
   {
     id: 2,
@@ -26,6 +39,20 @@ const flagshipProjects = [
       "A monthly platform for entrepreneurs and innovators within the community to pitch or launch their projects, receiving live, constructive feedback from peers and experts.",
     icon: "🎤",
     bgColor: "bg-white",
+    buttons: [
+      {
+        label: "Apply to Pitch",
+        href: "https://forms.gle/gZRNY4j2mXcfTNcJ6",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        label: "Attend",
+        href: "https://nas.io/tech-rw",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    ],
   },
   {
     id: 3,
@@ -35,6 +62,20 @@ const flagshipProjects = [
       "An annual, intensive 4-day event where participants learn to build projects from scratch, culminating in judging, awards, and support to launch top projects into real startups.",
     icon: "🚀",
     bgColor: "bg-blue-50",
+    buttons: [
+      {
+        label: "Participate",
+        href: "https://forms.gle/rCUkJp9XypmyoUdY6",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        label: "Be a Sponsor",
+        href: "https://forms.gle/UhyzH6AkEjC45LfX9",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    ],
   },
 ];
 
@@ -179,6 +220,18 @@ export default function CommunityPage() {
                 <p className="text-gray-700 leading-relaxed text-base flex-grow">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-4 justify-between items-center py-6">
+                  {project?.buttons?.map((button, idx) => (
+                    <Link
+                      key={idx + 1}
+                      target={button?.target}
+                      href={button?.href}
+                      className="inline-block bg-primary text-white font-bold px-6 rounded-full text-xs py-2 shadow-md hover:bg-secondary transition-colors duration-300"
+                    >
+                      {button?.label}
+                    </Link>
+                  ))}
+                </div>
               </motion.div>
             ))}
           </div>
