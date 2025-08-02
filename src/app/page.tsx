@@ -1,11 +1,9 @@
 import MainPage from "../components/Pages/MainPage";
 
-function page() {
+export default function Home() {
   return (
     <div>
       <MainPage />
     </div>
   );
 }
-
-export default page;
