@@ -38,11 +38,13 @@ export default function DonatePage() {
       return;
     }
 
+    // A simple orderId can be created on the client side for now.
+    // In a real application, you might generate this on your server.
     const orderId = `donation-${Date.now()}`;
 
     try {
-      // Call the user's provided backend endpoint
-      const response = await fetch("/api/payment/create-payment", {
+      // Step 1: Call the backend endpoint to initiate payment with Paypack
+      const paypackResponse = await fetch("/api/payment/create-payment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,19 +56,42 @@ export default function DonatePage() {
         }),
       });
 
-      const result = await response.json();
+      const paypackResult = await paypackResponse.json();
 
-      if (response.ok) {
-        setMessage(
-          "Payment initiated successfully. Please check your phone to confirm the transaction."
-        );
+      if (paypackResponse.ok) {
+        // Step 2: If payment initiation is successful, call the new API to send an email notification
+        const emailResponse = await fetch("/api/contact/donation", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(donationData),
+        });
+
+        const emailResult = await emailResponse.json();
+
+        if (emailResponse.ok) {
+          setMessage(
+            "Payment initiated successfully and a notification email has been sent. Please check your phone to confirm the transaction."
+          );
+        } else {
+          // Display a success message for payment but note the email failure
+          setMessage(
+            `Payment initiated, but there was an error sending the notification email: ${
+              emailResult.message || "An unknown error occurred."
+            }`
+          );
+        }
       } else {
+        // Handle errors from the Paypack backend
         setMessage(
-          `Payment failed: ${result.error || "An unknown error occurred."}`
+          `Payment failed: ${
+            paypackResult.error || "An unknown error occurred."
+          }`
         );
       }
     } catch (error) {
-      console.error("Paypack API call failed:", error);
+      console.error("API call failed:", error);
       setMessage(
         "An error occurred while trying to process the payment. Please try again."
       );
@@ -75,7 +100,7 @@ export default function DonatePage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setMessage("");
+    setMessage(""); // Clear any previous messages
     setShowConfirmation(true);
     await handleMobileMoneyPayment();
   };

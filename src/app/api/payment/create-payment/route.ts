@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
           Authorization: `Bearer ${accessToken}`,
         },
         body: JSON.stringify({
-          amount: amount,
+          amount: parseFloat(amount),
           number: phoneNumber,
         }),
       }
