@@ -26,14 +26,13 @@ export default function DonatePage() {
     });
   };
 
-  // Function to handle the Mobile Money payment process
   const handleMobileMoneyPayment = async () => {
     setMessage("Processing Mobile Money payment...");
 
     // Simple validation for phone number format
-    if (!/^(078|079)\d{7}$/.test(donationData.phone)) {
+    if (!/^(078|079|073|072)\d{7}$/.test(donationData.phone)) {
       setMessage(
-        "Please enter a valid Rwandan mobile number (e.g., 078xxxxxxx or 079xxxxxxx)."
+        "Please enter a valid Rwandan mobile number (e.g., 078xxxxxxx, 072xxxxxxxx, 073xxxxxxx or 079xxxxxxx)."
       );
       return;
     }
@@ -408,12 +407,21 @@ export default function DonatePage() {
               in-kind support, or any other valuable resources, please get in
               touch with us.
             </p>
-            <Link
-              href="/contact?subject=In-kind%20Support%20Proposal"
-              className="inline-block bg-[#16327b] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#12285f] transition-colors duration-300"
-            >
-              Contact Us to Offer Support
-            </Link>
+            <div className="flex flex-col md:flex-row justify-center gap-6">
+              <Link
+                href="/contact?subject=In-kind%20Support%20Proposal"
+                className="inline-block bg-[#16327b] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#12285f] transition-colors duration-300"
+              >
+                Contact Us to Offer Support
+              </Link>
+              <Link
+                href="https://buymeacoffee.com/techinika"
+                target="_blank"
+                className="inline-block bg-[#16327b] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#12285f] transition-colors duration-300"
+              >
+                Use Buy me a Coffee page
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
