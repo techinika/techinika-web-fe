@@ -19,7 +19,7 @@ const flagshipProjects = [
     buttons: [
       {
         label: "Attend",
-        href: "https://nas.io/tech-rw",
+        href: "https://chat.whatsapp.com/FDVsiiuDtJDBgIRbK6BaXK",
         target: "_blank",
         rel: "noopener noreferrer",
       },
@@ -48,7 +48,7 @@ const flagshipProjects = [
       },
       {
         label: "Attend",
-        href: "https://nas.io/tech-rw",
+        href: "https://chat.whatsapp.com/FDVsiiuDtJDBgIRbK6BaXK",
         target: "_blank",
         rel: "noopener noreferrer",
       },
@@ -171,7 +171,7 @@ export default function CommunityPage() {
             fostering a culture of continuous learning and innovation. Our
             mission is to keep Rwandans at the forefront of technological
             advancements by providing accessible education, practical workshops,
-            and collaborative platforms. For the past ${yearsActive}{" "}
+            and collaborative platforms. For the past ${yearsActive}
             ${yearsActive === 1 ? "year" : "years"}, we have been empowering
             individuals to not only understand technology but also to actively
             build and apply their skills in meaningful ways, contributing to
@@ -312,7 +312,7 @@ export default function CommunityPage() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <Link
-              href="https://nas.io/tech-rw"
+              href="https://chat.whatsapp.com/FDVsiiuDtJDBgIRbK6BaXK"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full text-[#16327b] bg-white hover:bg-gray-100 transition-colors duration-300 font-semibold text-lg shadow-lg"

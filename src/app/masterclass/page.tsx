@@ -1,6 +1,6 @@
-import Masterclass from "@/components/Pages/MasterclassPage";
 import React from "react";
 import type { Metadata } from "next";
+import MasterClassRedirect from "@/components/Parts/MasterClassRedirect";
 
 export const metadata: Metadata = {
   title: "Technology Training for Teams in Rwanda | Techinika",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div>
-      <Masterclass />
+      <MasterClassRedirect />
     </div>
   );
 }

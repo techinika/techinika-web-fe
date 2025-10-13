@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image"; // For client logos or avatars
+import Image from "next/image";
 import Link from "next/link";
 
 const testimonials = [
@@ -11,7 +11,7 @@ const testimonials = [
       "Techinika transformed our internal processes. Their custom software solution streamlined our operations, saving us countless hours and significantly boosting our team's productivity. Highly recommend!",
     name: "Jane Doe",
     title: "CEO, Innovate Corp",
-    avatar: "/carine.jpg", // Replace with actual client avatars/photos
+    avatar: "/carine.jpg",
   },
   {
     quote:
@@ -32,10 +32,7 @@ const testimonials = [
 export const Testimonials = () => {
   return (
     <section className="bg-white py-16 md:py-24">
-      {" "}
-      {/* White background for this section */}
       <div className="container mx-auto px-6 md:px-12">
-        {/* Section Title */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +44,6 @@ export const Testimonials = () => {
           <span className="text-[#c48820]">Satisfied Clients</span>
         </motion.h2>
 
-        {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
@@ -72,10 +68,7 @@ export const Testimonials = () => {
                 </p>
               </blockquote>
 
-              {/* Client Info */}
               <div className="mt-auto">
-                {" "}
-                {/* Pushes content to bottom if cards have different heights */}
                 {testimonial.avatar && (
                   <Image
                     src={testimonial.avatar}

@@ -51,6 +51,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/masterclass"
+                target="_blank"
                 className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
               >
                 Masterclass Services
@@ -70,14 +71,6 @@ const Footer = () => {
                 className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
               >
                 Community
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/story"
-                className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
-              >
-                Our Story
               </Link>
             </li>
             <li>
@@ -119,7 +112,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="https://nas.io/tech-rw"
+                href="https://chat.whatsapp.com/FDVsiiuDtJDBgIRbK6BaXK"
                 className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
                 target="_blank"
               >
@@ -129,6 +122,7 @@ const Footer = () => {
             <li>
               <Link
                 href="/masterclass"
+                target="_blank"
                 className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
               >
                 Techinika Masterclass & Internships
