@@ -309,7 +309,7 @@ export default function Story() {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     We introduced monthly{" "}
-                    <Link href="/masterclass">
+                    <Link href="/masterclass" target="_blank">
                       <b>Masterclasses</b>
                     </Link>{" "}
                     to equip professionals with essential skills for seamless

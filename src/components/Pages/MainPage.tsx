@@ -7,8 +7,6 @@ import CallToAction from "../Parts/Join";
 import Footer from "../HeadFoot/Footer";
 import Expertise from "../Parts/HowWeWork";
 import FAQ from "../Parts/FrequentlyAskedQuestions";
-import Testimonials from "../Parts/Testimonials";
-import OurStory from "../Parts/OurStory";
 
 export default function MainPage() {
   return (
@@ -16,13 +14,13 @@ export default function MainPage() {
       <div className="font-main">
         <Nav />
       </div>
-      <div className="bg-white font-main mx-auto mt-[19vh] md:mt-[10vh]">
+      <div className="bg-white font-main mx-auto mt-[10vh]">
         <Content />
         <Programmes />
         <CallToAction />
         <Expertise />
-        <OurStory />
-        <Testimonials />
+        {/* <OurStory /> */}
+        {/* <Testimonials /> */}
         <FAQ />
         <Footer />
       </div>

@@ -144,8 +144,8 @@ export default function MediaPage() {
               </h3>
               <p className="text-gray-700 mb-6 flex-grow">
                 A YouTube channel dedicated to technology education. Our videos
-                are in **Kinyarwanda** to make learning accessible and relevant
-                to a wider local audience.
+                are in <b>Kinyarwanda</b> to make learning accessible and
+                relevant to a wider local audience.
               </p>
               <Link
                 href={MEDIA_LINKS.youtubeLearning}
@@ -183,7 +183,7 @@ export default function MediaPage() {
               </h3>
               <p className="text-gray-700 mb-6 flex-grow">
                 This channel focuses on the intersection of technology and
-                business. Our content is published in **English** to connect
+                business. Our content is published in <b>English</b> to connect
                 with a global audience.
               </p>
               <Link
@@ -218,12 +218,21 @@ export default function MediaPage() {
               a blog post idea or a video concept you would like to propose, we
               would love to hear from you.
             </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-[#c48820] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#a9751c] transition-colors duration-300"
-            >
-              Get in Touch with Your Ideas
-            </Link>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-block bg-[#c48820] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#a9751c] transition-colors duration-300"
+              >
+                Get in Touch with Your Ideas
+              </Link>
+              <Link
+                href="https://whatsapp.com/channel/0029Vb73U7eEKyZ8IRA5Gb1W"
+                target="_blank"
+                className="inline-block bg-[#c48820] text-white font-bold py-3 px-8 rounded-full text-lg shadow-md hover:bg-[#a9751c] transition-colors duration-300"
+              >
+                Follow our WhatsApp Channel
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>

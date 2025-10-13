@@ -286,7 +286,6 @@ export default function ConsultancyPage() {
         </div>
       </section>
 
-      {/* Our Portfolio Section */}
       <section
         id="portfolio"
         className="bg-gradient-to-b from-white to-blue-50 py-16 md:py-24"
@@ -362,7 +361,7 @@ export default function ConsultancyPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Link
-              href="https://forms.gle/qFq6N9pJm3yb1CjG9"
+              href="https://calendar.app.google/61FgQ8QSCY9HEnREA"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full text-[#c48820] bg-white hover:bg-gray-100 transition-colors duration-300 font-semibold text-lg shadow-lg"

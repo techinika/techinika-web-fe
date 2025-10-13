@@ -33,7 +33,7 @@ const Nav = () => {
           <Link href="/" className={linkClasses}>
             Home
           </Link>
-          <Link href="/masterclass" className={linkClasses}>
+          <Link href="/masterclass" target="_blank" className={linkClasses}>
             Masterclass
           </Link>
           <Link href="/consultancy" className={linkClasses}>
@@ -45,9 +45,7 @@ const Nav = () => {
           <Link href="/community" className={linkClasses}>
             Community
           </Link>
-          <Link href="/story" className={`${linkClasses} font-semibold`}>
-            Our Story
-          </Link>
+
           <Link
             href="/contact"
             rel="noopener noreferrer"
@@ -122,6 +120,7 @@ const Nav = () => {
             </Link>
             <Link
               href="/masterclass"
+              target="_blank"
               onClick={() => setIsOpen(false)}
               className={linkClasses}
             >
@@ -147,13 +146,6 @@ const Nav = () => {
               className={linkClasses}
             >
               Community
-            </Link>
-            <Link
-              href="/story"
-              onClick={() => setIsOpen(false)}
-              className={`${linkClasses} font-semibold`}
-            >
-              Our Story
             </Link>
             <Link
               href="/contact"
