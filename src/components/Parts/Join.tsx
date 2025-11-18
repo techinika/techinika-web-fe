@@ -7,9 +7,7 @@ export const CallToAction = () => {
   return (
     <section className="bg-gradient-to-r from-[#16327b] to-[#1a4092] py-20 md:py-24 text-white text-center">
       {" "}
-      {/* Dark blue gradient background */}
       <div className="container mx-auto px-6 md:px-12">
-        {/* Headline */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}

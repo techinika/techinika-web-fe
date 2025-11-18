@@ -5,10 +5,10 @@ import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn, // Changed to FaLinkedinIn for better icon consistency
-  FaXTwitter, // Changed to FaXTwitter for the new X logo
+  FaLinkedinIn,
+  FaXTwitter, 
   FaYoutube,
-} from "react-icons/fa6"; // Using fa6 for updated icons
+} from "react-icons/fa6"; 
 
 export const Socials = ({
   iconSize = 20,

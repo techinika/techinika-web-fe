@@ -7,10 +7,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        userAgent: "*", // Applies to all web crawlers
+        userAgent: "*",
         allow: "/",
       },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`, // Correctly points to your sitemap
+    sitemap: `${BASE_URL}/sitemap.xml`, 
   };
 }

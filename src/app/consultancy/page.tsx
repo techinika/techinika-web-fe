@@ -1,6 +1,6 @@
-import ConsultancyApply from "@/components/Pages/ConsultancyPage";
 import React from "react";
 import type { Metadata } from "next";
+import UbunifuRedirect from "@/components/Redirect/UbunifuRedirect";
 
 export const metadata: Metadata = {
   title: "Technology Consultancy Services in Rwanda | Techinika",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div>
-      <ConsultancyApply />
+      <UbunifuRedirect />
     </div>
   );
 }
