@@ -18,31 +18,7 @@ export const Programmes = () => {
         >
           Our <span className="text-[#c48820]">Products & Services</span>
         </motion.h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
-          <ProductCard
-            href="https://apprena.app"
-            imageSrc="/apprena.png"
-            imageAlt="Apprena Logo"
-            title="Apprena"
-            status="-Pending launch-"
-            description="Operating system for education institutions and a source of rich education."
-          />
-          <ProductCard
-            href="https://securedot.tech"
-            imageSrc="/securedot.png"
-            imageAlt="SecureDot Logo"
-            title="SecureDot"
-            status="-MVP Launched-"
-            description="Instantly secure your website with trusted, automated SSL certificates."
-          />
-          <ProductCard
-            href="/community"
-            imageSrc="/community.png"
-            imageAlt="Rwanda Technology Community Logo"
-            title="Rwanda Technology Community"
-            status="-Non-Profit-"
-            description="We are building a community to ignite talents to learn and support them as they build."
-          />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 ">
           <ProductCard
             href="/media"
             imageSrc="/original.png"
@@ -60,12 +36,20 @@ export const Programmes = () => {
             description="A highly customized training program to help you stay competitive on a job market."
           />
           <ProductCard
-            href="/consultancy"
+            href="https://ubunifu.techinika.co.rw"
             imageSrc="/consultancy.png"
-            imageAlt="Technology Consultation Icon"
-            title="Technology Solutions & Consultation"
+            imageAlt="Ubunifu Labs"
+            title="Ubunifu Labs"
             status="-For Businesses-"
-            description="We help your business determine right tools for the job, or build them for you."
+            description="Our division for consultancy, research and development of business solutions."
+          />
+          <ProductCard
+            href="/community"
+            imageSrc="/community.png"
+            imageAlt="Rwanda Technology Community Logo"
+            title="Rwanda Technology Community"
+            status="-Non-Profit-"
+            description="We are building a community to ignite talents to learn and support them as they build."
           />
         </div>
       </div>

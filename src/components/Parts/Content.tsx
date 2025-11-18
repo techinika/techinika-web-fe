@@ -113,59 +113,13 @@ export default function HeroSection() {
               Register to a Masterclass
             </button>
           </Link>
-          <Link href="/consultancy">
+          <Link href="/consultancy" target="_blank">
             <button className="px-8 py-3 rounded-full text-white bg-[#16327b] hover:bg-[#16327b]/90 transition-colors duration-300 font-semibold text-base shadow-lg">
-              Book a Free Consultation
+              Start a Project With Us
             </button>
           </Link>
         </motion.div>
 
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="mt-12 w-full overflow-hidden pb-4" 
-        >
-          <p className="text-gray-600 font-medium mb-6 text-center text-lg">
-            {" "}
-            
-            Trusted by Leading Organizations:
-          </p>
-          <div className="relative group">
-           
-            <div className="absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
-            <div className="absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-blue-50 to-transparent z-10"></div>
-
-            <ul className="flex animate-infinite-scroll space-x-16 group-hover:pause">
-              {[...partners, ...partners, ...partners].map(
-                (
-                  partner,
-                  index 
-                ) => (
-                  <li
-                    key={`${partner.id}-${index}`}
-                    className="flex items-center flex-shrink-0" 
-                  >
-                    <a
-                      href={partner.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={partner.name}
-                    >
-                      <Image
-                        src={partner.logo}
-                        alt={partner.name}
-                        width={120} 
-                        height={50}
-                        className="h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300" 
-                      />
-                    </a>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );

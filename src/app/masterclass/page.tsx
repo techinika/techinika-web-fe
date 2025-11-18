@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import MasterClassRedirect from "@/components/Parts/MasterClassRedirect";
+import MasterClassRedirect from "@/components/Redirect/MasterClassRedirect";
 
 export const metadata: Metadata = {
   title: "Technology Training for Teams in Rwanda | Techinika",
