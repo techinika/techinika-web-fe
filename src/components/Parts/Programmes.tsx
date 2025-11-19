@@ -25,7 +25,7 @@ export const Programmes = () => {
             imageAlt="Techinika.com Logo"
             title="Techinika Media"
             status="-Original-"
-            description="Learn how to do it yourself with our comprehensive guides and tutorials."
+            description="Rwanda’s #1 tech news, stories, events and opportunities platform."
           />
           <ProductCard
             href="/masterclass"
@@ -33,7 +33,7 @@ export const Programmes = () => {
             imageAlt="Techinika Learning Logo"
             title="Techinika Masterclass"
             status="-For B2C & B2B-"
-            description="A highly customized training program to help you stay competitive on a job market."
+            description="A highly customized training program to help you stay competitive on the market."
           />
           <ProductCard
             href="https://ubunifu.techinika.co.rw"
@@ -49,7 +49,7 @@ export const Programmes = () => {
             imageAlt="Rwanda Technology Community Logo"
             title="Rwanda Technology Community"
             status="-Non-Profit-"
-            description="We are building a community to ignite talents to learn and support them as they build."
+            description="We are building a community to ignite talents to learn and support them as they build solutions."
           />
         </div>
       </div>
