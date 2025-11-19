@@ -3,83 +3,12 @@
 
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion"; // Import motion from framer-motion
-
-// const partners = [
-//   {
-//     id: 4,
-//     name: "Ganza Nation",
-//     logo: "/ganzanation.png",
-//     website: "https://www.instagram.com/ganza_nation/",
-//   },
-//   {
-//     id: 6,
-//     name: "Green Home Group",
-//     logo: "/greenhomegroup.jpeg",
-//     website: "#",
-//   },
-//   {
-//     id: 7,
-//     name: "Rwanda ICT Chamber",
-//     logo: "/ictchamber.jpeg",
-//     website: "https://ictchamber.rw/",
-//   },
-//   {
-//     id: 8,
-//     name: "She Can Code School",
-//     logo: "/shecancode.png",
-//     website: "https://www.shecancodeschool.org/",
-//   },
-//   {
-//     id: 9,
-//     name: "ICP Rwanda",
-//     logo: "/icp.png",
-//     website: "https://x.com/icp_Rwanda_",
-//   },
-//   {
-//     id: 10,
-//     name: "HackNoel",
-//     logo: "/youthcode.png",
-//     website: "https://www.youthcodecamp.live/",
-//   },
-//   {
-//     id: 11,
-//     name: "HangaPitchFest",
-//     logo: "/hanga.png",
-//     website: "https://www.hangapitchfest.rw/",
-//   },
-//   {
-//     id: 12,
-//     name: "Sherrie Silver Foundation",
-//     logo: "/sherrie.jpg",
-//     website: "https://www.sherriesilverfoundation.org/",
-//   },
-//   {
-//     id: 13,
-//     name: "YALI Rwanda Chapter",
-//     logo: "/yali.png",
-//     website: "https://yalirwandachapter.org/",
-//   },
-//   {
-//     id: 14,
-//     name: "BICE Mechatrotech Ltd",
-//     logo: "/bice.png",
-//     website: "#",
-//   },
-//   {
-//     id: 15,
-//     name: "National Cyber Security Authority",
-//     logo: "/ncsa.png",
-//     website: "https://cyber.gov.rw/home/",
-//   },
-// ];
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
-  // Renamed from Content to HeroSection
   return (
     <section className="relative w-full p-10 bg-gradient-to-b from-white to-blue-50 overflow-hidden">
-      <div className="container mx-auto text-center flex flex-col items-center justify-center gap-6 relative z-10">
-        {/* Title */}
+      <div className="max-w-7xl mx-auto text-center flex flex-col items-center justify-center gap-6 relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,15 +19,15 @@ export default function HeroSection() {
           information, and <span className="text-[#c48820]">solutions.</span>
         </motion.h1>
 
-        {/* Subheadline */}
         <motion.p
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-2xl text-lg md:text-xl text-gray-700 leading-relaxed"
+          className="max-w-5xl text-lg md:text-xl text-gray-700 leading-relaxed"
         >
-          We build tailored software solutions that streamline your operations,
-          empower teams, and help you stay ahead in a competitive world.
+          We have solutions to help you grow your business with technology,
+          upskill your team, and stay informed with the latest trends and best
+          practices in the tech industry.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -119,7 +48,6 @@ export default function HeroSection() {
             </button>
           </Link>
         </motion.div>
-
       </div>
     </section>
   );

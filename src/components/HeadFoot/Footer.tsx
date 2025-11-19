@@ -139,7 +139,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 4: Contact & Legal */}
         <div className="md:col-span-1">
           <h4 className="font-semibold text-lg mb-4 text-[#c48820]">
             Contact Us
@@ -164,26 +163,6 @@ const Footer = () => {
               </a>
             </li>
             <li className="text-sm opacity-90">Kigali, Rwanda</li>
-          </ul>
-
-          <h4 className="font-semibold text-lg mb-4 text-[#c48820]">Legal</h4>
-          <ul className="space-y-3">
-            <li>
-              <Link
-                href="/privacy-policy"
-                className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/terms-of-service"
-                className="hover:text-[#c48820] transition-colors duration-200 text-sm opacity-90"
-              >
-                Terms of Service
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

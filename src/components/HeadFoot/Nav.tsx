@@ -36,7 +36,7 @@ const Nav = () => {
           <Link href="/masterclass" target="_blank" className={linkClasses}>
             Masterclass
           </Link>
-          <Link href="/consultancy" className={linkClasses}>
+          <Link href="/consultancy" target="_blank" className={linkClasses}>
             Consultation
           </Link>
           <Link href="/media" className={linkClasses}>
@@ -128,6 +128,7 @@ const Nav = () => {
             </Link>
             <Link
               href="/consultancy"
+              target="_blank"
               onClick={() => setIsOpen(false)}
               className={linkClasses}
             >
