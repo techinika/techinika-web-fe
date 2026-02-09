@@ -17,8 +17,8 @@ const Footer = () => {
               </h1>
             </div>
             <p className="text-slate-500 text-sm max-w-xs">
-              Empowering Rwanda's digital future through Media, Education, and
-              Innovative Technology.
+              {`Empowering Rwanda's digital future through Media, Education, and
+              Innovative Technology.`}
             </p>
           </div>
           <div className="flex gap-10">

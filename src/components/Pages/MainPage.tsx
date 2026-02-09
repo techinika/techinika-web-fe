@@ -93,9 +93,9 @@ const TechinikaLanding = () => {
               <span className="text-blue-600">technology.</span>
             </h2>
             <p className="text-lg lg:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
-              Based in Rwanda, Techinika is a venture studio and media house. We
+              {`Based in Rwanda, Techinika is a venture studio and media house. We
               build tools that empower creators, educate learners, and tell the
-              stories of innovation across the continent.
+              stories of innovation across the continent.`}
             </p>
             <div className="flex flex-col sm:row gap-4">
               <Link
@@ -222,9 +222,9 @@ const TechinikaLanding = () => {
                     </h4>
                   </div>
                   <p className="text-slate-400 text-lg mb-10 max-w-md leading-relaxed">
-                    Specific, results-driven training. We organize a training
+                    {`Specific, results-driven training. We organize a training
                     for a specific skill, and make sure that every attendee can
-                    do something with the skill on the market.
+                    do something with the skill on the market.`}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
