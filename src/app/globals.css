@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap")
-layer(base);
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
 
 @import "tailwindcss";
 
@@ -8,6 +7,14 @@ layer(base);
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/aspect-ratio';
+
+.google-sans-main {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -82,14 +89,10 @@ layer(base);
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-* {
-  font-family: "Inter", sans-serif;
-  box-sizing: border-box;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: "Google Sans", sans-serif;
   }
   body {
     @apply bg-background text-foreground;

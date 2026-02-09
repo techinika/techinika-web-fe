@@ -1,10 +1,10 @@
-import NotFoundPage from "@/components/Pages/NotFoundPage";
+import NotFoundComponent from "@/components/Pages/NotFoundPage";
 import React from "react";
 
 function NotFound() {
   return (
     <div>
-      <NotFoundPage />
+      <NotFoundComponent />
     </div>
   );
 }

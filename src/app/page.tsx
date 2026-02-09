@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import MainPage from "../components/Pages/MainPage";
+import TechinikaLanding from "../components/Pages/MainPage";
 
 export const metadata: Metadata = {
   title:
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div>
-      <MainPage />
+      <TechinikaLanding />
     </div>
   );
 }
