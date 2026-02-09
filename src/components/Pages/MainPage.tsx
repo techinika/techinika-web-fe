@@ -146,7 +146,7 @@ const TechinikaLanding = () => {
                   </span>
                 </div>
 
-                <p className="text-slate-600 mb-8 leading-relaxed flex-grow">
+                <p className="text-slate-600 mb-8 leading-relaxed grow">
                   {p.description}
                 </p>
                 <div className="pt-6 border-t border-slate-50">

@@ -50,7 +50,7 @@ const NotFoundComponent = () => {
       </div>
 
       <div className="relative z-10 max-w-xl w-full text-center">
-        <div className="mb-8 inline-flex items-center justify-center w-24 h-24 bg-white rounded-[2rem] shadow-xl shadow-blue-500/10 border border-slate-100 transform -rotate-12">
+        <div className="mb-8 inline-flex items-center justify-center w-24 h-24 bg-white rounded-4xl shadow-xl shadow-blue-500/10 border border-slate-100 transform -rotate-12">
           <Search className="w-10 h-10 text-blue-600 animate-pulse" />
         </div>
 
