@@ -10,7 +10,6 @@ import {
   QrCode,
   Globe,
   Users,
-  Zap,
   Calendar,
   CheckCircle2,
 } from "lucide-react";
@@ -23,8 +22,7 @@ const TechinikaLanding = () => {
     {
       title: "Techinika One",
       tag: "For Techies",
-      description:
-        "The heartbeat of African tech stories. We tell the stories of companies and people solving the biggest problems with technology.",
+      description: `The heartbeat of African tech stories. We tell the stories of companies and people solving the biggest problems with technology.`,
       icon: <Newspaper className="w-6 h-6 text-blue-500" />,
       link: "https://techinika.com",
       type: "MediaTech",
@@ -32,8 +30,7 @@ const TechinikaLanding = () => {
     {
       title: "Agaseke",
       tag: "For Creators",
-      description:
-        "Empowering Rwandan creators to monetize their craft by collecting tips, gifts and donations from their fans. A 'Buy Me a Coffee' for Rwanda.",
+      description: `Empowering Rwandan creators to monetize their craft by collecting tips, gifts and donations from their fans. A 'Buy Me a Coffee' for Rwanda.`,
       icon: <Wallet className="w-6 h-6 text-green-500" />,
       link: "https://agaseke.me",
       type: "FinTech",
@@ -41,8 +38,7 @@ const TechinikaLanding = () => {
     {
       title: "Apprena",
       tag: "For Learners",
-      description:
-        "AI-Powered customized career roadmaps and learning plans. Test your readiness and get a personalized curriculum to reach your goals.",
+      description: `AI-Powered customized career roadmaps and learning plans. Test your readiness and get a personalized curriculum to reach your goals.`,
       icon: <GraduationCap className="w-6 h-6 text-purple-500" />,
       link: "https://apprena.app",
       type: "EdTech",
@@ -50,8 +46,7 @@ const TechinikaLanding = () => {
     {
       title: "Ubunifu Labs",
       tag: "For Businesses",
-      description:
-        "Our engine room. We build custom software solutions, research solutions for new problems, and automate customer's operations to enhance their productivity.",
+      description: `Our engine room. We build custom software solutions, research solutions for new problems, and automate customer's operations to enhance their productivity.`,
       icon: <Code2 className="w-6 h-6 text-orange-500" />,
       link: "https://ubunifu.techinika.co.rw",
       type: "Development",
@@ -61,13 +56,13 @@ const TechinikaLanding = () => {
   const utilities = [
     {
       name: "SecureDot",
-      desc: "SSL & Security",
+      desc: `SSL & Security`,
       icon: <ShieldCheck className="w-4 h-4" />,
       link: "https://securedot.tech",
     },
     {
       name: "QR Studio",
-      desc: "Dynamic QR Codes",
+      desc: `Dynamic QR Codes`,
       icon: <QrCode className="w-4 h-4" />,
       link: "https://qr-studio.techinika.com",
     },
@@ -194,8 +189,8 @@ const TechinikaLanding = () => {
                 The Academy & Community
               </h3>
               <p className="text-slate-500 text-lg">
-                Building a movement of tech-literate problem solvers across
-                Rwanda.
+                {`Building a movement of tech-literate problem solvers across
+                Rwanda.`}
               </p>
             </div>
             <div className="bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100 flex items-center gap-2 self-start md:self-auto">
@@ -263,8 +258,8 @@ const TechinikaLanding = () => {
                   Rwanda Technology Community
                 </h4>
                 <p className="text-slate-600 mb-8 leading-relaxed">
-                  We organize events that connect creators, founders, and
-                  students. Join the heart of Kigali's tech scene.
+                  {`We organize events that connect creators, founders, and
+                  students. Join the heart of Kigali's tech scene.`}
                 </p>
               </div>
 
@@ -307,33 +302,34 @@ const TechinikaLanding = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h3 className="text-3xl lg:text-5xl font-bold mb-16 text-white leading-tight">
-            "We exist to solve problems using{" "}
-            <span className="text-blue-400">technology</span>, help others solve
-            problems, and help tell their stories."
+            {"We exist to solve problems using "}
+            <span className="text-blue-400">technology</span>
+            {`, help others solve
+            problems, and help tell their stories.`}
           </h3>
           <div className="grid md:grid-cols-3 gap-12 text-left">
             <div>
               <div className="text-blue-400 font-black text-4xl mb-4">01</div>
               <h5 className="text-white font-bold text-lg mb-2">Build</h5>
               <p className="text-slate-400 text-sm leading-relaxed">
-                We ship production-ready code that solves real-world challenges
-                facing Rwanda today.
+                {`We ship production-ready code that solves real-world challenges
+                facing Rwanda today.`}
               </p>
             </div>
             <div>
               <div className="text-blue-400 font-black text-4xl mb-4">02</div>
               <h5 className="text-white font-bold text-lg mb-2">Educate</h5>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Knowledge is the ultimate multiplier. We empower the workforce
-                with modern digital skills.
+                {`Knowledge is the ultimate multiplier. We empower the workforce
+                with modern digital skills.`}
               </p>
             </div>
             <div>
               <div className="text-blue-400 font-black text-4xl mb-4">03</div>
               <h5 className="text-white font-bold text-lg mb-2">Narrate</h5>
               <p className="text-slate-400 text-sm leading-relaxed">
-                African innovation deserves a global stage. We provide the
-                platform for those stories to be told.
+                {`African innovation deserves a global stage. We provide the
+                platform for those stories to be told.`}
               </p>
             </div>
           </div>
