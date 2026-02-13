@@ -20,9 +20,9 @@ import Footer from "../HeadFoot/Footer";
 const TechinikaLanding = () => {
   const products = [
     {
-      title: "Techinika One",
+      title: "Techinika News",
       tag: "For Techies",
-      description: `The heartbeat of African tech stories. We tell the stories of companies and people solving the biggest problems with technology.`,
+      description: `Rwanda's #1 tech news, and insights platform. We tell the stories of companies and people solving the biggest problems with technology.`,
       icon: <Newspaper className="w-6 h-6 text-blue-500" />,
       link: "https://techinika.com",
       type: "MediaTech",
@@ -30,7 +30,7 @@ const TechinikaLanding = () => {
     {
       title: "Agaseke",
       tag: "For Creators",
-      description: `Empowering Rwandan creators to monetize their craft by collecting tips, gifts and donations from their fans. A 'Buy Me a Coffee' for Rwanda.`,
+      description: `Creator Monetization Platform. We empower Rwandan creators to monetize their craft by collecting tips, gifts and donations from their fans. A 'Buy Me a Coffee' for Rwanda.`,
       icon: <Wallet className="w-6 h-6 text-green-500" />,
       link: "https://agaseke.me",
       type: "FinTech",
