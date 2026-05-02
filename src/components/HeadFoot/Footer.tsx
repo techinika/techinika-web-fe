@@ -4,17 +4,15 @@
 import Link from "next/link";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="py-16 px-6 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <h1 className="text-lg font-bold tracking-tighter text-slate-900">
-                TECHINIKA
-              </h1>
+              <div className="text-lg font-bold tracking-tighter text-slate-900">
+                 TECHINIKA
+               </div>
             </div>
             <p className="text-slate-500 text-sm max-w-xs">
               {`Empowering Rwanda's digital future through Media, Education, and
@@ -56,7 +54,7 @@ const Footer = () => {
                 Contact
               </p>
               <Link
-                href="mailto:hello@techinika.com"
+                href="mailto:info@techinika.com"
                 className="text-sm font-semibold hover:text-blue-600 transition"
               >
                 Email Us
@@ -73,7 +71,8 @@ const Footer = () => {
         </div>
         <div className="mt-16 pt-8 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-xs font-medium">
-            © 2026 Techinika Ltd. All rights reserved.
+            © 2020 - {new Date().getFullYear()} Techinika Ltd. All rights
+            reserved.
           </p>
           <p className="text-slate-400 text-[10px] uppercase font-bold tracking-widest">
             Designed for the future

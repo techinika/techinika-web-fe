@@ -10,7 +10,6 @@ import {
   QrCode,
   Globe,
   Users,
-  Calendar,
   CheckCircle2,
 } from "lucide-react";
 import Link from "next/link";
@@ -40,7 +39,7 @@ const TechinikaLanding = () => {
       tag: "For Learners",
       description: `AI-Powered customized career roadmaps and learning plans. Test your readiness and get a personalized curriculum to reach your goals.`,
       icon: <GraduationCap className="w-6 h-6 text-purple-500" />,
-      link: "https://apprena.app",
+      link: "https://apprena.techinika.com",
       type: "EdTech",
     },
     {
@@ -58,7 +57,7 @@ const TechinikaLanding = () => {
       name: "SecureDot",
       desc: `SSL & Security`,
       icon: <ShieldCheck className="w-4 h-4" />,
-      link: "https://securedot.tech",
+      link: "https://securedot.techinika.com",
     },
     {
       name: "QR Studio",
@@ -83,10 +82,10 @@ const TechinikaLanding = () => {
               <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
               Building for Rwanda & Africa
             </div>
-            <h2 className="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 text-slate-900 tracking-tight">
-              Solving problems using{" "}
-              <span className="text-blue-600">technology.</span>
-            </h2>
+            <h1 className="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 text-slate-900 tracking-tight">
+               Solving problems using{" "}
+               <span className="text-blue-600">technology.</span>
+             </h1>
             <p className="text-lg lg:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
               {`Based in Rwanda, Techinika is a venture studio and media house. We
               build tools that empower creators, educate learners, and tell the
@@ -186,11 +185,11 @@ const TechinikaLanding = () => {
           <div className="flex flex-col md:row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
               <h3 className="text-4xl font-bold mb-4 tracking-tight">
-                The Academy & Community
+                Online Learning & Partnerships
               </h3>
               <p className="text-slate-500 text-lg">
-                {`Building a movement of tech-literate problem solvers across
-                Rwanda.`}
+                {`Expanding tech education access and partnering with communities
+                across Rwanda.`}
               </p>
             </div>
             <div className="bg-emerald-50 px-4 py-2 rounded-xl border border-emerald-100 flex items-center gap-2 self-start md:self-auto">
@@ -199,7 +198,7 @@ const TechinikaLanding = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
               <span className="text-xs font-bold text-emerald-700 uppercase tracking-tighter">
-                New Masterclasses Open
+                New Content Available
               </span>
             </div>
           </div>
@@ -209,43 +208,47 @@ const TechinikaLanding = () => {
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-4 mb-8 flex-wrap">
-                    <div className="bg-blue-600 w-fit p-3 rounded-2xl">
-                      <GraduationCap className="w-8 h-8 text-white" />
+                    <div className="bg-red-600 w-fit p-3 rounded-2xl">
+                      <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                      </svg>
                     </div>
                     <h4 className="text-4xl font-bold tracking-tight">
-                      Skill Masterclasses
+                      Online Learning Content
                     </h4>
                   </div>
                   <p className="text-slate-400 text-lg mb-10 max-w-md leading-relaxed">
-                    {`Specific, results-driven training. We organize a training
-                    for a specific skill, and make sure that every attendee can
-                    do something with the skill on the market.`}
+                    {`Access free technology courses in Kinyarwanda on our YouTube
+                    channel. Learn at your own pace from local experts sharing
+                    practical tech skills.`}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
-                      "Real-world Projects",
-                      "Industry Certification",
-                      "Expert Mentorship",
-                      "Job-Ready Portfolio",
+                      "Kinyarwanda Language",
+                      "Practical Tech Skills",
+                      "Self-Paced Learning",
+                      "Local Expert Instructors",
                     ].map((item, idx) => (
                       <div
                         key={idx}
                         className="flex items-center gap-3 text-sm text-slate-300"
                       >
-                        <CheckCircle2 size={18} className="text-blue-500" />
+                        <CheckCircle2 size={18} className="text-red-500" />
                         {item}
                       </div>
                     ))}
                   </div>
                 </div>
-                <Link href={"https://masterclass.sinc.events"} target="_blank">
-                  <button className="w-fit bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-500 transition-all shadow-lg shadow-blue-900/20 active:scale-95">
-                    Browse Programs
+                <Link href={"https://youtube.com/@techinika"} target="_blank">
+                  <button className="w-fit bg-red-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-red-500 transition-all shadow-lg shadow-red-900/20 active:scale-95">
+                    Watch on YouTube
                   </button>
                 </Link>
               </div>
               <div className="absolute -bottom-20 -right-20 opacity-10 pointer-events-none">
-                <GraduationCap size={400} />
+                <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
               </div>
             </div>
 
@@ -255,34 +258,35 @@ const TechinikaLanding = () => {
                   <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-slate-900 tracking-tight">
-                  Rwanda Technology Community
+                  Tech Partnerships
                 </h4>
                 <p className="text-slate-600 mb-8 leading-relaxed">
-                  {`We organize events that connect creators, founders, and
-                  students. Join the heart of Kigali's tech scene.`}
+                  {`We partner with tech communities and initiatives to expand
+                  our impact in Rwanda's tech ecosystem. Let's collaborate
+                  to empower more people through technology.`}
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-slate-100">
                   <div className="bg-blue-50 p-2 rounded-xl text-blue-600">
-                    <Calendar size={20} />
+                    <Users size={20} />
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                      Next Event
+                      Partnership Type
                     </p>
                     <p className="text-sm font-bold text-slate-800">
-                      To be announced
+                      Communities & Initiatives
                     </p>
                   </div>
                 </div>
                 <Link
-                  href={"https://chat.whatsapp.com/KXbMAp9XIQxFY1lbUFP0fP"}
+                  href={"https://calendar.app.google/cMLAUa8cSNZpcpt8A"}
                   target="_blank"
                 >
-                  <button className="w-full bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">
-                    Join the Community
+                  <button className="w-full bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-blue-600 transition shadow-lg shadow-slate-200">
+                    Book a Meeting
                   </button>
                 </Link>
               </div>
