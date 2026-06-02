@@ -24,7 +24,7 @@ const Nav = () => {
           </Link>
         </div>
         <Link
-          href="https://calendar.app.google/cMLAUa8cSNZpcpt8A"
+          href="http://agaseke.me/techinika/booking"
           target="_blank"
         >
           <button className="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-blue-600 transition shadow-md shadow-slate-200">
