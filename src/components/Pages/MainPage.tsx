@@ -282,7 +282,7 @@ const TechinikaLanding = () => {
                   </div>
                 </div>
                 <Link
-                  href={"https://calendar.app.google/cMLAUa8cSNZpcpt8A"}
+                  href={"https://agaseke.me/techinika/booking"}
                   target="_blank"
                 >
                   <button className="w-full bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-blue-600 transition shadow-lg shadow-slate-200">
