@@ -21,9 +21,9 @@ const NotFoundComponent = () => {
       color: "text-blue-500",
     },
     {
-      name: "Join a Masterclass",
+      name: "Learn with us",
       icon: <GraduationCap size={18} />,
-      href: "https://masterclass.sinc.events",
+      href: "https://ubuhanga.techinika.com",
       color: "text-purple-500",
     },
     {

@@ -11,6 +11,7 @@ import {
   Globe,
   Users,
   CheckCircle2,
+  BookOpen,
 } from "lucide-react";
 import Link from "next/link";
 import Nav from "../HeadFoot/Nav";
@@ -204,51 +205,47 @@ const TechinikaLanding = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 relative overflow-hidden bg-slate-900 rounded-[2.5rem] p-10 lg:p-14 text-white shadow-2xl">
+            <div className="lg:col-span-2 relative overflow-hidden bg-amber-900 rounded-[2.5rem] p-10 lg:p-14 text-white shadow-2xl">
               <div className="relative z-10 h-full flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-4 mb-8 flex-wrap">
-                    <div className="bg-red-600 w-fit p-3 rounded-2xl">
-                      <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                      </svg>
+                    <div className="bg-amber-400 w-fit p-3 rounded-2xl">
+                      <BookOpen className="w-8 h-8 text-slate-900" />
                     </div>
                     <h4 className="text-4xl font-bold tracking-tight">
-                      Online Learning Content
+                      Ubuhanga Learning Platform
                     </h4>
                   </div>
-                  <p className="text-slate-400 text-lg mb-10 max-w-md leading-relaxed">
-                    {`Access free technology courses in Kinyarwanda on our YouTube
-                    channel. Learn at your own pace from local experts sharing
-                    practical tech skills.`}
+                  <p className="text-amber-100/80 text-lg mb-10 max-w-md leading-relaxed">
+                    {`Access free technology courses in Kinyarwanda on our
+                    dedicated learning platform. Learn at your own pace with
+                    interactive tutorials from local experts.`}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                     {[
                       "Kinyarwanda Language",
-                      "Practical Tech Skills",
+                      "Interactive Tutorials",
                       "Self-Paced Learning",
                       "Local Expert Instructors",
                     ].map((item, idx) => (
                       <div
                         key={idx}
-                        className="flex items-center gap-3 text-sm text-slate-300"
+                        className="flex items-center gap-3 text-sm text-amber-100/80"
                       >
-                        <CheckCircle2 size={18} className="text-red-500" />
+                        <CheckCircle2 size={18} className="text-amber-400" />
                         {item}
                       </div>
                     ))}
                   </div>
                 </div>
-                <Link href={"https://youtube.com/@techinika"} target="_blank">
-                  <button className="w-fit bg-red-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-red-500 transition-all shadow-lg shadow-red-900/20 active:scale-95">
-                    Watch on YouTube
+                <Link href={"https://ubuhanga.techinika.com"} target="_blank">
+                  <button className="w-fit bg-amber-400 text-slate-900 px-10 py-4 rounded-2xl font-bold hover:bg-amber-300 transition-all shadow-lg shadow-amber-900/20 active:scale-95">
+                    Start Learning on Ubuhanga
                   </button>
                 </Link>
               </div>
-              <div className="absolute -bottom-20 -right-20 opacity-10 pointer-events-none">
-                <svg width="400" height="400" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
+              <div className="absolute -bottom-16 -right-16 opacity-5 pointer-events-none">
+                <BookOpen size={320} />
               </div>
             </div>
 
@@ -282,7 +279,7 @@ const TechinikaLanding = () => {
                   </div>
                 </div>
                 <Link
-                  href={"https://calendar.app.google/cMLAUa8cSNZpcpt8A"}
+                  href={"https://agaseke.me/techinika/booking"}
                   target="_blank"
                 >
                   <button className="w-full bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-blue-600 transition shadow-lg shadow-slate-200">

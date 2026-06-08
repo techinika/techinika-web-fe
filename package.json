@@ -20,6 +20,7 @@
   "homepage": "https://github.com/techinika/techinika-web-fe#readme",
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
+    "caniuse-lite": "^1.0.30001791",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "fs": "^0.0.1-security",

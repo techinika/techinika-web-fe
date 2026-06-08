@@ -43,10 +43,10 @@ const Footer = () => {
                 LinkedIn
               </Link>
               <Link
-                href="https://youtube.com/@techinika"
+                href="https://ubuhanga.techinika.com"
                 className="text-sm font-semibold hover:text-blue-600 transition"
               >
-                YouTube
+                Ubuhanga
               </Link>
             </div>
             <div className="flex flex-col gap-3">
